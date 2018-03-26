@@ -4,10 +4,17 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=0">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<link rel="icon" href="#">
+		<link rel=stylesheet href="css/normalize.css" TYPE="text/css" media=screen>
+		<link rel=stylesheet href="css/grid.css" TYPE="text/css" media=screen>
+		<link rel=stylesheet href="css/flexbox.css" TYPE="text/css" media=screen>
+		<link rel=stylesheet href="css/main.css" TYPE="text/css" media=screen>
 		<!-- Search Engines, Browsers and Bookmarks -->
-		<title></title>
+		<title>Home</title>
 		<meta name="description" content="">
 		<link rel="icon" href=“”>
+		<!-- Fonts -->
+		
 		<!-- Facebook -->
 		<meta property="og:title" content="" />
 		<meta property="og:url" content="" />
@@ -22,7 +29,42 @@
 		<meta name="twitter:image" content="" />
 	</head>
 	<body>
-		<header>
+		<header class="primary-header">
+			<nav class="nav-area">
+
+				<!--Mobile Nav Icon(Hamburger Icon)-->
+				<button class="menu-icon">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar-1"></span>
+					<span class="icon-bar-2"></span>
+				</button>
+				<!--End Mobile Nav Icon-->
+
+				<ul class="navigation">
+					<li><a href="#" class="active">Home</a></li>
+					<li>
+						<a href="#">About</a>
+						<ul>
+							<li><a href="#">The Gospel </a></li>
+							<li><a href="#" class="active">Statement of faith</a></li>
+							<li>
+								<a href="#">Leadership</a>
+								<ul>
+									<li><a href="#">Elders</a></li>
+									<li><a href="">Deacons </a></li>
+								</ul>
+							</li>
+							<li><a href="#">Our Ministries</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Sermons</a></li>
+					<li><a href="#">Visit</a>
+					</li>
+				</ul>
+			</nav>
+			
 		</header><!--End Header-->
 		<!-- Scripts -->
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>

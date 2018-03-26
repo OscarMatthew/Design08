@@ -1,0 +1,179 @@
+/*===============================
+  ===============================
+  GENERAL
+  ===============================
+  ===============================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+@font-face {
+    font-family: 'design-08-icons';
+    src:  url('../assets/fonts/design-08-icons.eot?n1u6a6');
+    src:  url('../assets/fonts/design-08-icons.eot?n1u6a6#iefix') format('embedded-opentype'),
+      url('../assets/fonts/design-08-icons.ttf?n1u6a6') format('truetype'),
+      url('../assets/fonts/design-08-icons.woff?n1u6a6') format('woff'),
+      url('../assets/fonts/design-08-icons.svg?n1u6a6#design-08-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'design-08-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-angle-down:before {
+    content: "\e913";
+  }
+  .icon-arrow-right2:before {
+    content: "\e916";
+  }
+  .icon-carret-left:before {
+    content: "\e917";
+  }
+  .icon-check2:before {
+    content: "\e918";
+  }
+  .icon-comment2:before {
+    content: "\e919";
+  }
+  .icon-download2:before {
+    content: "\e91a";
+  }
+  .icon-events-double-arrow-left2:before {
+    content: "\e91b";
+  }
+  .icon-events-double-arrow-right2:before {
+    content: "\e91c";
+  }
+  .icon-events-single-arrow-left2:before {
+    content: "\e91d";
+  }
+  .icon-events-single-arrow-right2:before {
+    content: "\e91e";
+  }
+  .icon-facebook:before {
+    content: "\e91f";
+  }
+  .icon-filter:before {
+    content: "\e920";
+  }
+  .icon-listen2:before {
+    content: "\e921";
+  }
+  .icon-map2:before {
+    content: "\e922";
+  }
+  .icon-play-icon-2:before {
+    content: "\e923";
+  }
+  .icon-play-icon:before {
+    content: "\e924";
+  }
+  .icon-radio-circle2:before {
+    content: "\e925";
+  }
+  .icon-search-icon:before {
+    content: "\e926";
+  }
+  .icon-twitter2:before {
+    content: "\e927";
+  }
+
+
+  /*===============================
+  ===============================
+  HOMEPAGE
+  ===============================
+  ===============================*/
+
+  /*===============================
+    Header
+  ===============================*/
+
+/* =======  - Mobile+ ======= */
+
+/* Hamburger */
+.overflow-hidden {
+	overflow: hidden;
+}
+
+  .menu-icon {
+	cursor: pointer;
+	width: 48px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 15px;
+}
+
+.icon-bar-1,
+.icon-bar-2 {
+	background-color: #3F3F3F;
+	display: block;
+	opacity: 0.86;
+	height: 3px;
+	-ms-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-ms-transition-property: transform, width;
+	-webkit-transition-property: transform, width;
+	transition-property: transform, width;
+}
+
+.icon-bar-1 {
+	width: 20px;
+}
+
+.icon-bar-2 {
+	width: 20px;
+	margin-top: 0.3125rem;
+}
+
+.active .icon-bar-1 {
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.active .icon-bar-2 {
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	width: 20px;
+	margin-top: -3px;
+}
+  
