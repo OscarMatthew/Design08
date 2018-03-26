@@ -29,8 +29,14 @@
 		<meta name="twitter:image" content="" />
 	</head>
 	<body>
-		<header class="primary-header">
-			<nav class="nav-area">
+		<header>
+			<div class="primary-header">
+				<!--Logo-->
+				<div class="logo">
+					<a href="">
+						<img class="make-background" sizes="(min-width: 768px) 200px, 120px" srcset="assets/logo.png 200w, assets/logo-273.png 400w" src="assets/logo.png">
+					</a>
+				</div>
 
 				<!--Mobile Nav Icon(Hamburger Icon)-->
 				<button class="menu-icon">
@@ -38,7 +44,9 @@
 					<span class="icon-bar-1"></span>
 					<span class="icon-bar-2"></span>
 				</button>
-				<!--End Mobile Nav Icon-->
+			</div>
+
+			<nav class="nav-area">
 
 				<ul class="navigation">
 					<li><a href="#" class="active">Home</a></li>
@@ -64,7 +72,6 @@
 					</li>
 				</ul>
 			</nav>
-			
 		</header><!--End Header-->
 		<!-- Scripts -->
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>

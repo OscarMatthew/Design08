@@ -123,9 +123,32 @@ figure {
     Header
   ===============================*/
 
-/* =======  - Mobile+ ======= */
+/* =======  Primary header - Mobile+ ======= */
+
+.primary-header {
+    /* position: relative;
+	top: 0; */
+	z-index: 2;
+    background-color: #121212;
+}
+
+/* Logo */
+
+.logo {
+    max-height: 40px;
+}
+
+.logo img {
+    max-width: 120px;
+    max-height: 40px;
+}
+
+/* .logo h1 {
+    max-width: 240px;
+    font-size: 16px; */
 
 /* Hamburger */
+
 .overflow-hidden {
 	overflow: hidden;
 }
@@ -134,10 +157,10 @@ figure {
 	cursor: pointer;
 	width: 48px;
 	height: 100%;
-	position: absolute;
+	/* position: absolute;
 	top: 0;
-	left: 0;
-	padding-left: 15px;
+	left: 0; */
+	/* padding-left: 15px; */
 }
 
 .icon-bar-1,
@@ -176,4 +199,19 @@ figure {
 	width: 20px;
 	margin-top: -3px;
 }
+
+/* Navigation */
+
+.navigation {
+    background : red;
+    
+}
+
+open .navigation {
+	-webkit-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+
   
