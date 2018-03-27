@@ -14,6 +14,7 @@ html {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 .clearfix::after {
@@ -26,6 +27,60 @@ figure {
 	margin: 0;
 	padding: 0;
 	border: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*===============================
+	1.0.0 Solo Normalize CSS
+  ===============================*/
+  
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+button {
+    align-items: flex-start;
+    background-color: transparent;
+    padding: 0;
+    border-width: 0;
+    border-style: 0;
+    border-color: transparent;
+}
+
+button:focus {
+	outline: 0;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 @font-face {
@@ -112,7 +167,25 @@ figure {
     content: "\e927";
   }
 
+  body {
+    background: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    }
+  
 
+    .lines {
+      width: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      height: 100vh;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .line {
+      border-left: 1px solid rgba(0,0,0, 0.09);
+    }
   /*===============================
   ===============================
   HOMEPAGE
@@ -126,16 +199,38 @@ figure {
 /* =======  Primary header - Mobile+ ======= */
 
 .primary-header {
-    /* position: relative;
+  /* position: relative;
 	top: 0; */
 	z-index: 2;
-    background-color: #121212;
+  background-color: #121212;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	-moz-box-pack: justify;
+  justify-content: space-between;
+  height: 62px;
+  padding-left: 12px;
+  padding-right: 12px;
+
 }
 
 /* Logo */
 
 .logo {
     max-height: 40px;
+    padding: 10px;
+    margin-top: 3px;
 }
 
 .logo img {
@@ -155,17 +250,17 @@ figure {
 
   .menu-icon {
 	cursor: pointer;
-	width: 48px;
-	height: 100%;
+	/* width: 48px; */
+	/* height: 100%; */
 	/* position: absolute;
 	top: 0;
 	left: 0; */
-	/* padding-left: 15px; */
+	padding: 10px;
 }
 
 .icon-bar-1,
 .icon-bar-2 {
-	background-color: #3F3F3F;
+	background-color: #FFFFFF;
 	display: block;
 	opacity: 0.86;
 	height: 3px;
@@ -203,15 +298,112 @@ figure {
 /* Navigation */
 
 .navigation {
-    background : red;
-    
+  display: block;
+  font-family: 'Teko', Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  color: #4E4E4E;
+  margin: 62px 0 0;
+  padding: 20px 22px;
+	line-height: 2.8;
+  background : #F7F7F7;
+  position: fixed;
+  top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transition-duration: .5s;
+	transition-duration: .5s;
+	transition-property: transform, -webkit-transform;
+	-ms-transform: translateX(-2000px);
+	-webkit-transform: translateX(-2000px);
+  transform: translateX(-2000px);
+  z-index: 5;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
-open .navigation {
+.open .navigation {
 	-webkit-transform: translateX(0px);
 	-ms-transform: translateX(0px);
 	transform: translateX(0px);
 }
+
+.child-menu {
+ 
+  line-height: 2.4;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+}
+
+.child-menu ul {
+  font-size: 18px;
+  padding-left: 20px;
+  color: rgba(78, 78, 78, 0.7);
+  text-transform: uppercase;
+}
+
+.child-menu ul ul {
+  line-height: 2.1;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+.navigation a:hover {
+  color: #F93660;
+}
+
+
+/* ======= End Primary header - Mobile+ ======= */
+
+/*===============================
+    End Header
+  ===============================*/
+
+
+
+  /*===============================
+    Banner
+  ===============================*/
+
+  /* ======= Banner - Mobile+ ======= */
+
+    .bg-img-wrapper {
+    padding-bottom: 579px;
+    width: 100%;
+    /*Set for Background Image Effect*/
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .bg-img /*In order to work properly, the parent element needs to be set to position: relative*/ {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .dark-overlay /*Optional - Only required if text over bg-img*/ {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.35);
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+  
+  
 
 
   
