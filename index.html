@@ -38,8 +38,8 @@
 				</a>
 			</div>
 
-			<nav class="nav-area">
-
+      <!--Mobile/Tablet Nav Markup-->
+			<nav class="nav-area-mobile">
 				<!--Mobile Nav Icon(Hamburger Icon)-->
 				<button class="menu-icon">
 					<span class="sr-only">Toggle navigation</span>
@@ -70,21 +70,50 @@
 					<li><a href="#">Visit</a>
 					</li>
 				</ul>
-			</nav>
+      </nav>
+      
+      <!-- Desktop Nav Markup-->
+      <nav class="nav-area-desktop">
+				<ul class="navigation-desktop">
+					<li><a href="#" class="active">Home</a></li>
+					<li>
+						<a href="#">About</a>
+						<ul>
+							<li><a href="#">The Gospel </a></li>
+							<li><a href="#" class="active">Statement of faith</a></li>
+							<li>
+								<a href="#">Leadership</a>
+								<!-- <ul>
+									<li><a href="#">Elders</a></li>
+									<li><a href="">Deacons </a></li>
+								</ul> -->
+							</li>
+							<li><a href="#">Our Ministries</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Sermons</a></li>
+					<li><a href="#">Visit</a>
+					</li>
+				</ul>
+      </nav>
 		</header><!--End Header-->
+    
+    <main id="main-home">
+      <!--Banner-->
+      <!-- <section class="banner bg-img-wrapper">
+        <img class="bg-img" sizes="100vw" srcset="assets/images/banner-hand-2000.jpg 2000w, assets/images/banner-hand-1440.jpg 1440w, assets/images/banner-hand-850.jpg 850w" src="assets/images/banner-hand-2000.jpg 2000w">
+        <div class="dark-overlay"></div>
+      </section> -->
 
-		<div class="lines">
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</div>
-		<!--Banner-->
-		<!-- <section class="banner bg-img-wrapper">
-			<img class="bg-img" sizes="100vw" srcset="assets/images/banner-hand-2000.jpg 2000w, assets/images/banner-hand-1440.jpg 1440w, assets/images/banner-hand-850.jpg 850w" src="assets/images/banner-hand-2000.jpg 2000w">
-			<div class="dark-overlay"></div> -->
-		</section>
-		</div>
+      <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </main>
 		<!-- Scripts -->
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<script src="js/app.js"></script>
