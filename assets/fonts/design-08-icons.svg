@@ -7,6 +7,7 @@
 <font-face units-per-em="1024" ascent="960" descent="-64" />
 <missing-glyph horiz-adv-x="1024" />
 <glyph unicode="&#x20;" horiz-adv-x="512" d="" />
+<glyph unicode="&#xe900;" glyph-name="close" d="M1024 850.27l-402.302-402.302 402.302-402.302-109.73-109.73-402.238 402.366-402.302-402.302-109.73 109.73 402.302 402.238-402.302 402.302 109.73 109.73 402.302-402.302 402.238 402.302z" />
 <glyph unicode="&#xe913;" glyph-name="angle-down" horiz-adv-x="1665" d="M832.698-64l-833.213 832.011 178.938 191.989 654.275-671.962 654.103 671.962 178.423-191.989z" />
 <glyph unicode="&#xe916;" glyph-name="arrow-right2" horiz-adv-x="2048" d="M1536 960l512-512-512-512-109.695 109.695 329.085 329.085h-1755.39v146.305h1755.39l-329.085 329.085z" />
 <glyph unicode="&#xe917;" glyph-name="carret-left" horiz-adv-x="512" d="M0-64v1024l512.033-512.033z" />

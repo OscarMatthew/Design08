@@ -84,87 +84,91 @@ button:focus {
 }
 
 @font-face {
-    font-family: 'design-08-icons';
-    src:  url('../fonts/design-08-icons.eot?n1u6a6');
-    src:  url('../fonts/design-08-icons.eot?n1u6a6#iefix') format('embedded-opentype'),
-      url('../fonts/design-08-icons.ttf?n1u6a6') format('truetype'),
-      url('../fonts/design-08-icons.woff?n1u6a6') format('woff'),
-      url('../fonts/design-08-icons.svg?n1u6a6#design-08-icons') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'design-08-icons' !important;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-angle-down:before {
-    content: "\e913";
-  }
-  .icon-arrow-right2:before {
-    content: "\e916";
-  }
-  .icon-carret-left:before {
-    content: "\e917";
-  }
-  .icon-check2:before {
-    content: "\e918";
-  }
-  .icon-comment2:before {
-    content: "\e919";
-  }
-  .icon-download2:before {
-    content: "\e91a";
-  }
-  .icon-events-double-arrow-left2:before {
-    content: "\e91b";
-  }
-  .icon-events-double-arrow-right2:before {
-    content: "\e91c";
-  }
-  .icon-events-single-arrow-left2:before {
-    content: "\e91d";
-  }
-  .icon-events-single-arrow-right2:before {
-    content: "\e91e";
-  }
-  .icon-facebook:before {
-    content: "\e91f";
-  }
-  .icon-filter:before {
-    content: "\e920";
-  }
-  .icon-listen2:before {
-    content: "\e921";
-  }
-  .icon-map2:before {
-    content: "\e922";
-  }
-  .icon-play-icon-2:before {
-    content: "\e923";
-  }
-  .icon-play-icon:before {
-    content: "\e924";
-  }
-  .icon-radio-circle2:before {
-    content: "\e925";
-  }
-  .icon-search-icon:before {
-    content: "\e926";
-  }
-  .icon-twitter2:before {
-    content: "\e927";
-  }
+  font-family: 'design-08-icons';
+  src:  url('../fonts/design-08-icons.eot?4yofe3');
+  src:  url('../fonts/design-08-icons.eot?4yofe3#iefix') format('embedded-opentype'),
+    url('../fonts/design-08-icons.ttf?4yofe3') format('truetype'),
+    url('../fonts/design-08-icons.woff?4yofe3') format('woff'),
+    url('../fonts/design-08-icons.svg?4yofe3#design-08-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'design-08-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\e900";
+}
+.icon-angle-down:before {
+  content: "\e913";
+}
+.icon-arrow-right2:before {
+  content: "\e916";
+}
+.icon-carret-left:before {
+  content: "\e917";
+}
+.icon-check2:before {
+  content: "\e918";
+}
+.icon-comment2:before {
+  content: "\e919";
+}
+.icon-download2:before {
+  content: "\e91a";
+}
+.icon-events-double-arrow-left2:before {
+  content: "\e91b";
+}
+.icon-events-double-arrow-right2:before {
+  content: "\e91c";
+}
+.icon-events-single-arrow-left2:before {
+  content: "\e91d";
+}
+.icon-events-single-arrow-right2:before {
+  content: "\e91e";
+}
+.icon-facebook:before {
+  content: "\e91f";
+}
+.icon-filter:before {
+  content: "\e920";
+}
+.icon-listen2:before {
+  content: "\e921";
+}
+.icon-map2:before {
+  content: "\e922";
+}
+.icon-play-icon-2:before {
+  content: "\e923";
+}
+.icon-play-icon:before {
+  content: "\e924";
+}
+.icon-radio-circle2:before {
+  content: "\e925";
+}
+.icon-search-icon:before {
+  content: "\e926";
+}
+.icon-twitter2:before {
+  content: "\e927";
+}
 
   body {
     background: #FFFFFF;
@@ -384,7 +388,7 @@ button:focus {
   .primary-header {
     align-items: stretch;
     padding-left: 22px;
-    padding-right: 22px;
+    padding-right: 0px;
   }
 
   /* Navigation - Desktop */
@@ -423,7 +427,7 @@ button:focus {
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 4px;
+    padding-top: 7px;
     padding-bottom: 4px;
   }
 
@@ -452,12 +456,35 @@ button:focus {
     color: #DB1A44;
   }
 
-
   /* Search - Desktop */
-  .search-btn .icon-search-icon {
-    font-family: 'design-08-icons' , sans-serif;
+  .search-btn {
+    font-family: 'design-08-icons';
     font-size: 16px;
-    color: red;
+    color: rgba(255, 255, 255, 0.5);
+    padding-right: 32px;
+    padding-left: 11px;
+    margin-left: 34px;
+  }
+
+  .search-btn:before {
+    content: '|';
+    color: #F91C4C;
+    font-size: 29px;
+    position: absolute;
+    top: 22px;
+    right: 75px;
+  }
+
+  .search-btn .icon-close {
+    display: none;
+  }
+
+  .close-icon .icon-search-icon {
+    display: none;
+  }
+
+  .close-icon .icon-close {
+    display: block;
   }
 
   .search-area {
@@ -466,15 +493,19 @@ button:focus {
     left: 0;
     right: 0;
     height: calc(100vh - 80px);
-    background: green;
+    background: #fff;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+     /* Hides search Bar */
+    display: none;
   }
 
+  .search-open {
+    display: flex;
+  }
 
   .search-container {
-    background: yellow;
+    /* background: yellow; */
     flex-basis: 60%;
     display: flex;
     align-items: center;
@@ -482,14 +513,20 @@ button:focus {
   }
 
   .search-form {
-    flex-basis: 70%;
+    flex-basis: 98%;
     display: flex;
     flex-direction: column;
+    font-family: 'Teko', Helvetica, sans-serif;
+    font-style: none;
   }
 
   .search-form label {
     align-self: center;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    font-size: 70px;
+    letter-spacing: 5px;
+    color: rgba(18, 18, 18, 0.1)
   }
 
   .search-form input {
@@ -498,18 +535,35 @@ button:focus {
     background-color: transparent;
     border: 0px solid transparent;
     text-rendering: auto;
-    background: #fff;
+    background: transparent;
     text-align: center;
     outline: none;
+    border-bottom: 1px solid rgba(18, 18, 18, 0.7);
+    height: 50px;
+    font-size: 26px;
+  }
+
+  .search-form label::after {
+    font-family: 'design-08-icons';
+    font-size: 24px;
+    content: "\e926";
+    display: flex;
+    position: absolute;
+    left: 21%;
+    bottom: 42%;
+    color: rgba(18, 18, 18, 0.7)
   }
 
   .search-form
   input::placeholder {
-    color: red;
     text-align: center;
+    font-family: 'Teko', Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+    color: rgba(59, 59, 59, 0.2);
   }
-
-
 
   /* ======= End  Header - Desktop+ ======= */
 }

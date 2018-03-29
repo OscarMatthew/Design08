@@ -12,6 +12,17 @@ $(".menu-icon").click(function(){
 });
 
 ///////////////////
+//Search
+///////////////////
+
+$(".search-btn").click(function(){
+	$(".search-area").toggleClass("search-open");
+	// add close-icon class to swap icons
+	$(".search-btn").toggleClass("close-icon");
+	// $(".search-btn").removeClass("close-icon");	
+});
+
+///////////////////
 //Sub-Menu Items
 ///////////////////
 
