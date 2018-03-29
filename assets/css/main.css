@@ -496,16 +496,15 @@ button:focus {
     background: #fff;
     display: flex;
     justify-content: center;
-     /* Hides search Bar */
+    /* Hides search Bar */
     display: none;
   }
 
-  .search-open {
+  .search-open /* Shows search Bar */{
     display: flex;
   }
 
   .search-container {
-    /* background: yellow; */
     flex-basis: 60%;
     display: flex;
     align-items: center;
@@ -567,7 +566,6 @@ button:focus {
 
   /* ======= End  Header - Desktop+ ======= */
 }
-
 
 /*===============================
     End Header
