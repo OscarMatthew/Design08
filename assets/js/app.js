@@ -3,7 +3,7 @@
 ///////////////////
 
 $(".menu-icon").click(function(){
-	//Adds class to .menu icon so CSS can change icon shape
+	//Adds class to .menu-icon so CSS can change icon shape
 	$(this).toggleClass( "active" );
 	//Adds mobile nav so CSS can change make it appear
 	$(".nav-area-mobile").toggleClass( "open" );

@@ -451,6 +451,66 @@ button:focus {
   .navigation-desktop li a:hover {
     color: #DB1A44;
   }
+
+
+  /* Search - Desktop */
+  .search-btn .icon-search-icon {
+    font-family: 'design-08-icons' , sans-serif;
+    font-size: 16px;
+    color: red;
+  }
+
+  .search-area {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: calc(100vh - 80px);
+    background: green;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+
+  .search-container {
+    background: yellow;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-form {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-form label {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+
+  .search-form input {
+    /* Normalize input */
+    -webkit-appearance: textfield;
+    background-color: transparent;
+    border: 0px solid transparent;
+    text-rendering: auto;
+    background: #fff;
+    text-align: center;
+    outline: none;
+  }
+
+  .search-form
+  input::placeholder {
+    color: red;
+    text-align: center;
+  }
+
+
+
   /* ======= End  Header - Desktop+ ======= */
 }
 
