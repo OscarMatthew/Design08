@@ -85,11 +85,11 @@ button:focus {
 
 @font-face {
     font-family: 'design-08-icons';
-    src:  url('../assets/fonts/design-08-icons.eot?n1u6a6');
-    src:  url('../assets/fonts/design-08-icons.eot?n1u6a6#iefix') format('embedded-opentype'),
-      url('../assets/fonts/design-08-icons.ttf?n1u6a6') format('truetype'),
-      url('../assets/fonts/design-08-icons.woff?n1u6a6') format('woff'),
-      url('../assets/fonts/design-08-icons.svg?n1u6a6#design-08-icons') format('svg');
+    src:  url('../fonts/design-08-icons.eot?n1u6a6');
+    src:  url('../fonts/design-08-icons.eot?n1u6a6#iefix') format('embedded-opentype'),
+      url('../fonts/design-08-icons.ttf?n1u6a6') format('truetype'),
+      url('../fonts/design-08-icons.woff?n1u6a6') format('woff'),
+      url('../fonts/design-08-icons.svg?n1u6a6#design-08-icons') format('svg');
     font-weight: normal;
     font-style: normal;
   }
@@ -371,6 +371,10 @@ button:focus {
   .logo img {
     max-width: 200px;
     max-height: 60px;
+  }
+
+  .navigation {
+    margin: 80px 0 0;
   }
 }
 
