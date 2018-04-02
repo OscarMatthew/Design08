@@ -318,7 +318,7 @@ button:focus {
 	-ms-transform: translateX(-2000px);
 	-webkit-transform: translateX(-2000px);
   transform: translateX(-2000px);
-  z-index: 5;
+  z-index: 10;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
@@ -587,7 +587,7 @@ button:focus {
     /*Set for Background Image Effect*/
     position: relative;
     overflow: hidden;
-    z-index: 1;
+    z-index: -1;
   }
   
   .bg-img /*In order to work properly, the parent element needs to be set to position: relative*/ {
@@ -607,7 +607,7 @@ button:focus {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.35);
+    background-color: rgba(0,0,0,0.5);
     content: '';
     position: absolute;
     z-index: -1;
@@ -658,6 +658,33 @@ button:focus {
 
   /* ======= End Banner - Mobile+ ======= */
 
+  /* =======  Banner - Tablet+ ======= */
+@media (min-width: 768px) {
+  .bg-img-wrapper {
+    padding-bottom: 550px;
+  }
+
+  .banner-content {
+    padding-right: 25%;
+  }
+
+  .square-bg {
+    background-size: 37%;
+  }
+
+  .banner-content h1 {
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 10px; 
+  }
+
+  .banner-content p {
+    font-size: 15px;
+    padding-top: 27px;
+  }
+
+}
+
   /*===============================
     Main Content
   ===============================*/
@@ -665,10 +692,36 @@ button:focus {
     margin-right: auto;
     margin-left: auto;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 30px;;
   }
   
   /* ======= Main Content - Mobile+ ======= */
+
+  .invite h1,
+  .invite p {
+    margin: 0;
+    font-style: none;
+  }
+
+  .invite {
+    margin-top: -124px;
+  }
+
+  .invite .service-times {
+    font-family: 'Teko', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 36px;
+  }
+
+  .service-times span {
+    color: #F91C4C
+  }
 
   .invite-graphics {
     border: 13px solid #fff;
@@ -677,6 +730,125 @@ button:focus {
   .invite-graphics .bg-img-wrapper {
     padding-bottom: 262px;
   }
+
+  /* Where */
+  .where h2,
+  .where p {
+    margin: 0;
+  }
+
+  .where {
+    padding-top: 55px;
+  }
+
+  .address h2 {
+    font-family: 'Teko', Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    opacity: 0.9;
+  }
+
+  .address p {
+    font-size: 14px;
+    line-height: 27px;
+    opacity: 0.63;
+    padding-bottom: 16px;
+  }
+
+  .map {
+    background: #262626;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .map a {
+    align-self: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+
+/* ======= Main Content - Large Mobile+ ======= */
+@media (min-width: 480px) {
+  .container {
+    width: 90%;
+  }
+
+  .invite-graphics .bg-img-wrapper {
+    padding-bottom: 320px;
+  }
+
+  .invite .service-times {
+    font-size: 18px;
+    letter-spacing: 1.6px;
+    line-height: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 26px;
+  }
+}
+
+/* =======  Main Content - Tablet+ ======= */
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .invite {
+    display: flex;
+    flex-direction: row;
+    margin-top: -86px;
+  }
+
+  .invite-graphics .bg-img-wrapper {
+    padding-bottom: 280px;
+  }
+
+  .invite-graphics {
+    order: 0;
+    width: 300px;
+    height: 300px;
+  }
+
+  .invite .service-times {
+    order: 1;
+    
+    height: 46px;
+    padding-left: 28px;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .where {
+    position: absolute;
+    order: 2;
+    top: 80%;
+    left: 20%;
+    right: 60px;
+    display: flex;
+  }
+
+  .where .address {
+    padding-left: 33px;
+    padding-right: 40px;
+  }
+
+  
+}
 
 
   
