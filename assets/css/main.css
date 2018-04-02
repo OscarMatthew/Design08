@@ -180,8 +180,8 @@ button:focus {
       top: 46%;
       left: 0;
       right: 0;
-      margin-left: 50px;
-      margin-right: 50px;
+      margin-left: 30px;
+      margin-right: 30px;
       background: #fff;
       display: flex;
       justify-content: space-between;
@@ -661,8 +661,18 @@ button:focus {
   /*===============================
     Main Content
   ===============================*/
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   
   /* ======= Main Content - Mobile+ ======= */
+
+  .invite-graphics {
+    border: 13px solid #fff;
+  }
 
   .invite-graphics .bg-img-wrapper {
     padding-bottom: 262px;
