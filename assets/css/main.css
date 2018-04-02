@@ -177,6 +177,7 @@ button:focus {
   
     .lines {
       position: absolute;
+      top: 46%;
       left: 0;
       right: 0;
       margin-left: 50px;
@@ -185,6 +186,7 @@ button:focus {
       display: flex;
       justify-content: space-between;
       height: 100vh;
+      z-index: -2;
     }
 
     .line {
@@ -579,8 +581,8 @@ button:focus {
 
   /* ======= Banner - Mobile+ ======= */
 
-    .bg-img-wrapper {
-    padding-bottom: 579px;
+  .bg-img-wrapper {
+    padding-bottom: 525px;
     width: 100%;
     /*Set for Background Image Effect*/
     position: relative;
@@ -610,7 +612,63 @@ button:focus {
     position: absolute;
     z-index: -1;
   }
+
+  .square-bg {
+    background: url(../svg/svg-pattern-hero.svg) no-repeat;
+    position: absolute;
+    top: 6%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: 55%;
+    background-position: bottom right;
+    opacity: 0.6;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 10%;
+    right: 10%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-content h1,
+  .banner-content p {
+    margin: 0;
+  }
+
+  .banner-content h1 {
+    font-family: 'Teko', Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px; 
+  }
+
+  .banner-content p {
+    font-size: 14px;
+    line-height: 27px;
+    opacity: 0.74;
+    padding-top: 22px;
+  }
+
+  /* ======= End Banner - Mobile+ ======= */
+
+  /*===============================
+    Main Content
+  ===============================*/
   
+  /* ======= Main Content - Mobile+ ======= */
+
+  .invite-graphics .bg-img-wrapper {
+    padding-bottom: 262px;
+  }
+
+
   
 
 
