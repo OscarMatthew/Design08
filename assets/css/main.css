@@ -432,8 +432,12 @@ button:focus {
     padding-top: 7px;
     padding-bottom: 4px;
   }
+  .navigation-desktop > li,
+  .navigation-desktop > li:last-child {
+    position: relative;
+  }
 
-  .navigation-desktop > li > ul {
+  .navigation-desktop > li ul {
     width: 200px;
     position: absolute;
     top: 100%;
@@ -446,15 +450,45 @@ button:focus {
     display: none;
   }
 
-  .navigation-desktop > li:last-child > ul {
-    right: 0;
-  }
-
-  .navigation-desktop > li:hover > ul /* Brings dropdown on hover */{
+  .navigation-desktop > li:hover ul /* Brings dropdown on hover */{
     display: block;
   }
 
-  .navigation-desktop li a:hover {
+  .navigation-desktop > li:last-child ul {
+    position: absolute;
+    right: 0%;
+  }
+
+  .navigation-desktop > li ul > li {
+    line-height: 1.5;
+  }
+
+  .navigation-desktop > li ul > li ul,
+  .navigation-desktop > li ul > li:nth-child(2n) ul {
+    position: relative;
+  }
+
+  .navigation-desktop > li ul > li ul {
+    width: 140px;
+    position: absolute;
+    top: 43.5%;
+    opacity: 0.9;
+    text-transform: capitalize;
+    /* Hide dropdown on load*/
+    display: none !important;
+  }
+
+  .navigation-desktop > li ul > li:hover ul /* Brings dropdown on hover */ {
+    display: block !important;
+  }
+
+  .navigation-desktop > li ul > li:nth-child(2n) ul {
+    position: absolute;
+    top: 19%;
+    right: 100%;
+  }
+
+  .navigation-desktop li:hover {
     color: #DB1A44;
   }
 
@@ -683,8 +717,9 @@ button:focus {
 @media (min-width: 480px) {
 
   .service-times {
-    font-size: 18px;
-    letter-spacing: 1.6px;
+    top: 102%;
+    font-size: 21px;
+    letter-spacing: 2px;
     line-height: 25px;
     padding-left: 16px;
     padding-right: 16px;
@@ -701,11 +736,11 @@ button:focus {
   }
 
   .banner-content {
-    padding-right: 25%;
+    padding-right: 30%;
   }
 
   .square-bg {
-    background-size: 37%;
+    background-size: 36%;
   }
 
   .banner-content h1 {
@@ -719,6 +754,17 @@ button:focus {
     padding-top: 27px;
   }
 
+  .service-times {
+    top: 123%;
+    left: 52%;
+    font-size: 21px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 26px;
+    width: 55%;    
+  }
 }
 
 
@@ -801,9 +847,8 @@ button:focus {
 @media (min-width: 480px) {
   
   .invite {
-    display: flex;
     background: #fff;
-    /* height: 160px; */
+    display: flex;
     justify-content: space-between;
   }
 
@@ -859,7 +904,7 @@ button:focus {
 
 /* =======  Main Content - Tablet+ ======= */
 @media (min-width: 768px) {
-  .container {
+  .main-container {
     width: 100%;
     padding-left: 60px;
     padding-right: 60px;
@@ -867,8 +912,48 @@ button:focus {
 
   .invite {
     margin-top: -86px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
   }
 
+  .img-wrapper {
+ 
+  }
+
+  /* Where */
+  .where {
+    height: 50%;
+    padding-top: 135px;
+    padding-left: 34px;
+    border: none;
+  }
+
+  .address h2 {
+    font-size: 34px;
+    letter-spacing: 2.4px;
+  }
+
+  .address p {
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 0px;
+    padding-top: 2px;
+  }
+
+  .map {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-top: 25px;
+  }
+
+  .map iframe {
+    width: 70%;
+  }
+
+  .map a {
+    font-size: 12px;
+  }
   
 }
 
