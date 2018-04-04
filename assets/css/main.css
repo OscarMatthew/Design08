@@ -192,6 +192,7 @@ button:focus {
     .line {
       border-left: 1px solid rgba(0,0,0, 0.09);
     }
+
   /*===============================
   ===============================
   HOMEPAGE
@@ -224,28 +225,24 @@ button:focus {
 	-ms-flex-pack: justify;
 	-moz-box-pack: justify;
   justify-content: space-between;
-  height: 62px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 11px;
+  padding-right: 11px;
 }
 
 /* Logo */
 
 .logo {
     max-height: 40px;
-    padding: 10px;
-    margin-top: 3px;
-    align-self: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 24px;
+    margin-bottom: 21px;
 }
 
 .logo img {
     max-width: 120px;
     max-height: 40px;
 }
-
-/* .logo h1 {
-    max-width: 240px;
-    font-size: 16px; */
 
 /* Hamburger */
 
@@ -364,7 +361,6 @@ button:focus {
 @media (min-width: 768px) {
 
   .primary-header {
-    height: 80px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -372,6 +368,8 @@ button:focus {
   /* Logo - Tablet */
   .logo {
     max-height: 60px;
+    margin-top: 27px;
+    margin-bottom: 24px;
   }
 
   .logo img {
@@ -389,8 +387,6 @@ button:focus {
 @media (min-width: 992px) {
   .primary-header {
     align-items: stretch;
-    padding-left: 22px;
-    padding-right: 0px;
   }
 
   /* Navigation - Desktop */
@@ -400,7 +396,6 @@ button:focus {
   }
 
   .nav-area-desktop {
-    flex-basis: 45%;
     display: flex;
     line-height: 0;
   }
@@ -417,6 +412,7 @@ button:focus {
     display: flex;
     justify-content: space-between;
     z-index: 4;
+    margin-right: 12px;
   }
 
   .navigation-desktop li {
@@ -429,7 +425,7 @@ button:focus {
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 7px;
+    padding-top: 8px;
     padding-bottom: 4px;
   }
   .navigation-desktop > li,
@@ -494,21 +490,27 @@ button:focus {
 
   /* Search - Desktop */
   .search-btn {
+    padding-right: 10px;
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-btn .icon-search-icon,
+  .search-btn .icon-close {
     font-family: 'design-08-icons';
     font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
-    padding-right: 32px;
-    padding-left: 11px;
-    margin-left: 34px;
   }
 
   .search-btn:before {
     content: '|';
     color: #F91C4C;
     font-size: 29px;
-    position: absolute;
-    top: 22px;
-    right: 75px;
+    position: relative;
+    top: 1px;
+    right: 0;
   }
 
   .search-btn .icon-close {
@@ -607,7 +609,9 @@ button:focus {
     End Header
   ===============================*/
 
-
+.main-relative {
+  position: relative;
+}
 
   /*===============================
     Banner
@@ -615,16 +619,15 @@ button:focus {
 
   /* ======= Banner - Mobile+ ======= */
 
-  .bg-img-wrapper {
+  /* .bg-img-wrapper {
     padding-bottom: 525px;
     width: 100%;
-    /*Set for Background Image Effect*/
     position: relative;
     overflow: hidden;
     z-index: -1;
   }
   
-  .bg-img /*In order to work properly, the parent element needs to be set to position: relative*/ {
+  .bg-img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -635,17 +638,49 @@ button:focus {
     right: 0;
     z-index: -1;
   }
-  
-  .dark-overlay /*Optional - Only required if text over bg-img*/ {
+   */
+
+
+  .banner {
+    height: 525px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* position: relative; */
+    overflow: hidden;
+    padding: 44px;
+  }
+
+  .banner h1 {
+    /* flex-basis: 100%; */
+  }
+
+  .background-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .dark-overlay {
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.35);
     content: '';
     position: absolute;
     z-index: -1;
   }
+
+
 
   .square-bg {
     background: url(../svg/svg-pattern-hero.svg) no-repeat;
@@ -657,26 +692,16 @@ button:focus {
     background-size: 55%;
     background-position: bottom right;
     opacity: 0.6;
+    z-index: -1;
   }
 
-  .banner-content {
-    position: absolute;
-    top: 25%;
-    bottom: 25%;
-    left: 10%;
-    right: 10%;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .banner-content h1,
-  .banner-content h2,
-  .banner-content p {
+  .banner h1,
+  .banner h2,
+  .banner p {
     margin: 0;
   }
 
-  .banner-content h1 {
+  .banner h1 {
     font-family: 'Teko', Helvetica, sans-serif;
     font-size: 32px;
     font-weight: 500;
@@ -684,7 +709,7 @@ button:focus {
     letter-spacing: 5px; 
   }
 
-  .banner-content p {
+  .banner p {
     font-size: 14px;
     line-height: 27px;
     opacity: 0.74;
@@ -731,25 +756,21 @@ button:focus {
 /* =======  Banner - Tablet+ ======= */
 
 @media (min-width: 768px) {
-  .bg-img-wrapper {
+  /* .bg-img-wrapper {
     padding-bottom: 550px;
-  }
-
-  .banner-content {
-    padding-right: 30%;
-  }
+  } */
 
   .square-bg {
     background-size: 36%;
   }
 
-  .banner-content h1 {
+  .banner h1 {
     font-size: 42px;
     font-weight: 400;
     letter-spacing: 10px; 
   }
 
-  .banner-content p {
+  .banner p {
     font-size: 15px;
     padding-top: 27px;
   }
@@ -770,11 +791,11 @@ button:focus {
 /* =======  Banner - Desktop+ ======= */
 
 @media (min-width: 992px) {
-  .bg-img-wrapper {
+  /* .bg-img-wrapper {
     padding-bottom: 750px;
-  }
+  } */
 
-  .banner-content p {
+  .banner p {
     padding-right: 36%;
   }
 
@@ -782,11 +803,11 @@ button:focus {
     background-size: 36%;
   } */
 
-  .banner-content h1 {
+  .banner h1 {
     font-size: 65px;
   }
 
-  .banner-content p {
+  .banner p {
     font-size: 18px;
     line-height: 33px;
     opacity: 0.5;
@@ -871,6 +892,10 @@ button:focus {
     border-bottom-right-radius: 3px;
     /* display: flex;
     flex-direction: column; */
+  }
+
+  .map iframe {
+    height: 70px;
   }
 
   .map a {
