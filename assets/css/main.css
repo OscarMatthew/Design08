@@ -767,6 +767,47 @@ button:focus {
   }
 }
 
+/* =======  Banner - Desktop+ ======= */
+
+@media (min-width: 992px) {
+  .bg-img-wrapper {
+    padding-bottom: 750px;
+  }
+
+  .banner-content p {
+    padding-right: 36%;
+  }
+
+  /* .square-bg {
+    background-size: 36%;
+  } */
+
+  .banner-content h1 {
+    font-size: 65px;
+  }
+
+  .banner-content p {
+    font-size: 18px;
+    line-height: 33px;
+    opacity: 0.5;
+    padding-top: 35px;
+  }
+
+  .service-times {
+    top: 481px;
+    left: 429px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 27px;
+    padding-left: 29px;
+    padding-right: 0px;
+    padding-bottom: 26px;
+    width: calc(100% - 350px);
+    height: 97px;    
+  }
+}
+
 
 /*===============================
   Main Content
@@ -792,8 +833,6 @@ button:focus {
 
   .img-wrapper {
     border: 13px solid #fff;
-    /* width: 100%;
-    height: 100%; */
   }
 
   .img-wrapper img {
@@ -850,10 +889,6 @@ button:focus {
     background: #fff;
     display: flex;
     justify-content: space-between;
-  }
-
-  .img-wrapper {
- 
   }
 
   /* Where */
@@ -917,10 +952,6 @@ button:focus {
     justify-content: space-between;
   }
 
-  .img-wrapper {
- 
-  }
-
   /* Where */
   .where {
     height: 50%;
@@ -954,11 +985,58 @@ button:focus {
   .map a {
     font-size: 12px;
   }
+
+/* =======  Main Content - Desktop+ ======= */
+
+  @media (min-width: 992px) {
+    .main-container {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  
+    .invite {
+      margin-top: -97px;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    /* Where */
+    .where {
+      height: 50%;
+      padding-top: 135px;
+      padding-left: 34px;
+      border: none;
+    }
+  
+    .address h2 {
+      font-size: 34px;
+      letter-spacing: 2.4px;
+    }
+  
+    .address p {
+      font-size: 16px;
+      line-height: 28px;
+      padding-bottom: 0px;
+      padding-top: 2px;
+    }
+  
+    .map {
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px;
+      margin-top: 25px;
+    }
+  
+    .map iframe {
+      width: 70%;
+    }
+  
+    .map a {
+      font-size: 12px;
+    }
+  }
   
 }
-
-
-  
 
 
   
