@@ -782,12 +782,12 @@ HOMEPAGE
 @media (min-width: 992px) {
 
   .banner {
-    height: 740px;
+    height: 680px;
     padding: 60px;
   }
 
   .banner h1 {
-    padding-right: 50%;
+    padding-right: 40%;
   }
 
   .banner p {
