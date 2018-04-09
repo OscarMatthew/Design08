@@ -206,7 +206,6 @@ HOMEPAGE
 /* ======= header - Mobile+ ======= */
 
 .primary-header {
-  position: absolute;
 	z-index: 2;
   background-color: #121212;
   display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6
@@ -623,13 +622,13 @@ HOMEPAGE
     height: 525px;
     color: #fff;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-content: flex-start;
     position: relative;
     overflow: hidden;
     padding: 44px;
-
+    padding: 
   }
 
   .background-img {
@@ -687,7 +686,7 @@ HOMEPAGE
     line-height: 27px;
     opacity: 0.74;
     padding-top: 22px;
-    padding-bottom: 170px;
+    /* padding-bottom: 170px; */
   }
 
   .service-times {
@@ -737,6 +736,7 @@ HOMEPAGE
 @media (min-width: 768px) {
   .banner {
     height: 594px;
+    align-content: center;
   }
 
   .baaner h1,
