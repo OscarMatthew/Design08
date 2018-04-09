@@ -170,28 +170,34 @@ button:focus {
   content: "\e927";
 }
 
-  body {
+body {
     background: #FFFFFF;
     font-family: 'Open Sans', Helvetica, sans-serif;
-    }
-  
-    .lines {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin-left: 30px;
-      margin-right: 30px;
-      background: #fff;
-      display: flex;
-      justify-content: space-between;
-      height: 100vh;
-      z-index: -2;
-    }
+  }
 
-    .line {
-      border-left: 1px solid rgba(0,0,0, 0.09);
-    }
+  :root {
+    --primary-regular: #F91C4C;
+    --primary-light: #F93660;
+    --nav-hover: #F93660;
+  } 
+
+  .lines {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    z-index: -2;
+  }
+
+  .line {
+    border-left: 1px solid rgba(0,0,0, 0.09);
+  }
 
 /*===============================
 ===============================
@@ -206,6 +212,7 @@ HOMEPAGE
 /* ======= header - Mobile+ ======= */
 
 .primary-header {
+  position: absolute;
 	z-index: 2;
   background-color: #121212;
   display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6
@@ -346,7 +353,7 @@ HOMEPAGE
 }
 
 .navigation a:hover {
-  color: #F93660;
+  color: var(--nav-hover);
 }
 
 .nav-area-desktop /* Hides Desktop nav */{
@@ -477,14 +484,21 @@ HOMEPAGE
     display: block !important;
   }
 
-  .navigation-desktop > li ul > li:nth-child(2n) ul {
+  .navigation-desktop > li ul > li ul {
+    position: absolute;
+    left: 98%;
+  }
+
+  .navigation-desktop > li:last-child ul > li:nth-child(2n) ul {
     position: absolute;
     top: 19%;
     right: 100%;
+    left: -69%;
+    z-index: -1;
   }
 
   .navigation-desktop li:hover {
-    color: #DB1A44;
+    color: var(--primary-light);
   }
 
   /* Search - Desktop */
@@ -505,7 +519,7 @@ HOMEPAGE
 
   .search-btn:before {
     content: '|';
-    color: #F91C4C;
+    color: var(--primary-regular);
     font-size: 29px;
     position: relative;
     top: 1px;
@@ -623,7 +637,6 @@ HOMEPAGE
     color: #fff;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
     align-content: flex-start;
     position: relative;
     overflow: hidden;
@@ -694,19 +707,22 @@ HOMEPAGE
     bottom: 0;
     left: 30px;
     right: 30px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 72px;
+  }
+
+  .service-times h2 {
     font-family: 'Teko', Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: #fff;
     letter-spacing: 1.2px;
     line-height: 25px;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-bottom: 72px;
   }
 
   .service-times span {
-    color: #F91C4C
+    color: var(--primary-regular);
   }
 
 /* ======= End Banner - Mobile+ ======= */
@@ -722,11 +738,14 @@ HOMEPAGE
   }
 
   .service-times {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .service-times h2 {
     font-size: 21px;
     letter-spacing: 2px;
     line-height: 25px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
@@ -762,18 +781,22 @@ HOMEPAGE
   .service-times {
     position: absolute;
     bottom: 0;
-    left: 47%;
+    left: 42%;
     right: 0px;
-    /* right: 0px; */
+    padding-left: 34px;
+    padding-right: 53px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 55%;
+    height: 86px; 
+    display: flex;
+    align-items: center;
+  }
+
+  .service-times h2 {
     font-size: 21px;
     letter-spacing: 2px;
     line-height: 25px;
-    padding-left: 34px;
-    padding-right: 53px;
-    padding-top: 16px;
-    padding-bottom: 22px;
-    width: 55%;
-    height: 86px; 
   }
 }
 
@@ -807,11 +830,14 @@ HOMEPAGE
 
   .service-times {
     left: 45%;
+    height: 97px;    
+  }
+
+  .service-times h2 {
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 2px;
     line-height: 27px;
-    height: 97px;    
   }
 }
 
@@ -820,8 +846,6 @@ HOMEPAGE
 @media (min-width: 1200px) {
   .service-times {
     padding-left: 48px;
-    padding-top: 36px;
-    padding-bottom: 36px;
   }
 }
 
@@ -976,8 +1000,8 @@ HOMEPAGE
     height: 40px;
     display: flex;
     align-items: center; 
+    color: var(--primary-light);
   }
-
 
   .feed-content p span {
     content: "|";
@@ -986,7 +1010,7 @@ HOMEPAGE
     right: 0px;
     width: 36px;
     height: 1px;
-    background: rgba(0,0,0,1);
+    background: var(--primary-light);
   }
 
   .feed-2 .content-2 h1:before {
@@ -1005,15 +1029,15 @@ HOMEPAGE
     z-index: 2;
   }
 
-  .feed-1:hover .feed-content p,
+  /* .feed-1:hover .feed-content p,
   .feed-2:hover .feed-content p  {
-    color: #F91C4C;
+    
   }
 
   .feed-1:hover .feed-content p span,
   .feed-2:hover .feed-content p span {
-    background: #F91C4C;
-  }
+    
+  } */
 
 
 /* ======= Main Content - Large Mobile+ ======= */
@@ -1069,6 +1093,74 @@ HOMEPAGE
     align-items: center;
   }
 
+  /*  Page Feeds - Large Mobile+ */
+
+  .feed-1,
+  .feed-2 {
+    /* position: relative;
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; */
+  }
+
+  .feed-1 {
+    margin-bottom: 53px;
+  }
+
+  .feed-content {
+    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(0,0,0,1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px;
+    position: relative;
+  }
+
+  .feed-content h1 {
+    font-size: 18px;
+    letter-spacing: 1.6px;
+  }
+
+  .feed-content h1:before {
+    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-size: 120px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    content: "02";
+    color: rgba(0,0,0,0.02);
+    position: absolute;
+    bottom: -38px;
+    left: -20px;
+    z-index: -3;
+  }
+
+  .feed-content p {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    position: relative;
+    width: 35%;
+    height: 40px;
+    display: flex;
+    align-items: center; 
+    color: var(--primary-light);
+  }
+
+  .feed-content p span {
+    content: "|";
+    position: absolute;
+    top: 18px;
+    right: 0px;
+    width: 36px;
+    height: 1px;
+    background: var(--primary-light);
+  }
+
+
 }
 
 /* =======  Main Content - Tablet+ ======= */
@@ -1095,8 +1187,9 @@ HOMEPAGE
 
   /* Where */
   .where {
-    height: 50%;
-    padding-top: 135px;
+    margin-top: 100px;
+    justify-content: flex-end;
+    padding-top: 0px;
     padding-left: 34px;
     border: none;
   }
@@ -1117,6 +1210,7 @@ HOMEPAGE
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     margin-top: 25px;
+    min-width: 426px;
   }
 
   .map iframe {
@@ -1147,7 +1241,7 @@ HOMEPAGE
   .feed-2 {
     order: 0;
     padding-top: 112px;
-    padding-top: 0px;
+    /* padding-top: 0px; */
   }
 
   .feed-content {
@@ -1168,9 +1262,10 @@ HOMEPAGE
     left: -44px;
   }
 
-  .feed-content a {
+  .feed-content p {
     width: 37%;
   }
+}
 
 /* =======  Main Content - Desktop+ ======= */
 
@@ -1183,6 +1278,7 @@ HOMEPAGE
   
     .invite {
       margin-top: -97px;
+      margin-bottom: 97px;
       background: transparent;
       display: flex;
       justify-content: flex-start;
@@ -1194,7 +1290,7 @@ HOMEPAGE
 
     /* Where */
     .where {
-      height: inherit;
+      margin-top: 115px;
       padding-top: 0px;
       padding-left: 80px;
       padding-bottom: 15px;
@@ -1216,9 +1312,7 @@ HOMEPAGE
     }
   
     .map {
-      border-bottom-right-radius: 4px;
-      border-top-right-radius: 4px;
-      margin-top: 25px;
+      min-width: 430px;
     }
   
     .map iframe {
@@ -1240,7 +1334,7 @@ HOMEPAGE
     font-size: 22px;
   }
 
-  .feed-content a {
+  .feed-content p {
     font-size: 15px;
     width: 28%;
   }
@@ -1262,8 +1356,16 @@ HOMEPAGE
     max-width: 440px;
   }
 
+  .invite {
+    margin-bottom: 110px;
+  }
+
   .where {
     padding-left: 125px;
+  }
+
+  .map {
+    min-width: 435px;
   }
 
   /*  Page Feeds - Large Desktop */
@@ -1278,35 +1380,29 @@ HOMEPAGE
     max-width: 414px;
   }
 
-  .feed-1 {
-    margin-bottom: 0px;
-  }
-
   .feed-2 {
-    padding-top: 112px;
+    padding-top: 182px;
   }
 
   .feed-content {
-    padding-top: 28px;
+    padding-top: 32px;
   }
 
   .feed-content h1 {
-    font-size: 22px;
-    letter-spacing: 1.8px;
-    line-height: 26px;
-    /* font-weight: 400; */
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 400;
   }
 
   .feed-content h1:before {
-    font-size: 250px;
-    letter-spacing: 5px;
-    bottom: 21px;
-    left: -44px;
+    font-size: 300px;
+    letter-spacing: 10px;
+    bottom: 11px;
   }
 
-  .feed-content a {
-    font-size: 15px;
+  .feed-content p {
     width: 28%;
+    font-weight: 400;
   }
 
 }
