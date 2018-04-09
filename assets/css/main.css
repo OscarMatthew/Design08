@@ -921,12 +921,14 @@ HOMEPAGE
 
   /*  Page Feeds - Mobile+ */
 
-  .page-feeds h1 {
+  .page-feeds h1,
+  .page-feeds p {
     margin: 0;
   }
 
   .feed-1,
   .feed-2 {
+    position: relative;
     max-width: 420px;
     width: 100%;
   }
@@ -953,38 +955,31 @@ HOMEPAGE
     letter-spacing: 1.6px;
   }
 
-  .content-1 h1:before {
+  .feed-content h1:before {
     font-family: "Teko", Arial, Helvetica, sans-serif;
     font-size: 120px;
     font-weight: 500;
     letter-spacing: 5px;
     content: "02";
-    color: rgba(0,0,0,0.03);
+    color: rgba(0,0,0,0.02);
     position: absolute;
     bottom: -38px;
     left: -20px;
-    z-index: -1;
+    z-index: -3;
   }
 
-  .feed-content a {
+  .feed-content p {
     font-size: 14px;
     letter-spacing: 1.4px;
     position: relative;
     width: 35%;
     height: 40px;
     display: flex;
-    align-items: center;
+    align-items: center; 
   }
 
-  .feed-content a:hover {
-    color: #F91C4C;
-  }
 
-  .feed-content a:hover span {
-    background: #F91C4C;
-  }
-
-  .feed-content a span {
+  .feed-content p span {
     content: "|";
     position: absolute;
     top: 18px;
@@ -994,6 +989,31 @@ HOMEPAGE
     background: rgba(0,0,0,1);
   }
 
+  .feed-2 .content-2 h1:before {
+    content: "03";
+  }
+
+  .cover-link {
+    /* background: red; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    opacity: 0.1;
+    z-index: 2;
+  }
+
+  .feed-1:hover .feed-content p,
+  .feed-2:hover .feed-content p  {
+    color: #F91C4C;
+  }
+
+  .feed-1:hover .feed-content p span,
+  .feed-2:hover .feed-content p span {
+    background: #F91C4C;
+  }
 
 
 /* ======= Main Content - Large Mobile+ ======= */
@@ -1061,10 +1081,16 @@ HOMEPAGE
 
   .invite {
     margin-top: -86px;
+    margin-bottom: 87px;
     background: transparent;
     display: flex;
     justify-content: space-between;
     height: inherit;
+  }
+
+  .img-wrapper {
+    max-width: 336px;
+    width: 100%;
   }
 
   /* Where */
@@ -1099,6 +1125,51 @@ HOMEPAGE
 
   .map a {
     font-size: 12px;
+  }
+
+  /*  Page Feeds - Tablet */
+
+  .page-feeds {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feed-1,
+  .feed-2 {
+    max-width: 310px;
+  }
+
+  .feed-1 {
+    margin-bottom: 0px;
+    order: 1;
+  }
+
+  .feed-2 {
+    order: 0;
+    padding-top: 112px;
+    padding-top: 0px;
+  }
+
+  .feed-content {
+    padding-top: 28px;
+  }
+
+  .feed-content h1 {
+    font-size: 20px;
+    letter-spacing: 1.8px;
+    line-height: 26px;
+    /* font-weight: 400; */
+  }
+
+  .feed-content h1:before {
+    font-size: 250px;
+    letter-spacing: 5px;
+    bottom: 21px;
+    left: -44px;
+  }
+
+  .feed-content a {
+    width: 37%;
   }
 
 /* =======  Main Content - Desktop+ ======= */
@@ -1158,7 +1229,23 @@ HOMEPAGE
       font-size: 12px;
     }
 
+  /*  Page Feeds - Desktop */
+
+  .feed-1,
+  .feed-2 {
+    max-width: 410px;
   }
+
+  .feed-content h1 {
+    font-size: 22px;
+  }
+
+  .feed-content a {
+    font-size: 15px;
+    width: 28%;
+  }
+
+}
 
   
 /* =======  Main Content - Large Desktop+ ======= */
@@ -1177,6 +1264,49 @@ HOMEPAGE
 
   .where {
     padding-left: 125px;
+  }
+
+  /*  Page Feeds - Large Desktop */
+
+  .page-feeds {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feed-1,
+  .feed-2 {
+    max-width: 414px;
+  }
+
+  .feed-1 {
+    margin-bottom: 0px;
+  }
+
+  .feed-2 {
+    padding-top: 112px;
+  }
+
+  .feed-content {
+    padding-top: 28px;
+  }
+
+  .feed-content h1 {
+    font-size: 22px;
+    letter-spacing: 1.8px;
+    line-height: 26px;
+    /* font-weight: 400; */
+  }
+
+  .feed-content h1:before {
+    font-size: 250px;
+    letter-spacing: 5px;
+    bottom: 21px;
+    left: -44px;
+  }
+
+  .feed-content a {
+    font-size: 15px;
+    width: 28%;
   }
 
 }
