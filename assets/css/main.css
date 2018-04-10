@@ -1058,19 +1058,43 @@ HOMEPAGE
     object-fit: cover;
   }
 
+  .recent-sermon .play-icon,
+  .play-icon .outer-circle,
+  .play-icon .outer-circle .inner-dark-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.17);
+  }
+
   .recent-sermon .play-icon {
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    width: 82px;
+    height: 82px;
+  }
+
+  .play-icon .outer-circle {
+    width: 65px;
+    height: 65px;
+  }
+
+  .play-icon .outer-circle .inner-dark-circle{
+    width: 45px;
+    height: 45px;
+    background: #121212;
   }
 
   .recent-sermon .icon-play-icon {
     font-family: 'design-08-icons', sans-serif;
     font-size: 16px;
     color: var(--primary-regular);
+    margin-left: 3px;
   }
-
-
 
   /* Recent Sermon Content */
   .recent-sermon-content {
@@ -1109,6 +1133,11 @@ HOMEPAGE
     padding-top: 15px;
   }
 
+  .recent-sermon-content h1::first-word {
+    color: var(--primary-regular);
+    background: green;
+  }
+
   /* Avatar */
   .recent-sermon-content .avatar {
     display: flex;
@@ -1138,6 +1167,11 @@ HOMEPAGE
 
 
 
+
+
+  .red {
+    color: var(--primary-regular);
+  }
 
 /* ======= Main Content - Large Mobile+ ======= */
 @media (min-width: 480px) {

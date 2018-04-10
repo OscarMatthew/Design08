@@ -30,6 +30,16 @@ $(".search-btn").click(function(){
 //Target all .nav-area li items that have UL as children add class
 //Mobile & Tablet
 var subMenuItems = $( ".nav-area-mobile > ul > li:has(ul)" );
-// var menuChild = $('<button class="more"></button>');
 
 $(subMenuItems).addClass("child-menu");
+
+
+///////////////////
+//Last Word
+///////////////////
+
+$("#lastWord").html(function(){
+	var text= $(this).text().trim().split(" ");
+	var last = text.pop();
+	return text.join(" ") + (text.length > 0 ? " <span class='red'>" + last + "</span>" : last);
+  });
