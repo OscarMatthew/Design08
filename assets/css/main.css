@@ -212,7 +212,7 @@ HOMEPAGE
 /* ======= header - Mobile+ ======= */
 
 .primary-header {
-  position: absolute;
+  /* position: absolute; */
 	z-index: 2;
   background-color: #121212;
   display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6
@@ -392,6 +392,7 @@ HOMEPAGE
 
 @media (min-width: 992px) {
   .primary-header {
+    position: relative;
     align-items: stretch;
   }
 
@@ -805,23 +806,17 @@ HOMEPAGE
 @media (min-width: 992px) {
 
   .banner {
-    height: 680px;
+    height: 630px;
     padding: 60px;
   }
 
   .banner h1 {
-    padding-right: 40%;
-  }
-
-  .banner p {
-    padding-right: 60%; 
-  }
-
-  .banner h1 {
+    padding-right: 25%;
     font-size: 65px;
   }
 
   .banner p {
+    padding-right: 60%; 
     font-size: 18px;
     line-height: 33px;
     opacity: 0.5;
@@ -1348,6 +1343,16 @@ HOMEPAGE
   }
 
 }
+
+/* =======  Main Content - Super Large Desktop+ ======= */
+
+@media (min-width: 1600px) { 
+  .super-big-container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 
 
   
