@@ -1,1 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-429 3960 520 390"><defs><style>.a,.b,.c,.d,.e,.f{fill:#1c1e1f;}.a{opacity:0.01;}.b{opacity:0.07;}.c{opacity:0.02;}.d{opacity:0.1;}.e{opacity:0.05;}.f{opacity:0.029;}</style></defs><g transform="translate(-1683 -3209)"><rect class="a" width="130" height="130" transform="translate(1254 7169)"/><rect class="b" width="130" height="130" transform="translate(1254 7299)"/><rect class="b" width="130" height="130" transform="translate(1384 7299)"/><rect class="c" width="130" height="130" transform="translate(1514 7299)"/><rect class="d" width="130" height="130" transform="translate(1254 7429)"/><rect class="d" width="130" height="130" transform="translate(1384 7429)"/><rect class="e" width="130" height="130" transform="translate(1514 7429)"/><rect class="f" width="130" height="130" transform="translate(1644 7429)"/></g></svg>
+<svg id="Group_11381" data-name="Group 11381" xmlns="http://www.w3.org/2000/svg" viewBox="1793 -1266 520 390">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: #1c1e1f;
+      }
+
+      .cls-1 {
+        opacity: 0.06;
+      }
+
+      .cls-2 {
+        opacity: 0.09;
+      }
+
+      .cls-3 {
+        opacity: 0.02;
+      }
+
+      .cls-4 {
+        opacity: 0.13;
+      }
+
+      .cls-5 {
+        opacity: 0.1;
+      }
+
+      .cls-6 {
+        opacity: 0.05;
+      }
+
+      .cls-7 {
+        opacity: 0.029;
+      }
+    </style>
+  </defs>
+  <g id="Group_11380" data-name="Group 11380" transform="translate(539 -8435)">
+    <rect id="Rectangle_2720" data-name="Rectangle 2720" class="cls-1" width="130" height="130" transform="translate(1254 7169)"/>
+    <rect id="Rectangle_2720-2" data-name="Rectangle 2720" class="cls-2" width="130" height="130" transform="translate(1254 7299)"/>
+    <rect id="Rectangle_2720-3" data-name="Rectangle 2720" class="cls-1" width="130" height="130" transform="translate(1384 7299)"/>
+    <rect id="Rectangle_2720-4" data-name="Rectangle 2720" class="cls-3" width="130" height="130" transform="translate(1514 7299)"/>
+    <rect id="Rectangle_2720-5" data-name="Rectangle 2720" class="cls-4" width="130" height="130" transform="translate(1254 7429)"/>
+    <rect id="Rectangle_2720-6" data-name="Rectangle 2720" class="cls-5" width="130" height="130" transform="translate(1384 7429)"/>
+    <rect id="Rectangle_2720-7" data-name="Rectangle 2720" class="cls-6" width="130" height="130" transform="translate(1514 7429)"/>
+    <rect id="Rectangle_2720-8" data-name="Rectangle 2720" class="cls-7" width="130" height="130" transform="translate(1644 7429)"/>
+  </g>
+</svg>
