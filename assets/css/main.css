@@ -1469,6 +1469,7 @@ HOMEPAGE
       width: 970px;
       padding-left: 30px;
       padding-right: 30px;
+      padding-bottom: 150px;
     }
 
     .lines {
@@ -1542,6 +1543,10 @@ HOMEPAGE
   }
 
   /*  Recent Sermons - Desktop */
+
+  .recent-sermon {
+    margin-bottom: 100px;
+  }
 
   .recent-sermon .img-container {
     height: 658px;
@@ -1774,7 +1779,7 @@ HOMEPAGE
   right: 0;
   bottom: 0;
   left: 0;
-  background-size: 62%;
+  background-size: 195px 146px;
   background-position: bottom left;
   opacity: 1;
 }
@@ -1884,8 +1889,204 @@ HOMEPAGE
   color: rgba(255,255,255,1);
 }
 
+
 /* ======= Footer - Large Mobile+ ======= */
 
 @media (min-width: 480px) {
+  /* Footer Content */
+  .footer-content {
+   width: 70%;
+  }
+}
+
+/* ======= Footer - Tablet+ ======= */
+
+@media (min-width: 768px) {
+
+  .primary-footer {
+    padding-top: 90px;
+    padding-bottom: 103px;
+  }
   
+  /* Footer Content */
+  .footer-content {
+    width: 70%;
+  }
+  
+  .primary-footer .inviting {
+    font-size: 144px;
+    letter-spacing: 22px;
+    padding-left: 17px;
+  }
+  
+  .primary-footer .inviting span {
+    letter-spacing: 13px;
+    font-size: 68px;
+    margin-top: -42px;
+    margin-left: -90px;
+  }
+  
+  /* Top SVG Background */
+  .primary-footer .square-bg-top {
+    background-size: 131px 255px;
+  }
+  
+  /* Bottom SVG Background */
+  .primary-footer .square-bg-bottom {
+    background-size: 269px 202px;
+  }
+  
+  .primary-footer .inviting-content {
+    line-height: 30px;
+    padding-top: 4px;
+    width: 342px;
+    margin: 0 auto;
+  }
+    
+  .primary-footer .inviting-content:before {
+    content: '';
+    width: 65px;
+    height: 1px;
+    margin-top: -16px;
+    margin-left: -33px;
+  }
+  
+  /* Footer Map */
+  .footer-map {
+    padding-top: 52px;
+    width: 342px;
+    margin: 0 auto;
+  }
+  
+  .footer-map iframe {
+    height: 82px;
+  }
+  
+  .footer-map a {
+    height: 50px;
+  }
+  
+  .footer-nav {
+    padding-top: 72px;
+    letter-spacing: 2px;
+    width: 342px;
+    margin: 0 auto;
+  }
+  
+  .footer-nav ul {
+    -webkit-column-count: 1;
+   -moz-column-count: 1;
+   -ms-column-count: 1;
+   -o-column-count: 1;
+    column-count: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-divider {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 8px;
+  }
+  
+  .footer-content .copy-credit {
+    padding-top: 11px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+}
+
+/* =======  Footer - Desktop+ ======= */
+
+@media (min-width: 992px) { 
+  .primary-footer {
+    padding-top: 139px;
+    padding-bottom: 150px;
+  }
+  
+  /* Footer Content */
+  .footer-content {
+    width: 100%;
+  }
+  
+  .primary-footer .inviting {
+    font-size: 210px;
+    letter-spacing: 22px;
+    padding-left: 17px;
+  }
+  
+  .primary-footer .inviting span {
+    letter-spacing: 13px;
+    font-size: 100px;
+    margin-top: -64px;
+    margin-left: -118px;
+  }
+  
+  /* Top SVG Background */
+  .primary-footer .square-bg-top {
+    background-size: 246px 476px;
+  }
+  
+  /* Bottom SVG Background */
+  .primary-footer .square-bg-bottom {
+    background-size: 520px 390px;
+  }
+  
+  .primary-footer .inviting-content {
+    font-size: 15px;
+    padding-top: 0px;
+    width: 449px;
+  }
+    
+  .primary-footer .inviting-content:before {
+    width: 55px;
+    margin-top: -29px;
+    margin-left: -33px;
+  }
+  
+  /* Footer Map */
+  .footer-map {
+    padding-top: 65px;
+    width: 386px;
+  }
+  
+  .footer-map iframe {
+    height: 91px;
+  }
+  
+  .footer-map a {
+    height: 53px;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-top: 5px;
+  }
+  
+  .footer-map a .icon-map2 {
+    font-size: 15px;
+    padding-bottom: 4px;
+    padding-right: 12px;
+  }
+  
+  .footer-nav {
+    padding-top: 80px;
+    letter-spacing: 2px;
+    width: 488px;
+    font-size: 15px;
+  }
+
+  .footer-divider {
+    width: 633px;
+    margin-top: 30px;
+  }
+  
+  .footer-content .copy-credit {
+    width: 633px;
+    margin: 0 auto;
+    padding-top: 19px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+  }
 }
