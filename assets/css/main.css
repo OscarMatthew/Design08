@@ -1615,7 +1615,6 @@ HOMEPAGE
     width: 39px;
   }
 
-
 }
 
   
@@ -1701,4 +1700,32 @@ HOMEPAGE
 
 
 
+/*===============================
+  Footer
+===============================*/
+
+/* ======= Footer - Mobile+ ======= */
+
+.primary-footer {
+  background: var(--primary-regular);
+  position: relative;
+  height: 920px;
+}
+
+.primary-footer h1 {
+  margin: 0;
+}
+
+.primary-footer .square-bg-top {
+  background: url(../svg/svg-pattern-footer-1.svg) no-repeat;
+  position: absolute;
+  top: 6%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: 55%;
+  background-position: bottom right;
+  opacity: 1;
+  z-index: 6;
+}
   
