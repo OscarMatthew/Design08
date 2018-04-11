@@ -1710,9 +1710,8 @@ HOMEPAGE
 .primary-footer {
   background: var(--primary-regular);
   position: relative;
-  /* height: 920px; */
   padding-top: 178px;
-  /* padding-bottom: 178px; */
+  padding-bottom: 103px;
 }
 
 .footer-content h1,
@@ -1775,7 +1774,7 @@ HOMEPAGE
   right: 0;
   bottom: 0;
   left: 0;
-  background-size: 100%;
+  background-size: 62%;
   background-position: bottom left;
   opacity: 1;
 }
