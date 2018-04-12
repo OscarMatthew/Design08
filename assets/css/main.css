@@ -889,14 +889,14 @@ HOMEPAGE
     width: 100%;
   }
 
-  .bg-imgva {
+  .image-container {
     width: 100%;
     padding-bottom: 100%;
     position: relative;
     overflow: hidden;
   }
 
-  .bg-imgva img {
+  .image-container img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -930,12 +930,13 @@ HOMEPAGE
   }
 
   .map {
-    background: #262626;
+    background: rgba(38, 38, 38, 1);
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .map iframe {
@@ -943,11 +944,17 @@ HOMEPAGE
   }
 
   .map a {
-    align-self: center;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
     color: #fff;
     padding-top: 17px;
     padding-bottom: 17px;
+  }
+
+  .map a:hover {
+    color: var(--nav-hover);
   }
 
   /*  Page Feeds - Mobile+ */
@@ -1036,19 +1043,31 @@ HOMEPAGE
     left: 0;
     content: '';
     position: absolute;
-    opacity: 0.1;
+    /* opacity: 0.1; */
     z-index: 2;
   }
 
-  /* .feed-1:hover .feed-content p,
-  .feed-2:hover .feed-content p  {
-    
+  /* Image Transitions */
+  .feed-1 .image-container,
+  .feed-2 .image-container {
+    position: relative;
+    overflow: hidden;
   }
 
-  .feed-1:hover .feed-content p span,
-  .feed-2:hover .feed-content p span {
-    
-  } */
+  .feed-1 .image-container .feed-image,
+  .feed-2 .image-container .feed-image {
+    transform: scale(1);
+    transition-duration: 1.5s;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .feed-1:hover .feed-image,
+  .feed-2:hover .feed-image {
+    transform: scale(1.05);
+  }
 
 
   /*  Recent Sermons - Mobile+ */
@@ -1062,6 +1081,24 @@ HOMEPAGE
     margin-left: -15px;
     margin-right: 15px;
     position: relative;
+  }
+
+  .img-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .img-container .feed-image {
+    transform: scale(1);
+    transition-duration: 1.5s;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .recent-sermon:hover .feed-image {
+    transform: scale(1.05);
   }
 
   .recent-sermon .img-container img {
@@ -1253,8 +1290,6 @@ HOMEPAGE
     font-size: 11px;
     padding-top: 0px;
     padding-bottom: 0px;
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
 
@@ -1324,6 +1359,7 @@ HOMEPAGE
 
   .map a {
     font-size: 12px;
+    padding-top: 4px;
   }
 
   /*  Page Feeds - Tablet */
@@ -1844,6 +1880,12 @@ HOMEPAGE
   padding-right: 8px;
 }
 
+.footer-map a:hover {
+  color: var(--nav-hover);
+  /* background: #3B3B3B; */
+}
+
+/* Footer Nav */
 .footer-nav {
   font-family: "Teko", Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -1863,6 +1905,11 @@ HOMEPAGE
  -ms-column-count: 3;
  -o-column-count: 3;
 	column-count: 3;
+}
+
+.footer-nav ul li:hover,
+.footer-content .copy-credit .credit a:hover {
+  opacity: 0.7;
 }
 
 .footer-divider {
@@ -2090,3 +2137,11 @@ HOMEPAGE
     font-size: 14px;
   }
 }
+
+
+
+/*===============================
+===============================
+SERMONS
+===============================
+===============================*/

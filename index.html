@@ -145,7 +145,7 @@
 
 				<article class="invite"><!-- Invite Section -->
 					<div class="img-wrapper">
-						<div class="bg-imgva">
+						<div class="image-container">
 							<img class="" alt="invitation" src="images/door.jpg">
 						</div>
 					</div>
@@ -165,8 +165,13 @@
 				<!-- Page Feeds -->
 				<article class="page-feeds">
 					<article class="feed-1">
-						<div class="bg-imgva">
-							<img class="" alt="The Gospel" src="images/praying-over-bible.jpg">
+						<div class="image-container">
+							<img class="feed-image" alt="The Gospel" 
+							sizes="(max-width: 480px) 95vw,
+							(min-width: 768px) 850px" 
+							srcset="images/praying-over-bible-460px 460px,
+							images/praying-over-bible-850px 850px"
+							src="images/praying-over-bible.jpg">
 						</div>
 						<div class="feed-content content-1">
 							<h1>02 The Gospel</h1>
@@ -176,8 +181,13 @@
 					</article>
 
 					<article class="feed-2">
-						<div class="bg-imgva">
-							<img class="" alt="" src="images/singing.jpg">
+						<div class="image-container">
+							<img class="feed-image" alt="statement of Faith" 
+							sizes="(max-width: 480px) 460px,
+							(min-width: 768px) 850px"
+							srcset="images/praying-over-bible-460px 460px,
+							images/praying-over-bible-850px 850px"
+							src="images/singing.jpg">
 						</div>
 						<div class="feed-content content-2">
 							<h1>03 Statement of Faith</h1>
@@ -189,7 +199,7 @@
 
 				<article class="recent-sermon">
 					<div class="img-container">
-						<img src="images/lion.jpg">
+						<img class="feed-image" src="images/lion.jpg">
 						<div class="play-icon">
 							<div class="outer-circle">
 								<div class="inner-dark-circle">
