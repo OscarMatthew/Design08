@@ -303,7 +303,7 @@ HOMEPAGE
 	-ms-transform: translateX(-2000px);
 	-webkit-transform: translateX(-2000px);
   transform: translateX(-2000px);
-  z-index: 10;
+  z-index: 1000;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
@@ -1763,7 +1763,7 @@ HOMEPAGE
 
 /* Footer Content */
 .footer-content {
-  z-index: 100000;
+  z-index: 10;
   position: relative;
 }
 
@@ -2145,3 +2145,413 @@ HOMEPAGE
 SERMONS
 ===============================
 ===============================*/
+
+.sermons h1 {
+  margin: 0;
+}
+
+.sermons .page-heading {
+  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #121212;
+  text-align: center;
+  padding-top: 55px;
+  /* padding-bottom: 61px; */
+}
+
+/*===============================
+Browse By
+===============================*/
+
+.browse-wrapper {
+  padding-top: 20px;
+}
+
+/* Browse Button */
+.browse {
+	width: 115px;
+	margin: 0 auto;
+	padding: 12px;
+	background: #343434;
+	color: rgba(255,255,255,0.5);
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	-moz-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	/* position: relative;
+  top: -70px; */
+	cursor: pointer;
+	-webkit-user-select: none; /* Chrome/Safari */     
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  /* Not implemented yet */
+  -o-user-select: none;
+  user-select: none;
+}
+
+.browse span {
+  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  padding-top: 2px;
+}
+
+.browse .icon-angle-down {
+  font-size: 6px;
+  padding-bottom: 2px;
+}
+
+
+/* Browse Content */
+.browse-content ul,
+.browse-content ul li,
+.browse-content h1 {
+	margin: 0;
+}
+	
+.browse-content li {
+	list-style: none;	
+}
+
+.browse-content /* Accordian styling */ {
+  margin-top: 30px;
+  padding: 43px 20px 43px;
+  background: #F6F6F4;
+  border-radius: 5px;
+}
+
+.browse-content h1 {
+  font-family: 'Teko', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+	font-style: normal;
+	color: #222222;
+	opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+	padding-bottom: 16px;
+}
+
+.browse-content li {
+	font-size: 14px;
+	color: rgba(34, 34, 34, 0.7),
+}
+
+.resource-types {
+	line-height: 2.1;
+	margin-bottom: 34px;
+}
+
+.index ul li {
+	line-height: 2.1;
+}
+	
+.index ul li ul li {
+	display: none;
+}
+
+.browse-wrapper.active {
+	height: 100%;
+}
+
+.browse-content.active {
+	display: block;
+}
+
+.browse-content {
+	display: none;
+}
+
+.browse-wrapper .active .icon-angle-down {
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+	transform: rotate(180deg);
+}
+
+/*===============================
+Sermon Card styles
+===============================*/
+
+.sermon-feed {
+  position: relative;
+  margin-top: 61px;
+}
+
+.sermon-feed .img-container {
+  height: 215px;
+  margin-left: -15px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.sermon-feed:hover .feed-image {
+  transform: scale(1.05);
+}
+
+.sermon-feed .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sermon-feed .play-icon,
+.play-icon .outer-circle,
+.play-icon .outer-circle .inner-dark-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.17);
+}
+
+.sermon-feed .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 82px;
+  height: 82px;
+}
+
+.play-icon .outer-circle {
+  width: 65px;
+  height: 65px;
+}
+
+.play-icon .outer-circle .inner-dark-circle{
+  width: 45px;
+  height: 45px;
+  background: #121212;
+}
+
+.sermon-feed .icon-play-icon {
+  font-family: 'design-08-icons', sans-serif;
+  font-size: 16px;
+  color: var(--primary-regular);
+  margin-left: 3px;
+}
+
+/* Recent Sermon Content */
+.sermon-content {
+  margin-right: -15px;
+  margin-left: 15px;
+  height: 215px;
+  padding: 30px;
+  color: rgba(255,255,255,0.97);
+  background: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sermon-content p,
+.sermon-content h1 {
+  margin: 0;
+  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sermon-content .snippet {
+  display: none;
+}
+
+.sermon-content .meta {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+} 
+
+.sermon-content h1 {
+  font-size: 26px;
+  letter-spacing: 2.5px;
+  padding-top: 15px;
+  text-transform: uppercase;
+  line-height: 32px;
+}
+
+/* Avatar */
+.sermon-content .avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar .speaker {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding-left: 11px;
+}
+
+/* Side Labels */
+.sermon-content .label-counter {
+  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.4px;
+  text-transform: capitalize;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 55px;
+  left: -74px;
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start;
+  color: var(--primary-light);
+  width: 120px;
+}
+
+.sermon-content .label-counter span {
+  content: "|";
+  width: 55px;
+  height: 1px;
+  background: var(--primary-light);
+  margin-left: 8px;
+  margin-bottom: 2px;
+}
+
+
+/* =======  - Tablet+ ======= */
+@media (min-width: 768px) {
+
+  .sermons .page-heading {
+    font-size: 46px;
+    letter-spacing: 6px;
+    padding-top: 83px;
+  }
+
+  /*===============================
+  Browse By
+  ===============================*/
+
+  .browse-wrapper {
+    padding-top: 20px;
+  }
+  
+  /* Browse Button */
+  .browse {
+    width: 161px;
+    height: 42px;
+    padding: 14px 12px 12px;
+    background: #fff;
+    color: rgba(59, 59, 59, 0.9);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px ;
+    border-radius: 3px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: justify;
+    -moz-box-pack: justify;
+    justify-content: space-around;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .active .browse {
+    -moz-border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
+  }
+  
+  .browse span {
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding-top: 0px;
+  }
+  
+  .browse .icon-angle-down {
+    font-size: 7px;
+    /* padding-bottom: 2px; */
+  }
+  
+  
+  /* Browse Content */
+    
+  .browse-content /* Accordian styling */ {
+    margin-top: 0px;
+    padding: 41px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .browse-content h1 {
+    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    font-style: normal;
+    color: #222222;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-bottom: 16px;
+  }
+  
+  
+  /* old */
+  .browse-content h1 {
+		padding-bottom: 16px;
+	}
+
+	.browse-content li {
+		font-size: 15px;
+	}
+
+	.resource-types {
+		line-height: 2.1;
+		margin-bottom: 34px;
+	}
+
+	.index ul li {
+		line-height: 2.1;
+	}
+
+	.index ul li ul li {
+		display: none;
+	}
+
+	.flex-container {
+		display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+		display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+		display: -ms-flexbox; /* TWEENER - IE 10 */
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		-moz-box-pack: justify;
+		justify-content: space-between;
+	}
+
+	.index {
+		width: 60%;
+	}	
+
+
+}
+
+

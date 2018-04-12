@@ -43,3 +43,14 @@ $("#lastWord").html(function(){
 	var last = text.pop();
 	return text.join(" ") + (text.length > 0 ? " <span class='red'>" + last + "</span>" : last);
   });
+
+
+  ///////////////////
+//Sermon Archive
+///////////////////
+$(".browse").click(function(){
+	//Add class to make area full width
+	$(".browse").toggleClass("active");
+	$(".browse-content").toggleClass( "active" );
+	$(".browse-wrapper").toggleClass( "active" );
+});
