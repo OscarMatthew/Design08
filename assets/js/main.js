@@ -20,8 +20,9 @@ $(".search-btn").click(function(){
 	// add close-icon class to swap icons
 	$(".search-btn").toggleClass("close-icon");
 	// Stops scrolling when Search is open
-	$("html").toggleClass( "overflow-hidden" );	
+	$("html").toggleClass( "overflow-hidden" );		
 });
+
 
 ///////////////////
 //Sub-Menu Items
@@ -53,4 +54,5 @@ $(".browse").click(function(){
 	$(".browse").toggleClass("active");
 	$(".browse-content").toggleClass( "active" );
 	$(".browse-wrapper").toggleClass( "active" );
+	$(".browse").toggleClass("flip");
 });

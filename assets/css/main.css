@@ -551,6 +551,7 @@ HOMEPAGE
     flex-direction: column;
     font-family: 'Teko', Helvetica, sans-serif;
     font-style: none;
+    position: relative;
   }
 
   .search-form label {
@@ -576,14 +577,12 @@ HOMEPAGE
     font-size: 26px;
   }
 
-  .search-form label::after {
-    font-family: 'design-08-icons';
+  .search-form .icon-search-icon {
+    font-family: 'design-08-icons', serif;
     font-size: 24px;
-    content: "\e926";
-    display: flex;
     position: absolute;
-    left: 21%;
-    bottom: 42%;
+    bottom: 0;
+    margin-bottom: 16px;
     color: rgba(18, 18, 18, 0.7)
   }
 
@@ -1127,12 +1126,12 @@ HOMEPAGE
     height: 82px;
   }
 
-  .play-icon .outer-circle {
+  .recent-sermon .play-icon .outer-circle {
     width: 65px;
     height: 65px;
   }
 
-  .play-icon .outer-circle .inner-dark-circle{
+  .recent-sermon .play-icon .outer-circle .inner-dark-circle{
     width: 45px;
     height: 45px;
     background: #121212;
@@ -1431,12 +1430,12 @@ HOMEPAGE
     width: 94px;
   }
 
-  .play-icon .outer-circle {
+  .recent-sermon .play-icon .outer-circle {
     width: 74px;
     height: 74px;
   }
 
-  .play-icon .outer-circle .inner-dark-circle{
+  .recent-sermon .play-icon .outer-circle .inner-dark-circle{
     width: 52px;
     height: 52px;
   }
@@ -1595,12 +1594,12 @@ HOMEPAGE
     width: 124px;
   }
 
-  .play-icon .outer-circle {
+  .recent-sermon .play-icon .outer-circle {
     width: 98px;
     height: 98px;
   }
 
-  .play-icon .outer-circle .inner-dark-circle{
+  .recent-sermon .play-icon .outer-circle .inner-dark-circle{
     width: 68px;
     height: 68px;
   }
@@ -1849,10 +1848,12 @@ HOMEPAGE
 .footer-map {
   border-radius: 3px;
   padding-top: 42px;
+  max-width: 480px;
 }
 
 .footer-map iframe {
   height: 80px;
+  width: 100%;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   display: block;
@@ -1898,8 +1899,12 @@ HOMEPAGE
   padding-right: 18px;
 }
 
-.footer-nav ul {
+.footer-nav a {
   line-height: 2.7;
+  display: block;
+}
+
+.footer-nav {
   -webkit-column-count: 3;
  -moz-column-count: 3;
  -ms-column-count: 3;
@@ -1907,7 +1912,8 @@ HOMEPAGE
 	column-count: 3;
 }
 
-.footer-nav ul li:hover,
+
+.footer-nav a:hover,
 .footer-content .copy-credit .credit a:hover {
   opacity: 0.7;
 }
@@ -2020,14 +2026,18 @@ HOMEPAGE
     margin: 0 auto;
   }
   
-  .footer-nav ul {
+  .footer-nav {
     -webkit-column-count: 1;
    -moz-column-count: 1;
    -ms-column-count: 1;
    -o-column-count: 1;
     column-count: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  .footer-nav a {
+    margin: 0 12px;
   }
   
   .footer-divider {
@@ -2123,6 +2133,11 @@ HOMEPAGE
     font-size: 15px;
   }
 
+  .footer-nav a {
+    margin: 0 24px;
+    font-weight: 400;
+  }
+
   .footer-divider {
     width: 633px;
     margin-top: 30px;
@@ -2176,8 +2191,8 @@ Browse By
 	width: 115px;
 	margin: 0 auto;
 	padding: 12px;
-	background: #343434;
-	color: rgba(255,255,255,0.5);
+	background: #fff;
+  color: rgba(59, 59, 59, 0.9);
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
@@ -2198,6 +2213,7 @@ Browse By
 	align-items: center;
 	/* position: relative;
   top: -70px; */
+  position: relative;
 	cursor: pointer;
 	-webkit-user-select: none; /* Chrome/Safari */     
   -moz-user-select: none; /* Firefox */
@@ -2205,6 +2221,17 @@ Browse By
   /* Not implemented yet */
   -o-user-select: none;
   user-select: none;
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
+  bottom: -2px
+}
+
+.active .browse:after {
+  content: '';
+  width: 200px;
+  height: 12px;
+  background: #fff;
+  position: absolute;
+  bottom: -10px;
 }
 
 .browse span {
@@ -2213,14 +2240,22 @@ Browse By
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.8px;
-  padding-top: 2px;
 }
 
-.browse .icon-angle-down {
+.browse i.icon-angle-down {
+  -webkit-transition: -webkit-transform .5s;
+	transition: -webkit-transform .5s;
+	transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
   font-size: 6px;
   padding-bottom: 2px;
 }
-
+ 
+.flip .icon-angle-down {
+	transform: rotate(-180deg);
+	-ms-transform: translateX(-180px);
+	-webkit-transform: rotate(-180deg);	
+}
 
 /* Browse Content */
 .browse-content ul,
@@ -2236,8 +2271,9 @@ Browse By
 .browse-content /* Accordian styling */ {
   margin-top: 30px;
   padding: 43px 20px 43px;
-  background: #F6F6F4;
+  background: #fff;
   border-radius: 5px;
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
 }
 
 .browse-content h1 {
@@ -2283,14 +2319,9 @@ Browse By
 	display: none;
 }
 
-.browse-wrapper .active .icon-angle-down {
-	-ms-transform: rotate(180deg); /* IE 9 */
-	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-	transform: rotate(180deg);
-}
 
 /*===============================
-Sermon Card styles
+Sermon Card styles - Mobile
 ===============================*/
 
 .sermon-feed {
@@ -2335,12 +2366,12 @@ Sermon Card styles
   height: 82px;
 }
 
-.play-icon .outer-circle {
+.sermon-feed .play-icon .outer-circle {
   width: 65px;
   height: 65px;
 }
 
-.play-icon .outer-circle .inner-dark-circle{
+.sermon-feed .play-icon .outer-circle .inner-dark-circle{
   width: 45px;
   height: 45px;
   background: #121212;
@@ -2353,7 +2384,7 @@ Sermon Card styles
   margin-left: 3px;
 }
 
-/* Recent Sermon Content */
+/* Sermon Content */
 .sermon-content {
   margin-right: -15px;
   margin-left: 15px;
@@ -2416,18 +2447,18 @@ Sermon Card styles
   text-transform: capitalize;
   transform: rotate(-90deg);
   position: absolute;
-  bottom: 55px;
-  left: -74px;
+  bottom: 47px;
+  left: -64px;
   display: flex;
   align-items: center; 
   justify-content: flex-start;
   color: var(--primary-light);
-  width: 120px;
+  width: 100px;
 }
 
 .sermon-content .label-counter span {
   content: "|";
-  width: 55px;
+  width: 36px;
   height: 1px;
   background: var(--primary-light);
   margin-left: 8px;
@@ -2435,7 +2466,7 @@ Sermon Card styles
 }
 
 
-/* =======  - Tablet+ ======= */
+/* =======  Sermons - Tablet+ ======= */
 @media (min-width: 768px) {
 
   .sermons .page-heading {
@@ -2457,8 +2488,6 @@ Sermon Card styles
     width: 161px;
     height: 42px;
     padding: 14px 12px 12px;
-    background: #fff;
-    color: rgba(59, 59, 59, 0.9);
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px ;
     border-radius: 3px;
@@ -2467,7 +2496,6 @@ Sermon Card styles
     -ms-flex-pack: justify;
     -moz-box-pack: justify;
     justify-content: space-around;
-    box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
   }
 
   .active .browse {
@@ -2484,7 +2512,6 @@ Sermon Card styles
   
   .browse .icon-angle-down {
     font-size: 7px;
-    /* padding-bottom: 2px; */
   }
   
   
@@ -2493,41 +2520,26 @@ Sermon Card styles
   .browse-content /* Accordian styling */ {
     margin-top: 0px;
     padding: 41px;
-    background: #fff;
     border-radius: 3px;
-    box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
   }
   
   .browse-content h1 {
-    font-family: 'Teko', Arial, Helvetica, sans-serif;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 1;
-    font-style: normal;
-    color: #222222;
-    opacity: 0.9;
-    text-transform: uppercase;
     letter-spacing: 1.5px;
     padding-bottom: 16px;
   }
   
-  
-  /* old */
-  .browse-content h1 {
-		padding-bottom: 16px;
-	}
-
 	.browse-content li {
 		font-size: 15px;
 	}
 
 	.resource-types {
-		line-height: 2.1;
-		margin-bottom: 34px;
+		/* line-height: 2.1; */
+		margin-bottom: 0px;
 	}
 
 	.index ul li {
-		line-height: 2.1;
+		/* line-height: 2.1; */
 	}
 
 	.index ul li ul li {
@@ -2549,9 +2561,253 @@ Sermon Card styles
 
 	.index {
 		width: 60%;
-	}	
+  }	
+  
+  .index .flex-container-secondary {
+    column-count: 2;
+  }
 
+
+  /*===============================
+  Sermon Card styles - Tablet
+  ===============================*/
+
+  .sermon-feed {
+    display: flex;
+    margin-top: 89px;
+  }
+
+  .sermon-feed .img-container {
+    height: 405px;
+    width: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .sermon-feed .play-icon {
+    margin-left: -46px;
+    margin-top: -46px;
+    height: 94px;
+    width: 94px;
+  }
+
+ .sermon-feed .play-icon .outer-circle {
+    width: 74px;
+    height: 74px;
+  }
+
+ .sermon-feed .play-icon .outer-circle .inner-dark-circle{
+    width: 52px;
+    height: 52px;
+  }
+
+ .sermon-feed .icon-play-icon {
+    font-size: 17px;
+    margin-left: 4px;
+  }
+
+  /* Sermon Content */
+  .sermon-content {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 55px;
+    height: 417px;
+    width: 50%;
+    padding: 43px;
+  }
+
+  .sermon-content .snippet {
+    display: block;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .sermon-content .meta {
+    letter-spacing: 2.2px;
+  }
+
+  .sermon-content h1 {
+    font-size: 34px;
+    letter-spacing: 3px;
+    padding-top: 4px;
+    line-height: 44px;
+  }
+
+  /* Avatar */
+  .avatar-container {
+    width: 32px;
+    height: 32px;
+  }
+
+  .avatar .speaker {
+    padding-left: 16px;
+    font-size: 12px;
+  }
+
+  /* Side Labels */
+  .sermon-content .label-counter {
+    transform: rotate(0deg);
+    position: absolute;
+    bottom: 0px;
+    left: -111px;
+    height: 55px;
+  }
 
 }
 
+/* =======  sermons - Desktop+ ======= */
 
+@media (min-width: 992px) { 
+
+  .sermons .page-heading {
+    font-size: 63px;
+    letter-spacing: 9px;
+    padding-top: 129px;
+  }
+
+  /*===============================
+  Browse By
+  ===============================*/
+
+  .browse-wrapper {
+    padding-top: 26px;
+  }
+
+  /* Browse Button */
+  .browse {
+    /* box-shadow: 1px 2px 6px rgba(0,0,0,0.15); */
+  }
+
+  /* Browse Content */		
+  .browse-content {
+    padding: 41px 43px 34px;	
+  }
+
+  .browse-content h1 {
+    padding-bottom: 16px;
+  }
+
+  .resource-types {
+    line-height: 2.1;
+    margin-bottom: 34px;
+  }
+
+  .index ul li {
+    font-weight: 500;
+    line-height: 2.1;
+  }
+
+  .index ul li ul li {
+    font-weight: 300;
+    display: block;
+    /* color: green; */
+    color: rgba(0,0,0,0.7);
+  }
+
+  .browse-content .index .all {
+    display: none;	
+  }
+
+  .index {
+    width: 75%;
+  }	
+
+  /*Secondary Flex Container*/
+  .flex-container-secondary {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  /*===============================
+  Sermon Card styles - Desktop
+  ===============================*/
+
+  .sermon-feed {
+    margin-top: 125px;
+  }
+
+  .sermon-feed .img-container {
+    height: 658px;
+  }
+
+  .recent-sermon .play-icon {
+    margin-left: -58px;
+    margin-top: -60px;
+    height: 124px;
+    width: 124px;
+  }
+
+  .recent-sermon .play-icon .outer-circle {
+    width: 98px;
+    height: 98px;
+  }
+
+  .recent-sermon .play-icon .outer-circle .inner-dark-circle{
+    width: 68px;
+    height: 68px;
+  }
+
+  .recent-sermon .icon-play-icon {
+    font-size: 19px;
+    margin-left: 7px;
+  }
+
+  /* Recent Sermon Content */
+  .recent-sermon-content {
+    margin-top: 139px;
+    height: 679px;
+    padding: 70px;
+  }
+  
+  .recent-sermon-content .snippet {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .recent-sermon-content .meta {
+    font-size: 17px;
+    letter-spacing: 2.4px;
+  }
+
+  .recent-sermon-content h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    padding-top: 8px;
+    line-height: 74px;
+  }
+
+  /* Avatar */
+  .avatar-container {
+    width: 36px;
+    height: 36px;
+  }
+
+  .avatar .speaker {
+    font-size: 13px;
+  }
+
+  /* Side Labels */
+  .label-counter {
+    bottom: 0px;
+    left: -230px;
+    height: 140px;
+    width: 170px;
+    font-size: 20px;
+  }
+
+  .label-counter span {
+    width: 39px;
+  }
+
+}
