@@ -1579,6 +1579,9 @@ HOMEPAGE
 
   /*  Recent Sermons - Desktop */
 
+  .sermons {
+    padding-bottom: 279px;
+  }
   .recent-sermon {
     margin-bottom: 100px;
   }
@@ -2334,6 +2337,7 @@ Sermon Card styles - Mobile
   margin-left: -15px;
   margin-right: 15px;
   position: relative;
+  background: var(--primary-regular);
 }
 
 .sermon-feed:hover .feed-image {
@@ -2741,46 +2745,46 @@ Sermon Card styles - Mobile
     height: 658px;
   }
 
-  .recent-sermon .play-icon {
+  .sermon-feed .play-icon {
     margin-left: -58px;
     margin-top: -60px;
     height: 124px;
     width: 124px;
   }
 
-  .recent-sermon .play-icon .outer-circle {
+  .sermon-feed .play-icon .outer-circle {
     width: 98px;
     height: 98px;
   }
 
-  .recent-sermon .play-icon .outer-circle .inner-dark-circle{
+  .sermon-feed .play-icon .outer-circle .inner-dark-circle{
     width: 68px;
     height: 68px;
   }
 
-  .recent-sermon .icon-play-icon {
+  .sermon-feed .icon-play-icon {
     font-size: 19px;
     margin-left: 7px;
   }
 
-  /* Recent Sermon Content */
-  .recent-sermon-content {
+  /* Sermon Content */
+  .sermon-content {
     margin-top: 139px;
     height: 679px;
     padding: 70px;
   }
   
-  .recent-sermon-content .snippet {
+  .sermon-content .snippet {
     font-size: 16px;
     line-height: 30px;
   }
 
-  .recent-sermon-content .meta {
+  .sermon-content .meta {
     font-size: 17px;
     letter-spacing: 2.4px;
   }
 
-  .recent-sermon-content h1 {
+  .sermon-content h1 {
     font-size: 60px;
     letter-spacing: 5px;
     padding-top: 8px;
@@ -2798,16 +2802,17 @@ Sermon Card styles - Mobile
   }
 
   /* Side Labels */
-  .label-counter {
+  .sermon-content .label-counter {
     bottom: 0px;
-    left: -230px;
-    height: 140px;
-    width: 170px;
+    left: -161px;
+    height: 150px;
+    width: 120px;
     font-size: 20px;
   }
 
-  .label-counter span {
+  .sermon-content .label-counter span {
     width: 39px;
+    margin-left: 12px;
   }
 
 }

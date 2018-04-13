@@ -39,7 +39,7 @@ $(subMenuItems).addClass("child-menu");
 //Last Word
 ///////////////////
 
-$("#lastWord").html(function(){
+$(".lastWord").html(function(){
 	var text= $(this).text().trim().split(" ");
 	var last = text.pop();
 	return text.join(" ") + (text.length > 0 ? " <span class='red'>" + last + "</span>" : last);
