@@ -56,3 +56,16 @@ $(".browse").click(function(){
 	$(".browse-wrapper").toggleClass( "active" );
 	$(".browse").toggleClass("flip");
 });
+
+
+///////////////////
+// Event Tab
+///////////////////
+
+$(".tab-links .calender").click(function(){
+	$(".events").addClass("calender-open");	
+});
+
+$(".tab-links .list").click(function(){
+	$(".events").removeClass("calender-open");	
+});

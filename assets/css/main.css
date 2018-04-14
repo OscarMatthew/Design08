@@ -2165,12 +2165,12 @@ SERMONS & BLOG COMMON STYLES
 ===============================*/
 
 .sermons h1,
-.blog h1 {
+#blog h1 {
   margin: 0;
 }
 
 .sermons .page-heading,
-.blog .page-heading {
+#blog .page-heading {
   font-family: 'Teko', Arial, Helvetica, sans-serif;
   font-size: 36px;
   font-weight: 500;
@@ -2434,6 +2434,7 @@ Browse By - Mobile
 .card-content .label-counter {
   font-family: 'Teko', Arial, Helvetica, sans-serif;
   font-size: 14px;
+  font-weight: 400;
   letter-spacing: 2.4px;
   text-transform: capitalize;
   transform: rotate(-90deg);
@@ -2460,7 +2461,7 @@ Browse By - Mobile
 @media (min-width: 768px) {
 
   .sermons .page-heading,
-  .blog .page-heading {
+  #blog .page-heading {
     font-size: 46px;
     letter-spacing: 6px;
     padding-top: 83px;
@@ -2641,59 +2642,21 @@ Browse By - Mobile
   }
 
 }
-/*===============================
-===============================
-END SERMONS & BLOG COMMON STYLES
-===============================
-===============================*/
 
 
-
-
-/*===============================
-===============================
-SERMONS
-===============================
-===============================*/
-
-/*===============================
- Sermon Card styles - Mobile
-===============================*/
-
-.card-content .snippet {
-  display: none;
-}
-
-/* =======  Sermons - Tablet+ ======= */
-@media (min-width: 768px) {
-
-  /*===============================
-  Sermon Card styles - Tablet
-  ===============================*/
-
-  .card-content .snippet {
-    display: block;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-}
-
-/* =======  sermons - Desktop+ ======= */
+/* =======  sermons/blog - Desktop+ ======= */
 
 @media (min-width: 992px) { 
 
-  .sermons .page-heading {
+  .sermons .page-heading,
+  #blog .page-heading {
     font-size: 63px;
     letter-spacing: 9px;
     padding-top: 129px;
   }
 
   /*===============================
-  Browse By
+  Browse By - Desktop
   ===============================*/
 
   .browse-wrapper {
@@ -2754,7 +2717,7 @@ SERMONS
   }
 
   /*===============================
-  Sermon Card styles - Desktop
+  Card styles - Desktop
   ===============================*/
 
   .card {
@@ -2793,11 +2756,6 @@ SERMONS
     height: 679px;
     padding: 70px;
   }
-  
-  .card-content .snippet {
-    font-size: 16px;
-    line-height: 30px;
-  }
 
   .card-content .meta {
     font-size: 17px;
@@ -2833,6 +2791,470 @@ SERMONS
   .card-content .label-counter span {
     width: 39px;
     margin-left: 12px;
+  }
+
+}
+/*===============================
+===============================
+END SERMONS & BLOG COMMON STYLES
+===============================
+===============================*/
+
+
+
+/*===============================
+===============================
+SERMONS
+===============================
+===============================*/
+
+/*===============================
+ Sermon Card styles - Mobile
+===============================*/
+
+.card-content .snippet {
+  display: none;
+}
+
+/* =======  Sermons - Tablet+ ======= */
+@media (min-width: 768px) {
+
+  /*===============================
+  Sermon Card styles - Tablet
+  ===============================*/
+
+  .card-content .snippet {
+    display: block;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+}
+
+/* =======  sermons - Desktop+ ======= */
+
+@media (min-width: 992px) { 
+
+  /*===============================
+  Sermon Card styles - Desktop
+  ===============================*/
+
+  .card-content .snippet {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+}
+
+/*===============================
+===============================
+BLOG
+===============================
+===============================*/
+
+/* Side Labels */
+#blog .card .card-content .label-counter {
+  bottom: 72px;
+  left: -89px;
+  width: 150px;
+  /* background: green; */
+}
+
+#blog .card .card-content .label-counter span {
+  margin-left: 15px;
+}
+
+
+/* =======  Blog - Tablet+ ======= */
+@media (min-width: 768px) { 
+
+  /*===============================
+  Blog Card styles - Tablet
+  ===============================*/
+
+   #blog .card .img-container {
+    height: 336px;
+  }
+
+  /* Sermon Content */
+  #blog .card-content {
+    height: 332px;
+    padding: 54px;
+  }
+
+  /* Side Labels */
+  #blog .card .card-content .label-counter {
+    bottom: -6px;
+    left: -146px;
+    height: 51px;
+  }
+
+}
+
+/* =======  Blog - Desktop+ ======= */
+@media (min-width: 992px) { 
+
+  #blog .card .img-container {
+    height: 320px;
+  }
+
+  /* Sermon Content */
+  #blog .card-content {
+    margin-top: 60px;
+    height: 320px;
+    padding: 70px;
+  }
+
+  #blog .card .card-content h1 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    padding-top: 5px;
+    line-height: 46px;
+  }
+
+  /* Side Labels */
+  #blog .card .card-content .label-counter {
+    bottom: -5px;
+    left: -168px;
+  }
+
+}
+
+
+
+/*===============================
+===============================
+EVENTS
+===============================
+===============================*/
+.events h1 {
+  margin: 0;
+}
+
+.events .page-heading {
+  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #121212;
+  text-align: center;
+  padding-top: 55px;
+}
+
+/* Events Navigation */
+
+.events-navigation{
+  /* background: green; */
+  padding-top: 44px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(0,0,0,0.09);
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.months {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.months p {
+  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  margin: 0 30px;
+  color: #585858;
+}
+
+.months a i {
+  font-family: 'design-08-icons', sans-serif;
+  font-size: 16px;
+  color: #9A9A9A;
+}
+
+.months a {
+  padding: 15px;
+}
+
+.event-tab {
+  display: none;
+}
+
+.event-card h1,
+.event-card p {
+  margin: 0;
+}
+
+.event-card {
+  background: #F6F6F4;
+  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  height: 131px;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  border-radius: 3px;
+  margin-top: 43px;
+}
+
+.event-card .event-content {
+  width: 50%;
+  border-left: 2px solid var(--primary-light);
+  padding-left: 13px;
+}
+
+.event-card .event-time {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.event-card h1 {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  color: rgba(59, 59, 59, 1);
+  padding-top: 5px;
+}
+
+.event-card P,
+.event-card .event-time {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: rgba(59, 59, 59, 0.9);
+  padding-top: 9px;
+}
+
+/* =======  Events - Large Mobilet+ ======= */
+@media (min-width: 480px) { 
+
+  .event-card {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 5px;
+    /* margin-top: 43px; */
+    align-items: center;
+  }
+
+  .event-card .event-content {
+    width: 65%;
+    display: flex;
+    align-items: center;
+  }
+
+  .event-card .event-time {
+    width: 35%;
+  }
+
+  .event-card h1 {
+    padding-top: 2px;
+    margin-left: 10%;
+    letter-spacing: 1.6px;
+  }
+  
+  .event-card P,
+  .event-card .event-time {
+    padding-top: 2px;
+  }
+
+}
+
+/* =======  Events - Tablet+ ======= */
+@media (min-width: 768px) { 
+
+  .events .page-heading {
+    font-size: 46px;
+    letter-spacing: 6px;
+    padding-top: 83px;
+  }
+  
+  /* Events Navigation */
+  
+  .events-navigation {
+    padding-top: 59px;
+    padding-bottom: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .months {
+    justify-content: flex-start;
+  }
+  
+  .event-tab {
+    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    display: flex;
+  }
+
+  .event-tab .tab-links a {
+    padding: 15px;
+    color: rgba(18, 18, 18, 0.7);
+  }
+
+  .event-tab .tab-links .list {
+    margin-right: 23px;
+  }
+
+  /* Events cards */
+  .event-card-container {
+    padding-top: 45px;
+  }
+
+  .event-card {
+    height: 91px;
+    padding: 32px;
+    margin-top: 34px;
+  }
+
+  .event-card .event-content {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  .event-card .event-time {
+    width: 30%;
+  }
+
+  .event-card h1 {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 1.8px;
+    padding-top: 4px;
+    margin-left: 120px;
+  }
+  
+  .event-card P {
+    font-size: 26px;
+    letter-spacing: 1.8px;
+    padding-top: 4px;
+  }
+
+  .event-card .event-time {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    padding-top: 4px;
+  }
+
+  /* Events calender */
+  .calender-content p {
+    margin: 0;
+  }
+
+  .calender-content {
+    margin-top: 43px;
+    display: none;
+  }
+
+  /* Toggle Function */
+  .calender-open .event-card-container {
+    display: none;
+  }
+
+  .calender-open .calender-content {
+    display: block;
+  }
+
+}
+
+/* =======  Events - Desktop+ ======= */
+@media (min-width: 992px) {
+
+  .events .page-heading {
+    font-size: 63px;
+    letter-spacing: 9px;
+    padding-top: 129px;
+  }
+  
+  /* Events Navigation */
+  
+  .events-navigation {
+    padding-top: 59px;
+    padding-bottom: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .months {
+    justify-content: flex-start;
+  }
+  
+  .event-tab {
+    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    display: flex;
+  }
+
+  .event-tab .tab-links a {
+    padding: 15px;
+    color: rgba(18, 18, 18, 0.7);
+  }
+
+  .event-tab .tab-links .list {
+    margin-right: 23px;
+  }
+
+  /* Events cards */
+  .event-card-container {
+    padding-top: 45px;
+  }
+
+  .event-card {
+    height: 91px;
+    padding: 32px;
+    margin-top: 34px;
+  }
+
+  .event-card .event-content {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  .event-card .event-time {
+    width: 30%;
+  }
+
+  .event-card h1 {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 1.8px;
+    padding-top: 4px;
+    margin-left: 120px;
+  }
+  
+  .event-card P {
+    font-size: 26px;
+    letter-spacing: 1.8px;
+    padding-top: 4px;
+  }
+
+  .event-card .event-time {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    padding-top: 4px;
   }
 
 }
