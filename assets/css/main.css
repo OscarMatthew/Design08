@@ -3002,6 +3002,11 @@ EVENTS
   padding: 18px;
   border-radius: 3px;
   margin-top: 43px;
+  position: relative;
+}
+
+.event-card:hover {
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.16);
 }
 
 .event-card .event-content {
@@ -3033,6 +3038,15 @@ EVENTS
   color: rgba(59, 59, 59, 0.9);
   padding-top: 9px;
 }
+
+.event-image-container {
+  display: none;
+}
+
+.calender-content {
+  display: none;
+}
+
 
 /* =======  Events - Large Mobilet+ ======= */
 @media (min-width: 480px) { 
@@ -3095,6 +3109,7 @@ EVENTS
     justify-content: flex-start;
   }
   
+  /* Events Tab */
   .event-tab {
     font-family: 'Teko', Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -3106,6 +3121,25 @@ EVENTS
   .event-tab .tab-links a {
     padding: 15px;
     color: rgba(18, 18, 18, 0.7);
+  }
+
+  .event-tab .tab-links a:hover {
+    color: rgba(18, 18, 18, 1);
+  }
+
+  .event-tab .tab-links .current {
+    color: var(--primary-regular);
+    position: relative;
+  }
+
+  .event-tab .tab-links .current:after {
+    content: "";
+    width: 90%;
+    height: 3px;
+    background: var(--primary-regular);;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   .event-tab .tab-links .list {
@@ -3160,7 +3194,6 @@ EVENTS
 
   .calender-content {
     margin-top: 43px;
-    display: none;
   }
 
   /* Toggle Function */
@@ -3186,29 +3219,24 @@ EVENTS
   /* Events Navigation */
   
   .events-navigation {
-    padding-top: 59px;
-    padding-bottom: 2px;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding-top: 150px;
+    padding-bottom: 3px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .months {
-    justify-content: flex-start;
+  .months a {
+    padding: 20px;
   }
   
   .event-tab {
-    font-family: 'Teko', Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1.4px;
+    letter-spacing: 2px;
     display: flex;
   }
 
   .event-tab .tab-links a {
-    padding: 15px;
+    padding: 20px;
     color: rgba(18, 18, 18, 0.7);
   }
 
@@ -3222,39 +3250,59 @@ EVENTS
   }
 
   .event-card {
-    height: 91px;
-    padding: 32px;
-    margin-top: 34px;
+    height: 118px;
+    padding: 0px;
+    margin-top: 56px;
   }
 
   .event-card .event-content {
-    width: 70%;
-    display: flex;
-    align-items: center;
+    width: 58%;
+    margin-left: 38px;
   }
 
   .event-card .event-time {
-    width: 30%;
+    width: 22%;
   }
 
   .event-card h1 {
-    font-size: 26px;
-    line-height: 30px;
-    letter-spacing: 1.8px;
-    padding-top: 4px;
-    margin-left: 120px;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 2.2px;
+    /* padding-top: 4px;
+    margin-left: 120px; */
   }
   
   .event-card P {
-    font-size: 26px;
-    letter-spacing: 1.8px;
-    padding-top: 4px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    /* padding-top: 4px; */
   }
 
   .event-card .event-time {
-    font-size: 20px;
-    letter-spacing: 1.5px;
-    padding-top: 4px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-right: 38px;
+  }
+
+  .event-image-container {
+    display: block;
+    width: 20%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .event-image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 
 }

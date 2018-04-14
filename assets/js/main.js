@@ -63,9 +63,13 @@ $(".browse").click(function(){
 ///////////////////
 
 $(".tab-links .calender").click(function(){
-	$(".events").addClass("calender-open");	
+	$(".events").addClass("calender-open");
+	$(".calender").addClass("current");
+	$(".list").removeClass("current");		
 });
 
 $(".tab-links .list").click(function(){
-	$(".events").removeClass("calender-open");	
+	$(".events").removeClass("calender-open");
+	$(".list").addClass("current");	
+	$(".calender").removeClass("current");
 });
