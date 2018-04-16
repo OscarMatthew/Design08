@@ -2168,23 +2168,47 @@ HOMEPAGE
 
 /*===============================
 ===============================
-PAGE
+PAGE - MOBILE
 ===============================
 ===============================*/
 
-.page-header h1 {
-  margin: 0;
-}
-
 .page-header {
-  height: 360px;
+  height: 320px;
   color: #fff;
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
-  /* padding: 44px; */
+  padding: 36px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-family: "Teko", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  line-height: 46px;
+}
+
+.page-header .dark-overlay {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.page-image-svg {
+  background: url(../svg/svg-pattern-hero-2.svg) no-repeat;
+  position: absolute;
+  top: 0;
+  right: -8px;
+  bottom: -10px;
+  left: 0;
+  background-size: 40%;
+  background-position: bottom right;
+  opacity: 0.7;
+  z-index: -1;
 }
 
 
