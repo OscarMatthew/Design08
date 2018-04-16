@@ -2168,6 +2168,119 @@ HOMEPAGE
 
 /*===============================
 ===============================
+ENTRY CONTENT - MOBILE
+===============================
+===============================*/
+
+.entry-content {
+	position: relative;
+}
+
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {}
+
+.entry-content h2 {}
+
+.entry-content h3 {}
+
+.entry-content h4 {}
+
+.entry-content h5 {}
+
+.entry-content h6 {}
+
+.entry-content p {
+  margin: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: none;
+  line-height: 32px;
+  color: #3B3B3B;
+  padding-bottom: 33px;
+}
+
+.entry-content ul,
+.entry-content ol {}
+
+.entry-content li {}
+
+.entry-content blockquote {}
+
+.entry-content a {}
+
+.entry-content a:hover {}
+
+.entry-content a:active {}
+
+.entry-content strong {}
+
+.entry-content em {}
+
+.entry-content img,
+.entry-content figure {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 1rem;
+}
+
+.entry-content img.alignright,
+.entry-content a img.alignright,
+.entry-content figure.alignright {
+	float: right; 
+	margin: 0 0 1rem 1rem;
+}
+
+.entry-content img.alignleft,
+.entry-content a img.alignleft,
+.entry-content figure.alignleft {
+    float: left; 
+    margin: 0 1rem 1rem 0;
+}
+
+.entry-content img.aligncenter,
+.entry-content a img.aligncenter,
+.entry-content figure.aligncenter {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.entry-content figcaption {
+	text-align: left; /*Decide text-align left or center */
+}
+
+.entry-content figcaption a {}
+
+.entry-content figcaption a:hover {}
+
+.entry-content figcaption a:active {}
+
+.entry-content figcaption strong {}
+
+.entry-content figcaption em {}
+
+.entry-content iframe {
+	max-width: 100%;
+	margin: 0 0 1rem;
+}
+
+/* =======  Entry Content - Tablet+ ======= */
+@media (min-width: 768px) { 
+  .entry-content p {
+    font-size: 18px;
+    line-height: 36px;
+    padding-bottom: 38px;
+  }
+}
+
+
+
+/*===============================
+===============================
 PAGE - MOBILE
 ===============================
 ===============================*/
@@ -2181,6 +2294,7 @@ PAGE - MOBILE
   position: relative;
   overflow: hidden;
   padding: 36px;
+  padding-left: -30px;
 }
 
 .page-header h1 {
@@ -2209,6 +2323,93 @@ PAGE - MOBILE
   background-position: bottom right;
   opacity: 0.7;
   z-index: -1;
+}
+
+.page-entry {
+  margin-top: 41px;
+}
+
+.sidebar {
+  display: none;
+}
+
+/* =======  Page - Tablet+ ======= */
+@media (min-width: 768px) { 
+  .page-header {
+    height: 300px;
+    padding: 60px;
+  }
+  
+  .page-header h1 {
+    font-size: 50px;
+    letter-spacing: 6px;
+    line-height: 70px;
+  }
+
+  
+  .page-image-svg {
+    right: -13px;
+    bottom: -17px;
+    background-size: 21%;
+    opacity: 0.7;
+  }
+  
+  .page-entry {
+    margin-top: 73px;
+  }
+}
+
+/* =======  Page - Desktop+ ======= */
+@media (min-width: 992px) { 
+  .page-header {
+    height: 420px;
+    padding: 80px;
+  }
+  
+  .page-header h1 {
+    font-size: 63px;
+    letter-spacing: 6px;
+    line-height: 80px;
+  }
+
+  
+  .page-image-svg {
+    background-size: 20%;
+    opacity: 0.9;
+  }
+  
+  .page-entry {
+    margin-top: 71px;
+  }
+
+  /* =======  Sidebar ======= */
+  .page-entry {
+    display: flex;
+  }
+
+  .page-entry-split-1 {
+    width: 70%;
+  } 
+
+  .sidebar {
+    width: 30%;
+    display: block;
+    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .sidebar h1 {
+    margin: 0;
+  }
+
+  .sidebar .sidebar-heading {
+    font-size: 20px;
+    background: var(--primary-regular);
+    text-align: center;
+    line-height: 1;
+    padding: 24px 20px 18px;
+    margin-top: 12px;
+  }
 }
 
 
