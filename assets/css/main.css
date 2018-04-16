@@ -653,7 +653,7 @@ HOMEPAGE
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -2;
   }
 
   .dark-overlay {
@@ -664,7 +664,7 @@ HOMEPAGE
     background-color: rgba(0,0,0,0.5);
     content: '';
     position: absolute;
-    z-index: -1;
+    z-index: -2;
   }
 
   .square-bg {
@@ -677,7 +677,7 @@ HOMEPAGE
     background-size: 55%;
     background-position: bottom right;
     opacity: 0.6;
-    z-index: -1;
+    z-index: -2;
   }
 
   .banner h1,
@@ -723,6 +723,10 @@ HOMEPAGE
 
   .service-times span {
     color: var(--primary-regular);
+  }
+
+  .banner .cover-link {
+    z-index: 1;
   }
 
 /* ======= End Banner - Mobile+ ======= */
@@ -878,13 +882,17 @@ HOMEPAGE
   .invite {
     margin-top: -40px;
     margin-bottom: 56px;
+    position: relative;
+    z-index: 10;
+    margin-left: 1px;
+    margin-right: 1px;
   }
 
   .img-wrapper {
     /* border: 13px solid #fff; */
     background: #fff;
-    padding: 13px;
-    max-width: 420px;
+    padding: 13px 13px 0px;
+    max-width: 418px;
     width: 100%;
   }
 
@@ -909,7 +917,7 @@ HOMEPAGE
   }
 
   .where {
-    padding-top: 55px;
+    padding-top: 68px;
   }
 
   .address h2 {
@@ -1683,7 +1691,7 @@ HOMEPAGE
   }
 
   .invite {
-    margin-bottom: 110px;
+    margin-bottom: 123px;
   }
 
   .where {
@@ -2160,6 +2168,41 @@ HOMEPAGE
 
 /*===============================
 ===============================
+PAGE
+===============================
+===============================*/
+
+.page-header h1 {
+  margin: 0;
+}
+
+.page-header {
+  height: 360px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  /* padding: 44px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================
+===============================
 SERMONS & BLOG COMMON STYLES
 ===============================
 ===============================*/
@@ -2243,7 +2286,7 @@ Browse By - Mobile
 	transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
   font-size: 6px;
-  padding-bottom: 2px;
+  width: 10px;
 }
  
 .flip .icon-angle-down {
@@ -2457,6 +2500,73 @@ Browse By - Mobile
   margin-bottom: 2px;
 }
 
+/*===============================
+Pagination - Mobile
+===============================*/
+.pagination-wrapper {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 62px;
+  height: 50px;
+  box-shadow: 1px 2px 6px rgba(168, 37, 37, 0.15);
+  border-radius: 3px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3B3B3B;
+}
+
+.pagination a,
+.pagination span {
+  padding: 17px 7px 15px;
+  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  /* line-height: 0; */
+  
+}
+
+.pagination .icon-events-single-arrow-left2,
+.pagination .icon-events-single-arrow-right2 {
+  font-family: 'design-08-icons', sans-serif;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+.pagination .icon-events-single-arrow-left2 {
+  padding-right: 20px;
+}
+
+.pagination .icon-events-single-arrow-right2 {
+  padding-left: 20px
+}
+
+.pagination .current {
+  color: var(--primary-regular);
+  position: relative;
+}
+
+.pagination .current:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: var(--primary-regular);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.pagination a:hover {
+  color: var(--primary-light);
+}
+
+
 /* =======  Sermons & Blog - Tablet+ ======= */
 @media (min-width: 768px) {
 
@@ -2641,6 +2751,44 @@ Browse By - Mobile
     height: 55px;
   }
 
+  /*===============================
+  Pagination - Tablet
+  ===============================*/
+  .pagination-wrapper {
+    margin-top: 89px;
+    height: 75px;
+    /* border-radius: 3px; */
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    align-self: stretch;
+  }
+
+  .pagination a,
+  .pagination span {
+    padding: 27px 17px 25px;
+    font-size: 20px;
+    
+  }
+
+  .pagination .icon-events-single-arrow-left2,
+  .pagination .icon-events-single-arrow-right2 {
+    font-family: 'design-08-icons', sans-serif;
+    /* font-size: 14px; */
+    padding-top: 27px;
+  }
+
+  .pagination .icon-events-single-arrow-left2 {
+    padding-right: 40px;
+  }
+
+  .pagination .icon-events-single-arrow-right2 {
+    padding-left: 40px;
+  }
+
 }
 
 
@@ -2793,6 +2941,36 @@ Browse By - Mobile
     margin-left: 12px;
   }
 
+  /*===============================
+  Pagination - Desktop
+  ===============================*/
+  .pagination-wrapper {
+    margin: 0 auto;
+    margin-top: 126px;
+    width: 600px;
+    border-radius: 5px;
+   
+  }
+
+  .pagination a,
+  .pagination span {
+    padding: 25px 15px 23px;
+    font-size: 26px;  
+    font-weight: 400;
+  }
+
+  .pagination .icon-events-single-arrow-left2,
+  .pagination .icon-events-single-arrow-right2 {
+    padding-top: 25px;
+  }
+
+  .pagination .icon-events-single-arrow-left2 {
+    padding-right: 45px;
+  }
+
+  .pagination .icon-events-single-arrow-right2 {
+    padding-left: 45px;
+  }
 }
 /*===============================
 ===============================
