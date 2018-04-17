@@ -2278,6 +2278,12 @@ ENTRY CONTENT - MOBILE
 }
 
 
+/* =======  Entry Content - Desktop+ ======= */
+@media (min-width: 992px) { 
+ 
+}
+
+
 
 /*===============================
 ===============================
@@ -2388,11 +2394,12 @@ PAGE - MOBILE
   }
 
   .page-entry-split-1 {
-    width: 70%;
+    width: 66.5%;
+    padding-right: 60px;
   } 
 
   .sidebar {
-    width: 30%;
+    width: 33.5%;
     display: block;
     font-family: 'Teko', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
@@ -2409,6 +2416,58 @@ PAGE - MOBILE
     line-height: 1;
     padding: 24px 20px 18px;
     margin-top: 12px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+
+  .sidebar nav {
+    background: #F6F6F4;
+    padding: 45px;
+  }
+
+  .sidebar .sidebar-navigation {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: rgba(59, 59, 59, 0.9);
+  }
+
+  .sidebar .sidebar-navigation a {
+    display: flex;
+  }
+
+  .sidebar .sidebar-navigation a:hover {
+    color: var(--nav-hover);
+  }
+
+  .sidebar .sidebar-navigation .sidebar-current {
+    color: var(--primary-light);
+  }
+
+  .sidebar .sidebar-navigation > li {
+    padding-bottom: 15px;
+  }
+
+  .sidebar .sidebar-navigation > li:last-child {
+    padding-bottom: 0px;
+  }
+
+  .sidebar .sidebar-navigation li > ul {
+    padding-top: 12px;
+    padding-left: 15px;
+  }
+
+  .sidebar .sidebar-navigation li > ul > li {
+    padding: 3px 0;
+    font-style: italic;
+    text-transform: lowercase;
+    font-size: 18px;
+  }
+
+  .sidebar .sidebar-navigation li > ul > li:last-child {
+    padding-bottom: 0px;
   }
 }
 
