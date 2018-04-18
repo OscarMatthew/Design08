@@ -227,6 +227,18 @@ HOMEPAGE
     margin-bottom: 21px;
 }
 
+/* Logo Placeholder*/
+.logo a .logo-placeholder {
+  color: grey;
+  font-family: "Teko", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 200px;
+  height: 40px;
+  display: none;
+}
+
 .logo img {
     max-width: 120px;
     max-height: 40px;
@@ -336,7 +348,7 @@ HOMEPAGE
 
 .navigation a:hover,
 .navigation a:active {
-  color: var(--nav-hover);
+  color: var(--primary-light);
 }
 
 .nav-area-desktop /* Hides Desktop nav */{
@@ -973,7 +985,7 @@ HOMEPAGE
 
   .map a:hover,
   .map a:active {
-    color: var(--nav-hover);
+    color: var(--primary-light);
   }
 
   /*  Page Feeds - Mobile+ */
@@ -1918,7 +1930,7 @@ HOMEPAGE
 
 .footer-map a:hover,
 .footer-map a:active {
-  color: var(--nav-hover);
+  color: var(--primary-light);
  
 }
 
@@ -2452,11 +2464,11 @@ ENTRY CONTENT - MOBILE
   }
 
   .sidebar .sidebar-navigation a:hover {
-    color: var(--nav-hover);
+    color: var(--primary-light);
   }
 
   .sidebar .sidebar-navigation a:active {
-    color: var(--primary-regular);
+    color: var(--primary-dark);
   }
 
   .sidebar .sidebar-navigation .sidebar-current {
@@ -2650,11 +2662,11 @@ Browse By - Mobile
 }
 
 .browse-wrapper a:hover {
-  color: var(--nav-hover);
+  color: var(--primary-light);
 }
 
 .browse-wrapper a:active {
-  color: var(--primary-regular);
+  color: var(--primary-dark);
 }
 
 /*===============================
@@ -2867,7 +2879,7 @@ Pagination - Mobile
 }
 
 .pagination a:active {
-  color: var(--primary-regular);
+  color: var(--primary-dark);
 }
 
 
@@ -3527,7 +3539,7 @@ BLOGPOST
 }
 
 .tag-container a:active {
-  color: var(--primary-regular);
+  color: var(--primary-dark);
 }
 
 .tag-container .current {
@@ -4266,7 +4278,7 @@ EVENTS
 }
 
 .error-page .go-back-home-btn:active {
-  background-color: var(--primary-regular);
+  background-color: var(--primary-dark);
 	color: #fff; 
 }
 
