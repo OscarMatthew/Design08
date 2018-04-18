@@ -177,8 +177,8 @@ body {
 
   :root {
     --primary-regular: #F91C4C;
-    --primary-light: #F93660;
-    --nav-hover: #F93660;
+    --primary-light: #ff3b66;
+    --primary-dark: #d61f46;
   } 
 
 /*===============================
@@ -916,7 +916,7 @@ HOMEPAGE
     position: absolute;
     left: -19px;
     bottom: -85px;
-    z-index: -3;
+    z-index: 0;
   }
 
   /* Where */
@@ -953,10 +953,12 @@ HOMEPAGE
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 480px;
   }
 
   .map iframe {
     height: 70px;
+    width: 100%;
   }
 
   .map a {
@@ -1374,7 +1376,7 @@ HOMEPAGE
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     margin-top: 25px;
-    min-width: 426px;
+    max-width: 426px;
   }
 
   .map iframe {
@@ -1575,7 +1577,7 @@ HOMEPAGE
     }
   
     .map {
-      min-width: 430px;
+      max-width: 430px;
     }
   
     .map iframe {
@@ -1723,7 +1725,7 @@ HOMEPAGE
   }
 
   .map {
-    min-width: 435px;
+    max-width: 435px;
   }
 
   /*  Page Feeds - Large Desktop */
@@ -1806,8 +1808,6 @@ HOMEPAGE
   font-size: 99px;
   font-weight: 400;
   letter-spacing: 10px;
-  padding-left: 5px;
-  /* line-height: 1; */
   text-transform: uppercase;
   text-align: center;
   color: rgba(0,0,0,0.04);
@@ -1824,8 +1824,8 @@ HOMEPAGE
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -37px;
-  margin-left: -70px;
+  transform: translate(-50%, -50%);
+  padding-bottom: 6px;
 }
 
 /* Top SVG Background */
@@ -1933,19 +1933,16 @@ HOMEPAGE
   padding-top: 50px;
   padding-left: 18px;
   padding-right: 18px;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -ms-column-count: 3;
+  -o-column-count: 3;
+   column-count: 3;
 }
 
 .footer-nav a {
   line-height: 2.7;
   display: block;
-}
-
-.footer-nav {
-  -webkit-column-count: 3;
- -moz-column-count: 3;
- -ms-column-count: 3;
- -o-column-count: 3;
-	column-count: 3;
 }
 
 
@@ -1984,6 +1981,9 @@ HOMEPAGE
 @media (min-width: 480px) {
   /* Footer Content */
   .footer-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
    width: 70%;
   }
 }
@@ -1999,20 +1999,17 @@ HOMEPAGE
   
   /* Footer Content */
   .footer-content {
-    width: 70%;
+    width: 100%;
   }
-  
+
   .primary-footer .inviting {
     font-size: 144px;
     letter-spacing: 22px;
-    padding-left: 17px;
   }
   
   .primary-footer .inviting span {
     letter-spacing: 13px;
     font-size: 68px;
-    margin-top: -42px;
-    margin-left: -90px;
   }
   
   /* Top SVG Background */
@@ -2058,11 +2055,8 @@ HOMEPAGE
   .footer-nav {
     padding-top: 72px;
     letter-spacing: 2px;
-    width: 342px;
+    /* width: 400px; */
     margin: 0 auto;
-  }
-  
-  .footer-nav {
     -webkit-column-count: 1;
    -moz-column-count: 1;
    -ms-column-count: 1;
@@ -2070,6 +2064,7 @@ HOMEPAGE
     column-count: 1;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .footer-nav a {
@@ -2099,21 +2094,18 @@ HOMEPAGE
   }
   
   /* Footer Content */
-  .footer-content {
+  /* .footer-content {
     width: 100%;
-  }
+  } */
   
   .primary-footer .inviting {
     font-size: 210px;
     letter-spacing: 22px;
-    padding-left: 17px;
   }
   
   .primary-footer .inviting span {
     letter-spacing: 13px;
     font-size: 100px;
-    margin-top: -64px;
-    margin-left: -118px;
   }
   
   /* Top SVG Background */
@@ -2165,7 +2157,7 @@ HOMEPAGE
   .footer-nav {
     padding-top: 80px;
     letter-spacing: 2px;
-    width: 488px;
+    /* width: 488px; */
     font-size: 15px;
   }
 
@@ -3130,7 +3122,8 @@ Pagination - Mobile
 
   /* Browse Content */		
   .browse-content {
-    padding: 41px 43px 34px;	
+    padding: 41px 43px 34px;
+    justify-content: flex-start;	
   }
 
   .browse-content h1 {
@@ -3140,6 +3133,7 @@ Pagination - Mobile
   .resource-types {
     line-height: 2.1;
     margin-bottom: 34px;
+    margin-right: 50px;
   }
 
   .index ul li {
@@ -3159,7 +3153,8 @@ Pagination - Mobile
   }
 
   .index {
-    width: 75%;
+    /* width: 75%; */
+    flex-grow: 1;
   }	
 
   /*Secondary Flex Container*/
