@@ -334,7 +334,8 @@ HOMEPAGE
   text-transform: lowercase;
 }
 
-.navigation a:hover {
+.navigation a:hover,
+.navigation a:active {
   color: var(--nav-hover);
 }
 
@@ -725,10 +726,6 @@ HOMEPAGE
     color: var(--primary-regular);
   }
 
-  .banner .cover-link {
-    z-index: 1;
-  }
-
 /* ======= End Banner - Mobile+ ======= */
 
 
@@ -846,7 +843,7 @@ HOMEPAGE
   }
 }
 
-/* =======  Main Content - Large Desktop+ ======= */
+/* ======= Banner - Large Desktop+ ======= */
 
 @media (min-width: 1200px) {
   .banner h1 {
@@ -883,17 +880,16 @@ HOMEPAGE
     margin-top: -40px;
     margin-bottom: 56px;
     position: relative;
-    z-index: 10;
     margin-left: 1px;
     margin-right: 1px;
   }
 
   .img-wrapper {
-    /* border: 13px solid #fff; */
     background: #fff;
     padding: 13px 13px 0px;
     max-width: 418px;
     width: 100%;
+    position: relative;
   }
 
   .image-container {
@@ -909,6 +905,19 @@ HOMEPAGE
     height: 100%;
     object-fit: cover;
   } 
+
+  .invite .img-wrapper:after {
+    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-size: 120px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    content: "01";
+    color: rgba(0,0,0,0.02);
+    position: absolute;
+    left: -19px;
+    bottom: -85px;
+    z-index: -3;
+  }
 
   /* Where */
   .where h2,
@@ -960,7 +969,8 @@ HOMEPAGE
     padding-bottom: 17px;
   }
 
-  .map a:hover {
+  .map a:hover,
+  .map a:active {
     color: var(--nav-hover);
   }
 
@@ -1008,7 +1018,7 @@ HOMEPAGE
   .feed-content h1:before {
     font-family: "Teko", Arial, Helvetica, sans-serif;
     font-size: 120px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 5px;
     content: "02";
     color: rgba(0,0,0,0.02);
@@ -1051,7 +1061,7 @@ HOMEPAGE
     content: '';
     position: absolute;
     /* opacity: 0.1; */
-    z-index: 2;
+    z-index: 0;
   }
 
   /* Image Transitions */
@@ -1330,6 +1340,13 @@ HOMEPAGE
   .img-wrapper {
     max-width: 336px;
     width: 100%;
+  }
+
+  .invite .img-wrapper:after {
+    font-size: 250px;
+    letter-spacing: 5px;
+    left: -44px;
+    bottom: -183px;
   }
 
   /* Where */
@@ -1694,6 +1711,13 @@ HOMEPAGE
     margin-bottom: 123px;
   }
 
+  .invite .img-wrapper:after {
+    font-size: 300px;
+    letter-spacing: 10px;
+    left: -50px;
+    bottom: -220px;
+  }
+
   .where {
     padding-left: 125px;
   }
@@ -1892,9 +1916,10 @@ HOMEPAGE
   padding-right: 8px;
 }
 
-.footer-map a:hover {
+.footer-map a:hover,
+.footer-map a:active {
   color: var(--nav-hover);
-  /* background: #3B3B3B; */
+ 
 }
 
 /* Footer Nav */
@@ -2438,6 +2463,10 @@ ENTRY CONTENT - MOBILE
     color: var(--nav-hover);
   }
 
+  .sidebar .sidebar-navigation a:active {
+    color: var(--primary-regular);
+  }
+
   .sidebar .sidebar-navigation .sidebar-current {
     color: var(--primary-light);
   }
@@ -2532,8 +2561,6 @@ Browse By - Mobile
 	-moz-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	/* position: relative;
-  top: -70px; */
   position: relative;
 	cursor: pointer;
 	-webkit-user-select: none; /* Chrome/Safari */     
@@ -2543,7 +2570,6 @@ Browse By - Mobile
   -o-user-select: none;
   user-select: none;
   box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
-  /* bottom: -2px */
 }
 
 .browse span {
@@ -2629,6 +2655,14 @@ Browse By - Mobile
 
 .browse-content {
 	display: none;
+}
+
+.browse-wrapper a:hover {
+  color: var(--nav-hover);
+}
+
+.browse-wrapper a:active {
+  color: var(--primary-regular);
 }
 
 /*===============================
@@ -2838,6 +2872,10 @@ Pagination - Mobile
 
 .pagination a:hover {
   color: var(--primary-light);
+}
+
+.pagination a:active {
+  color: var(--primary-regular);
 }
 
 
@@ -3491,6 +3529,10 @@ BLOGPOST
   background: var(--primary-light);
   color: rgba(255,255,255,1);
   padding: 20px 18px;
+}
+
+.tag-container a:active {
+  color: var(--primary-regular);
 }
 
 .tag-container .current {
@@ -4219,6 +4261,11 @@ EVENTS
 
 .error-page .go-back-home-btn:hover { /* Btn Hover */
 	background-color: var(--primary-light);
+	color: #fff; 
+}
+
+.error-page .go-back-home-btn:active {
+  background-color: var(--primary-regular);
 	color: #fff; 
 }
 
