@@ -2514,13 +2514,13 @@ SERMONS & BLOG COMMON STYLES
 ===============================
 ===============================*/
 
-.sermons h1,
-#blog h1 {
+.blog h1,
+#sermons h1 {
   margin: 0;
 }
 
-.sermons .page-heading,
-#blog .page-heading {
+.blog .page-heading,
+#sermons .page-heading {
   font-family: 'Teko', Arial, Helvetica, sans-serif;
   font-size: 36px;
   font-weight: 500;
@@ -2567,7 +2567,7 @@ Browse By - Mobile
 	align-items: center;
   position: relative;
 	cursor: pointer;
-	-webkit-user-select: none; /* Chrome/Safari */     
+	-webkit-user-select: none; /* Chrome/Safari */   
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+ */
   /* Not implemented yet */
@@ -2710,8 +2710,9 @@ Browse By - Mobile
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -40px;
-  margin-top: -40px;
+  transform: translate(-50%, -50%);
+  /* margin-left: -40px;
+  margin-top: -40px; */
   width: 82px;
   height: 82px;
 }
@@ -2721,7 +2722,7 @@ Browse By - Mobile
   height: 65px;
 }
 
-.card .play-icon .outer-circle .inner-dark-circle{
+.card .play-icon .outer-circle .inner-dark-circle { 
   width: 45px;
   height: 45px;
   background: #121212;
@@ -2731,7 +2732,7 @@ Browse By - Mobile
   font-family: 'design-08-icons', sans-serif;
   font-size: 16px;
   color: var(--primary-regular);
-  margin-left: 3px;
+  margin-left: 4px;
 }
 
 /* Sermon Content */
@@ -2794,13 +2795,13 @@ Browse By - Mobile
   text-transform: capitalize;
   transform: rotate(-90deg);
   position: absolute;
-  bottom: 47px;
-  left: -64px;
+  bottom: 70px;
+  left: -89px;
   display: flex;
   align-items: center; 
   justify-content: flex-start;
   color: var(--primary-light);
-  width: 100px;
+  width: 150px;
 }
 
 .card-content .label-counter span {
@@ -2886,8 +2887,8 @@ Pagination - Mobile
 /* =======  Sermons & Blog - Tablet+ ======= */
 @media (min-width: 768px) {
 
-  .sermons .page-heading,
-  #blog .page-heading {
+  .blog .page-heading,
+  #sermons .page-heading {
     font-size: 46px;
     letter-spacing: 6px;
     padding-top: 83px;
@@ -3005,8 +3006,8 @@ Pagination - Mobile
   }
 
   .card .play-icon {
-    margin-left: -46px;
-    margin-top: -46px;
+    /* margin-left: -46px;
+    margin-top: -46px; */
     height: 94px;
     width: 94px;
   }
@@ -3063,7 +3064,7 @@ Pagination - Mobile
     transform: rotate(0deg);
     position: absolute;
     bottom: 0px;
-    left: -111px;
+    left: -135px;
     height: 55px;
   }
 
@@ -3112,8 +3113,8 @@ Pagination - Mobile
 
 @media (min-width: 992px) { 
 
-  .sermons .page-heading,
-  #blog .page-heading {
+  .blog .page-heading,
+  #sermons .page-heading {
     font-size: 63px;
     letter-spacing: 9px;
     padding-top: 129px;
@@ -3156,7 +3157,6 @@ Pagination - Mobile
   .index ul li ul li {
     font-weight: 300;
     display: block;
-    /* color: green; */
     color: rgba(0,0,0,0.7);
   }
 
@@ -3165,7 +3165,6 @@ Pagination - Mobile
   }
 
   .index {
-    /* width: 75%; */
     flex-grow: 1;
   }	
 
@@ -3193,28 +3192,6 @@ Pagination - Mobile
 
   .card .img-container {
     height: 658px;
-  }
-
-  .card .play-icon {
-    margin-left: -58px;
-    margin-top: -60px;
-    height: 124px;
-    width: 124px;
-  }
-
-  .card .play-icon .outer-circle {
-    width: 98px;
-    height: 98px;
-  }
-
-  .card .play-icon .outer-circle .inner-dark-circle{
-    width: 68px;
-    height: 68px;
-  }
-
-  .card .icon-play-icon {
-    font-size: 19px;
-    margin-left: 7px;
   }
 
   /* Sermon Content */
@@ -3248,10 +3225,10 @@ Pagination - Mobile
 
   /* Side Labels */
   .card-content .label-counter {
-    bottom: 0px;
-    left: -161px;
+    bottom: -2px;
+    left: -185px;
     height: 150px;
-    width: 120px;
+    width: 170px;
     font-size: 20px;
   }
 
@@ -3301,23 +3278,23 @@ END SERMONS & BLOG COMMON STYLES
 
 /*===============================
 ===============================
-SERMONS
+Blog
 ===============================
 ===============================*/
 
 /*===============================
- Sermon Card styles - Mobile
+ Blog Card styles - Mobile
 ===============================*/
 
 .card-content .snippet {
   display: none;
 }
 
-/* =======  Sermons - Tablet+ ======= */
+/* =======  Blog - Tablet+ ======= */
 @media (min-width: 768px) {
 
   /*===============================
-  Sermon Card styles - Tablet
+  Blog Card styles - Tablet
   ===============================*/
 
   .card-content .snippet {
@@ -3331,7 +3308,7 @@ SERMONS
 
 }
 
-/* =======  sermons - Desktop+ ======= */
+/* =======  Blog - Desktop+ ======= */
 
 @media (min-width: 992px) { 
 
@@ -3348,64 +3325,65 @@ SERMONS
 
 /*===============================
 ===============================
-BLOG
+Sermons
 ===============================
 ===============================*/
 
 /* Side Labels */
 #blog .card .card-content .label-counter {
-  bottom: 72px;
+  /* bottom: 72px;
   left: -89px;
-  width: 150px;
+  width: 150px; */
   /* background: green; */
 }
 
-#blog .card .card-content .label-counter span {
+#sermons .card .card-content .label-counter span {
   margin-left: 15px;
 }
 
 
-/* =======  Blog - Tablet+ ======= */
+/* =======  Sermons - Tablet+ ======= */
 @media (min-width: 768px) { 
 
   /*===============================
-  Blog Card styles - Tablet
+  Sermons Card styles - Tablet
   ===============================*/
 
-   #blog .card .img-container {
+   #sermons .card .img-container {
     height: 336px;
   }
 
   /* Sermon Content */
-  #blog .card-content {
+  #sermons .card-content {
     height: 332px;
     padding: 54px;
   }
 
   /* Side Labels */
-  #blog .card .card-content .label-counter {
+  #sermons .card .card-content .label-counter {
+    justify-content: flex-end;
     bottom: -6px;
-    left: -146px;
+    left: -174px;
     height: 51px;
   }
 
 }
 
-/* =======  Blog - Desktop+ ======= */
+/* =======  Sermons - Desktop+ ======= */
 @media (min-width: 992px) { 
 
-  #blog .card .img-container {
+  #sermons .card .img-container {
     height: 320px;
   }
 
   /* Sermon Content */
-  #blog .card-content {
+  #sermons .card-content {
     margin-top: 60px;
     height: 320px;
     padding: 70px;
   }
 
-  #blog .card .card-content h1 {
+  #sermons .card .card-content h1 {
     font-size: 36px;
     letter-spacing: 3px;
     padding-top: 5px;
@@ -3413,9 +3391,9 @@ BLOG
   }
 
   /* Side Labels */
-  #blog .card .card-content .label-counter {
-    bottom: -5px;
-    left: -168px;
+  #sermons .card .card-content .label-counter {
+    bottom: -2px;
+    left: -205px;
   }
 
 }
