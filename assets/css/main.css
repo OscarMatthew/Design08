@@ -3349,7 +3349,7 @@ Blog
 
 /*===============================
 ===============================
-Sermons
+SERMONS
 ===============================
 ===============================*/
 
@@ -3416,7 +3416,271 @@ Sermons
 }
 
 
- 
+
+/*===============================
+===============================
+SERMON SINGLE
+===============================
+===============================*/
+
+/*===============================
+Audio & Video Player
+===============================*/
+
+/*========= tabs.css ==========*/
+
+#main-header {
+	background: black;
+	padding: 5px;
+}
+
+body > header > span {
+	color: #fff;
+}
+
+
+/* Responsive Video */
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
+/* Tab and Tab Content Toggle Classes */
+
+.watch-tab,
+.listen-tab,
+.download-tab {
+	cursor: pointer;
+}
+
+.watch-tab.active,
+.listen-tab.active,
+.download-tab.active {
+	background: red;
+}
+
+#watch-content,
+#listen-content,
+.download-tab > ul {
+	display: none;
+}
+
+.dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 90 !important;
+	background: rgba(0,0,0,.5);
+	cursor: pointer;
+}
+
+.download-tab > ul {
+	z-index: 991;
+	position: relative;
+}
+
+#watch-content.active,
+#listen-content.active{
+	display: block;
+}
+
+/* Dropdown Off Click for Mobile */
+
+
+/*====*/
+.sermon-player-2 {
+	display: none;
+}
+
+/*========= Audio-player.css ==========*/
+
+@font-face {
+  font-family: 'sola-mp3-icons';
+  src:  url('../fonts/sola-mp3-icons.eot?zc8xw9');
+  src:  url('../fonts/sola-mp3-icons.eot?zc8xw9#iefix') format('embedded-opentype'),
+    url('../fonts/sola-mp3-icons.ttf?zc8xw9') format('truetype'),
+    url('../fonts/sola-mp3-icons.woff?zc8xw9') format('woff'),
+    url('../fonts/sola-mp3-icons.svg?zc8xw9#sola-mp3-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.audioplayer-playpause {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sola-mp3-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-media-pause:before,
+.audioplayer .audioplayer-playpause:before {
+  content: "\e900";
+	font-size: 46px;
+	line-height: 1;
+}
+
+.icon-media-play:before,
+.audioplayer:not(.audioplayer-playing) .audioplayer-playpause:before {
+  content: "\e901";
+	font-size: 46px;
+	line-height: 1;
+}
+
+.audioplayer-wrapper {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.audioplayer-wrapper img {
+	display: none;
+}
+
+@media (min-width: 481px) {
+	.audioplayer-wrapper img {
+		display: block;
+		height: 80px;
+	}
+}
+
+.audioplayer {
+	height: 80px;
+	width: 100%;
+	color: #C7C7C7;
+	position: relative;
+	z-index: 100;	
+	background: #000;
+	-webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	/* Not implemented yet */
+	-o-user-select: none;
+	user-select: none;
+}
+
+.audioplayer-mini {
+	width: 2.5em; /* 40 */
+	margin: 0 auto;
+}
+
+.audioplayer > div {
+	position: absolute;
+}
+
+.audioplayer-playpause {
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+	z-index: 2;
+	position: absolute;
+	top: 18px;
+	left: 18px;
+}
+
+.audioplayer-playpause:hover {
+	color: white;
+}
+
+.audioplayer-mini .audioplayer-playpause {
+	width: 100%;
+}
+
+.audioplayer-playpause a {
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+.audioplayer-time
+{
+	width: 4.375em; /* 70 */
+	line-height: 1; /* 38 */
+	text-align: right;
+	z-index: 2;
+	top: 32px;
+	font-size: 15px;
+}
+.audioplayer-time-current {
+	left: 63px;
+}
+
+.audioplayer-time-duration {
+	right: 2.5em; /* 40 */
+}
+
+.audioplayer-bar {
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+.audioplayer-bar div {
+	width: 0;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.audioplayer-bar-loaded {
+	background-color: #2F2F2F;
+	z-index: 1;
+}
+.audioplayer-bar-played {
+	background: #3C3C3C;
+	z-index: 2;
+}
+
+.audioplayer-bar-played {
+	border-right: 1px solid #505050;
+}
+
+
+/*========= Audio/Video Player Theme Styling ==========*/
+
+
+
+
+
+
+
 /*===============================
 ===============================
 BLOGPOST
@@ -3492,7 +3756,6 @@ BLOGPOST
 }
 
 .single-entry {
-  /* padding: 46px 30px 100px; */
   padding-top: 46px;
   padding-left: 30px;
   padding-right: 30px;
@@ -3507,7 +3770,6 @@ BLOGPOST
   padding: 20px;
   border-top: 1px solid rgba(0,0,0, 0.2);
   border-bottom: 1px solid rgba(0,0,0, 0.2);
-  /* margin-top: 20px; */
   font-size: 15px;
   font-style: italic;
   line-height: 27px;
@@ -3664,7 +3926,6 @@ BLOGPOST
     font-size: 38px;
     line-height: 45px;
     letter-spacing: 4px;
-    /* padding-top: 9px; */
     padding-right: 30%;
   }
   
@@ -3674,7 +3935,6 @@ BLOGPOST
   }
   
   .single-entry {
-    /* padding: 50px 60px 140px; */
     padding-top: 50px;
     padding-left: 60px;
     padding-right: 60px;
@@ -3907,7 +4167,6 @@ EVENTS
 /* Events Navigation */
 
 .events-navigation {
-  /* background: green; */
   padding-top: 44px;
   padding-bottom: 2px;
   border-bottom: 1px solid rgba(0,0,0,0.09);
@@ -4015,7 +4274,6 @@ EVENTS
     justify-content: space-between;
     padding: 30px;
     border-radius: 5px;
-    /* margin-top: 43px; */
     align-items: center;
   }
 
@@ -4230,14 +4488,11 @@ EVENTS
     font-size: 30px;
     line-height: 34px;
     letter-spacing: 2.2px;
-    /* padding-top: 4px;
-    margin-left: 120px; */
   }
   
   .event-card P {
     font-size: 30px;
     letter-spacing: 2px;
-    /* padding-top: 4px; */
   }
 
   .event-card .event-time {
@@ -4341,21 +4596,13 @@ SINGLE EVENT
 
   .event-info {
     padding: 32px;
-    /* padding-right: 0; */
-    /* border-radius: 3px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .event-info h1 {
-    /* font-size: 21px;
-    letter-spacing: 1.2px; */
-  }
-
   .event-info p,
   .event-info address {
-    /* font-size: 16px; */
     line-height: 32px;
   }
 
@@ -4423,12 +4670,6 @@ SINGLE EVENT
     width: 1280px;
     margin: 0 auto;
 }
-
-
-
-
-
-
 
 
 
