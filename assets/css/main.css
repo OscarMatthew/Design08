@@ -2105,11 +2105,6 @@ HOMEPAGE
     padding-bottom: 150px;
   }
   
-  /* Footer Content */
-  /* .footer-content {
-    width: 100%;
-  } */
-  
   .primary-footer .inviting {
     font-size: 210px;
     letter-spacing: 22px;
@@ -2209,7 +2204,7 @@ ENTRY CONTENT - MOBILE
 	position: relative;
 }
 
-.entry-content h2,
+/* .entry-content h2,
 .entry-content h3,
 .entry-content h4,
 .entry-content h5,
@@ -2223,7 +2218,7 @@ ENTRY CONTENT - MOBILE
 
 .entry-content h5 {}
 
-.entry-content h6 {}
+.entry-content h6 {} */
 
 .entry-content p {
   margin: 0;
@@ -2236,7 +2231,7 @@ ENTRY CONTENT - MOBILE
   padding-bottom: 33px;
 }
 
-.entry-content ul,
+/* .entry-content ul,
 .entry-content ol {}
 
 .entry-content li {}
@@ -2251,7 +2246,7 @@ ENTRY CONTENT - MOBILE
 
 .entry-content strong {}
 
-.entry-content em {}
+.entry-content em {} */
 
 .entry-content img,
 .entry-content figure {
@@ -2286,7 +2281,7 @@ ENTRY CONTENT - MOBILE
 	text-align: left; /*Decide text-align left or center */
 }
 
-.entry-content figcaption a {}
+/* .entry-content figcaption a {}
 
 .entry-content figcaption a:hover {}
 
@@ -2294,7 +2289,7 @@ ENTRY CONTENT - MOBILE
 
 .entry-content figcaption strong {}
 
-.entry-content figcaption em {}
+.entry-content figcaption em {} */
 
 .entry-content iframe {
 	max-width: 100%;
@@ -3153,9 +3148,9 @@ Pagination - Mobile
   }
 
   /* Browse Button */
-  .browse {
-    /* box-shadow: 1px 2px 6px rgba(0,0,0,0.15); */
-  }
+  /* .browse {
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.15);
+  } */
 
   /* Browse Content */		
   .browse-content {
@@ -5091,7 +5086,6 @@ SINGLE EVENT
 }
 
 
-
 /* ======= 404 Error - Desktop+ ======= */
 
 @media (min-width: 992px) { 
@@ -5123,4 +5117,30 @@ SINGLE EVENT
     letter-spacing: 1.5px;
     max-width: 530px;
   }
+}
+
+
+/*===============================
+===============================
+TYPOGRAPHY PAGES
+===============================
+===============================*/
+
+/*===============================
+Topics
+===============================*/
+
+/* Index Browse Navigation */
+
+.index-navigationva {
+  /*Scrollbar function*/
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch !important;
+	-ms-overflow-style: -ms-autohiding-scrollbar !important;
+	border-bottom: #EAEAEA 1px solid;
+	border-top: #EAEAEA 1px solid;
+  position: relative;
+  background: red;
 }
