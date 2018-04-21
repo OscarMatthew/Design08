@@ -3476,10 +3476,26 @@ body > header > span {
 	cursor: pointer;
 }
 
+.watch-tab.active i,
+.listen-tab.active i,
+.download-tab.active i {
+	background: var(--primary-regular);
+  color: #fff;
+}
+
 .watch-tab.active,
 .listen-tab.active,
 .download-tab.active {
-	/* background: red; */
+	color: var(--primary-regular);
+}
+
+.sermon-tab-content > li:hover i {
+  background: var(--primary-light);
+  color: #fff;
+}
+
+.sermon-tab-content > li:hover {
+  color: var(--primary-light);
 }
 
 #watch-content,
@@ -3675,7 +3691,7 @@ body > header > span {
 
 /*========= Audio/Video Player Theme Styling ==========*/
 .sermon-single-flex {
-  /* padding-top: 53px; */
+  padding-bottom: 100px;
 }
 
 /* flex */
@@ -3693,8 +3709,7 @@ body > header > span {
 #tab-content,
 .tabs,
 .sermon-single-header {
-  /* flex-basis: 100%; */
-  width: 100%;
+  flex-basis: 100%;
 }
 
 #tab-content {
@@ -3717,9 +3732,6 @@ body > header > span {
 }
 
 .tabs > ul > li {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   margin-right: 23px;
   position: relative;
   color: #fff;
@@ -3738,15 +3750,6 @@ body > header > span {
 
 .tabs > ul > li:last-child {
   margin-right: 0px;
-}
-
-.tabs .sermon-tab-content .current {
-  color: var(--primary-regular);
-}
-
-.tabs .sermon-tab-content .current i {
-  background: var(--primary-regular);
-  color: #fff;
 }
 
 .tabs > ul .icon-play-icon-2 {
@@ -3770,6 +3773,7 @@ body > header > span {
   border-radius: 3px;
   margin-top: 10px;
   box-shadow: 1px 2px 6px rgba(0,0,0,0.09);
+  color: rgba(0,0,0,0.9)
 }
 
 .tabs > ul > li > ul li {
@@ -3777,8 +3781,7 @@ body > header > span {
   padding-bottom: 5px;
 }
 
-.tabs > ul > li > ul li a:hover,
-.tabs > ul > li > ul li a:active {
+.tabs > ul > li > ul li a:hover {
   color: var(--primary-light);
 }
 
@@ -3817,6 +3820,7 @@ body > header > span {
 }
 
 .sermon-single-header .meta {
+  font-size: 13px;
   line-height: 26px;
   order: 2;
   padding-top: 3px;
@@ -3838,6 +3842,10 @@ body > header > span {
 /* =======  Single Sermon - Tablet+ ======= */
 @media (min-width: 768px) { 
   
+  .sermon-single-flex {
+    padding-bottom: 140px;
+  }
+
   /* flex */
   .sermon-player {
     padding-left: 30px;
@@ -3849,7 +3857,7 @@ body > header > span {
   #tab-content,
   .tabs,
   .sermon-single-header {
-    /* flex-basis: 80%; */
+    flex-basis: 80%;
   }
   
   #tab-content {
@@ -3911,65 +3919,54 @@ body > header > span {
 /* =======  Single Sermon - Desktop+ ======= */
 @media (min-width: 992px) { 
   .sermon-single-flex {
-    /* padding-top: 53px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 120px;
   }
   
+  #tab-content,
+  .tabs,
+  .sermon-single-header {
+    flex-basis: 100%;
+  }
+
   /* flex */
   .sermon-player {
+    flex-basis: 100%;
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 81px;
     padding-bottom: 100px;
     display: grid;
-    /* grid-template-columns: 1fr 2fr; */
+    grid-template-rows: 200px 110px;
+    grid-template-columns: repeat(auto-fill, 50%);
+    grid-row-gap: 40px;
   }
-  
+
   #tab-content {
     order: 0;
     padding-top: 0px;
-    /* flex-basis: 60%; */
   }
   
   /* tabs */
   .tabs { 
     order: 2;
-    padding-top: 60px;
-    /* flex-basis: 40%; */
+    padding-top: 0px;
+    padding-left: 63px;
+    grid-column-start: 2;
   }
 
   .sermon-single-header {
     order: 1;
-    /* flex-basis: 40%; */
-    padding-left: 63px;
+    padding-left: 50px;
+    padding-top: 40px;
     text-align: left;
   }
-  
-  .tabs > ul > li > span {
-    display: flex;
-    margin-left: 15px;
-  }
-  
-  .tabs > ul > li {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    margin-right: 45px;
-    max-width: 150px;
-  }
-  
-  .tabs > ul > li > i {
-    width: 42px;
-    height: 42px;
-  }
 
-  
-  
-  
-  
   .sermon-single-header .date {
     order: 0;
     padding-top: 0px;
-    /* color: rgba(255, 255, 255, 0.7); */
     font-size: 14px;
   }
   
@@ -3982,11 +3979,8 @@ body > header > span {
   }
   
   .sermon-single-header .meta {
-    /* line-height: 23px; */
     order: 2;
-    /* padding-top: 3px; */
-    /* color: rgba(255, 255, 255, 0.7); */
-    font-size: 14px;
+    padding-top: 5px;
   }
 
 }
@@ -4310,7 +4304,7 @@ BLOGPOST
   
 }
 
-/* =======  Blogpost- Desktop+ ======= */
+/* =======  Blogpost - Desktop+ ======= */
 @media (min-width: 992px) { 
   .single-flex {
     display: flex;
