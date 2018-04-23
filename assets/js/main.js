@@ -55,6 +55,7 @@ $(".browse").click(function(){
 	$(".browse-content").toggleClass( "active" );
 	$(".browse-wrapper").toggleClass( "active" );
 	$(".browse").toggleClass("flip");
+	$(".browse-dropdown-area").toggleClass("active");
 });
 
 
