@@ -2413,7 +2413,7 @@ ENTRY CONTENT - MOBILE
   font-style: normal;
   text-transform: uppercase;
   color: #3B3B3B;
-  margin-bottom: 25px;
+  margin: 33px 0 25px;
 }
 
 .entry-content h2 {
@@ -2454,7 +2454,7 @@ ENTRY CONTENT - MOBILE
   font-style: none;
   line-height: 32px;
   color: #3B3B3B;
-  margin-bottom: 33px;
+  margin: 25px 0;
 }
 
 .entry-content b {
@@ -2486,11 +2486,12 @@ ENTRY CONTENT - MOBILE
 }
 
 .entry-content a {
-  font-style: italic;
+  text-decoration: underline;
   color: var(--primary-regular);
 }
 
 .entry-content a:hover {
+  text-decoration: none;
   color: var(--primary-light);
 }
 
@@ -2498,21 +2499,34 @@ ENTRY CONTENT - MOBILE
   color: var(--primary-dark);
 }
 
-.entry-content ul,
+.entry-content > ul,
+.entry-content > ol {
+  margin: 25px 0;
+}
+
+.entry-content ul  {
+ list-style: inherit;
+ margin-left: 30px;
+}
+
 .entry-content ol {
-  margin-bottom: 30px;
+  list-style: decimal;
+  margin-left: 30px;
 }
 
 .entry-content li {
   font-size: 16px;
   font-weight: 400;
+  line-height: 28px;
   font-style: normal;
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
-.entry-content li ul li,
-.entry-content li ol li {
+.entry-content li ul,
+.entry-content li ol {
   margin-left: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .entry-content blockquote {
@@ -2523,9 +2537,8 @@ ENTRY CONTENT - MOBILE
   color: rgba(40, 40, 40, 0.5);
   border-left: 3px solid var(--primary-regular);
   padding-left: 20px;
-  margin-bottom: 40px;
+  margin: 33px 0;
 }
-
 
 .entry-content img,
 .entry-content figure {
@@ -2579,7 +2592,12 @@ ENTRY CONTENT - MOBILE
 
 .entry-content iframe {
 	max-width: 100%;
-	margin: 0 0 1rem;
+  margin: 0 0 1rem;
+  height: auto;
+}
+
+.entry-content > *:first-child {
+  margin-top: 0;
 }
 
 /* =======  Entry Content - Tablet+ ======= */
@@ -2590,7 +2608,7 @@ ENTRY CONTENT - MOBILE
 	.entry-content h4,
 	.entry-content h5,
 	.entry-content h6 {
-    margin-bottom: 35px;
+    margin: 37px 0 25px;
   }
 
 	.entry-content h2 {
@@ -2626,17 +2644,18 @@ ENTRY CONTENT - MOBILE
 	.entry-content p {
     font-size: 18px;
     line-height: 36px;
-    margin-bottom: 38px;
+    margin: 28px 0;
   }
 
 	.entry-content ul,
   .entry-content ol {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
 
 .entry-content li {
   font-size: 18px;
-  margin: 20px 0;
+  line-height: 36px;
+  margin: 10px 0;
 }
 
 .entry-content li ul li,
@@ -2648,7 +2667,7 @@ ENTRY CONTENT - MOBILE
   font-size: 20px;
   line-height: 34px;
   padding-left: 24px;
-  margin-bottom: 60px;
+  margin: 37px 0;
 }
 	
 	.entry-content img.alignright,
@@ -2668,7 +2687,7 @@ ENTRY CONTENT - MOBILE
     text-align: left; /*Decide text-align left or center */
     margin-bottom: 30px;
   }
-   
+    
 }
 
 
