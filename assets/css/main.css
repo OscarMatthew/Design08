@@ -6049,7 +6049,7 @@ SEARCH RESULT PAGES
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 2px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   text-align: center;
   padding: 0 10%;
   line-height: 28px;
@@ -6060,36 +6060,71 @@ SEARCH RESULT PAGES
 }
 
 .search-card {
-  height: 200px;
+  height: 150px;
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 15px;
   color: #fff;
   display: flex;
-  /* flex-direction: column; */
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
-  align-content: space-between;
-  /* justify-content: space-between; */
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
 
 .search-card h1 {
-  /* flex-basis: 100%; */
   margin: 0;
+  font-family: "Teko", Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
 }
 
 .search-card p {
   margin: 0;
 }
 
-.search-card .author {
-  /* align-self: flex-end; */
-  /* display: flex;
-  align */
-  display: flex;
+.search-card .date {
+  font-size: 12px;
+  font-weight: 400;
+  padding-bottom: 6px;
+  color: rgba(255,255,255,0.8);
 }
+
+.search-card .meta {
+  border-left: 2px solid var(--primary-regular);
+  padding-left: 11px;
+}
+
+.search-card .author-label-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-card .author {
+  display: flex;
+  align-items: center;
+}
+
+.search-card .author p {
+  font-size: 12px;
+  margin-left: 8px;
+  color: rgba(255,255,255,0.7)
+}
+
+.search-card .label {
+  font-size: 11px;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255,255,255,0.7);
+  align-self: flex-end;
+}
+
 
 .search-card .avatar {
   width: 30px;
@@ -6116,8 +6151,107 @@ SEARCH RESULT PAGES
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.35);
+  background-color: rgba(0,0,0,0.5);
   content: '';
   position: absolute;
   z-index: -1;
+}
+
+.search-card:hover .background-img {
+  transform: scale(1.05);
+}
+
+
+/* ======= Search Result Page - tablet+ ======= */
+@media(min-width: 768px) {
+  .search-card-container {
+    padding-top: 90px;
+  }
+  
+  .search-card-container > h1 {
+    margin-bottom: 40px;
+    padding: 0 15%;
+  }
+  
+  .search-card {
+    height: 180px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .search-card h1 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 3px;
+  }
+
+  .search-card .date {
+    font-size: 13px;
+    padding-bottom: 12px;
+  }
+  
+  .search-card .meta {
+    padding-left: 15px;
+  }
+  
+  .search-card .author p {
+    margin-left: 10px;
+  }
+  
+  .search-card .label {
+    letter-spacing: 1px;
+  }
+  
+}
+
+
+/* ======= Search Result Page - Desktop+ ======= */
+@media(min-width: 992px) {
+  .search-card-container {
+    padding-top: 95px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .search-card-container > h1 {
+    font-size: 24px;
+    letter-spacing: 2.5px;
+    margin-bottom: 88px;
+    padding: 0 20%;
+    line-height: 32px;
+  }
+  
+  .search-card {
+    height: 220px;
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .search-card h1 {
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 3.2px;
+  }
+
+  .search-card .date {
+    font-size: 14px;
+  }
+  
+  .search-card .author p {
+    font-size: 13px;
+    margin-left: 12px;
+  }
+  
+  .search-card .label {
+    font-size: 12px;
+    /* padding: 5px 10px; */
+    letter-spacing: 1px;
+  }
+  
+  .search-card .avatar {
+    width: 36px;
+    height: 36px;
+  }
+  
 }
