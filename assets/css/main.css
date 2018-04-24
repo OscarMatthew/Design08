@@ -2685,7 +2685,7 @@ ENTRY CONTENT - MOBILE
 
   .entry-content figcaption {
     text-align: left; /*Decide text-align left or center */
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
     
 }
