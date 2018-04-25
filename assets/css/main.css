@@ -6380,6 +6380,12 @@ SEARCH RESULT PAGES
   order: 0;
 }
 
+.preview-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .author-speaker-preview h1,
 .series-preview h1  {
   font-family: "Teko", Arial, Helvetica, sans-serif;
