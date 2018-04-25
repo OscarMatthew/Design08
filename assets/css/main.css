@@ -2647,28 +2647,23 @@ ENTRY CONTENT - MOBILE
     margin: 28px 0;
   }
 
-	.entry-content ul,
-  .entry-content ol {
-    /* margin-bottom: 50px; */
+
+  .entry-content li {
+    font-size: 18px;
+    margin: 10px 0;
   }
 
-.entry-content li {
-  font-size: 18px;
-  line-height: 36px;
-  margin: 10px 0;
-}
+  .entry-content li ul li,
+  .entry-content li ol li {
+    margin-left: 24px;
+  }
 
-.entry-content li ul li,
-.entry-content li ol li {
-  margin-left: 24px;
-}
-
-.entry-content blockquote {
-  font-size: 20px;
-  line-height: 34px;
-  padding-left: 24px;
-  margin: 37px 0;
-}
+  .entry-content blockquote {
+    font-size: 20px;
+    line-height: 34px;
+    padding-left: 24px;
+    margin: 37px 0;
+  }
 	
 	.entry-content img.alignright,
 	.entry-content a img.alignright,
@@ -2685,7 +2680,6 @@ ENTRY CONTENT - MOBILE
 
   .entry-content figcaption {
     text-align: left; /*Decide text-align left or center */
-    /* margin-bottom: 30px; */
   }
     
 }
@@ -6412,7 +6406,7 @@ SEARCH RESULT PAGES
     font-size: 24px;
     letter-spacing: 2.5px;
     margin-bottom: 88px;
-    padding: 0 20%;
+    padding: 0 10%;
     line-height: 32px;
   }
   
