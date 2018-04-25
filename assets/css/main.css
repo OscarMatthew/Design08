@@ -6350,6 +6350,73 @@ SEARCH RESULT PAGES
 }
 
 
+/* ======= Author/Speaker And Series Preview ======= */
+
+.author-speaker-preview h1,
+.author-speaker-preview p,
+.series-preview h1,
+.series-preview p {
+  margin: 0;
+}
+
+.author-speaker-preview,
+.series-preview {
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.preview-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  overflow: hidden;
+  order: 0;
+}
+
+.author-speaker-preview h1,
+.series-preview h1  {
+  font-family: "Teko", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 28px;
+  letter-spacing: 2px;
+  color: rgba(40, 40, 40, 0.9);
+  margin-left: 14px;
+  margin-top: 2px;
+  order: 1;
+  flex-basis: 70%;
+}
+
+.author-speaker-preview p,
+.series-preview p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  flex-basis: 100%;
+  padding-top: 16px;
+  color:  rgba(40, 40, 40, 0.7);
+  order: 2;
+}
+
+/* ======= Series Preview ======= */
+.series-preview {
+  align-items: flex-start;
+}
+
+.series-preview .preview-wrapper  {
+  border-radius: 0%;
+}
+
+
 /* ======= Search Result Page - tablet+ ======= */
 @media(min-width: 768px) {
   .search-card-container {
@@ -6390,7 +6457,36 @@ SEARCH RESULT PAGES
   .search-card .label {
     letter-spacing: 1px;
   }
-  
+
+
+  /* ======= Series Preview - Tablet+======= */
+
+  .author-speaker-preview {
+    padding: 25px;
+  }
+
+  .preview-wrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  .author-speaker-preview h1,
+  .series-preview h1  {
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 3px;
+    margin-left: 18px;
+    margin-top: 4px;
+  }
+
+  .author-speaker-preview p,
+  .series-preview p {
+    font-size: 14px;
+    line-height: 26px;
+    flex-basis: 100%;
+    padding-top: 18px;
+  }
+ 
 }
 
 
@@ -6443,3 +6539,5 @@ SEARCH RESULT PAGES
   }
   
 }
+
+
