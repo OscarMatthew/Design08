@@ -524,6 +524,7 @@ HOMEPAGE
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+            position: relative;
   }
 
   .search-btn .icon-search-icon,
@@ -531,15 +532,16 @@ HOMEPAGE
     font-family: 'design-08-icons';
     font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
+    margin-left: auto;
   }
 
   .search-btn:before {
     content: '|';
     color: var(--primary-regular);
     font-size: 29px;
-    position: relative;
-    top: 1px;
-    right: 0;
+    position: absolute;
+    top: 25px;
+    left: -1px;
   }
 
   .search-btn .icon-close {
