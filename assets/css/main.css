@@ -2158,7 +2158,7 @@ HOMEPAGE
   -o-column-count: 3;
    -moz-column-count: 3; /* Firefox */
    column-count: 3;
-   height: 125px; /* Due to android Firefox. column-count was not working */
+   
 }
 
 .footer-nav a {
