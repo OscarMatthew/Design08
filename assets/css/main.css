@@ -2299,7 +2299,7 @@ HOMEPAGE
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        height: 109px; /* Due to android Firefox. column-count was not working */
+        /* height: 109px; Due to android Firefox. column-count was not working */
   }
 
   .footer-nav a {
@@ -2389,7 +2389,7 @@ HOMEPAGE
     letter-spacing: 2px;
     /* width: 488px; */
     font-size: 15px;
-    height: 120px; /* Due to android Firefox. column-count was not working */
+    /* height: 120px; Due to android Firefox. column-count was not working */
   }
 
   .footer-nav a {
