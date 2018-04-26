@@ -21,6 +21,10 @@ html {
     -ms-overflow-style: none;
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
 img {
     max-width: 100%;
     display: block;
