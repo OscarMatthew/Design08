@@ -2156,6 +2156,7 @@ HOMEPAGE
   -webkit-column-count: 3;
   -ms-column-count: 3;
   -o-column-count: 3;
+  -moz-column-count: 3; /* Firefox */
    column-count: 3;
 }
 
