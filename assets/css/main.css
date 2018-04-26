@@ -11,8 +11,8 @@
 
 html {
     overflow-x: hidden;
-    overflow-y: auto;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-y: auto; 
+    -ms-overflow-style: none;
 }
 
 img {
