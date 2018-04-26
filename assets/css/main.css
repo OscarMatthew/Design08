@@ -313,7 +313,7 @@ HOMEPAGE
 	-webkit-transform: translateX(-2000px);
  transform: translateX(-2000px);
   z-index: 1000;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -541,7 +541,7 @@ HOMEPAGE
     font-size: 29px;
     position: absolute;
     top: 25px;
-    left: -1px;
+    left: 2px;
   }
 
   .search-btn .icon-close {
@@ -1011,7 +1011,7 @@ HOMEPAGE
 }
 
 /* Where */
-.where h2,
+.where h1,
 .where p {
   margin: 0;
 }
@@ -1020,7 +1020,7 @@ HOMEPAGE
   padding-top: 68px;
 }
 
-.address h2 {
+.address h1 {
   font-family: 'Teko', Helvetica, sans-serif;
   font-size: 30px;
   text-transform: uppercase;
