@@ -21,13 +21,6 @@ html {
     -ms-overflow-style: none;
 }
 
-/* Hides Scrollbar on firefox */
-/* @-moz-document url-prefix() {
-  html,body{
-    overflow-y: auto !important;
-  }
-} */
-
 /* Hides Scrollbar on chrome */
 html::-webkit-scrollbar {
   display: none;
@@ -262,7 +255,8 @@ HOMEPAGE
 /* Hamburger */
 
 .overflow-hidden {
-	overflow: hidden;
+  overflow: hidden;
+  position: fixed;
 }
 
 .menu-icon {
