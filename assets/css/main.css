@@ -2158,7 +2158,7 @@ HOMEPAGE
   -o-column-count: 3;
    -moz-column-count: 3; /* Firefox */
    column-count: 3;
-   height: 200px;
+   height: 125px;
 }
 
 .footer-nav a {
@@ -2297,6 +2297,7 @@ HOMEPAGE
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        height: 109px;
   }
 
   .footer-nav a {
@@ -2386,6 +2387,7 @@ HOMEPAGE
     letter-spacing: 2px;
     /* width: 488px; */
     font-size: 15px;
+    height: 120px;
   }
 
   .footer-nav a {
