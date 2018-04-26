@@ -25,7 +25,7 @@ html {
 @-moz-document url-prefix() {
   html,body{
     overflow: hidden !important;
-    overflow-y: auto;
+    overflow-y: scroll !important;
   }
 }
 
