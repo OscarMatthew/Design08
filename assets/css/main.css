@@ -22,12 +22,13 @@ html {
 }
 
 /* Hides Scrollbar on firefox */
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
   html,body{
     overflow-y: auto !important;
   }
-}
+} */
 
+/* Hides Scrollbar on chrome */
 html::-webkit-scrollbar {
   display: none;
 }
