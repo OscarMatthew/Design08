@@ -19,7 +19,10 @@ html {
     overflow-x: hidden;
     overflow-y: auto; 
     -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
+}
+
+@-moz-document url-prefix() {
+  html,body{overflow: hidden !important;}
 }
 
 html::-webkit-scrollbar {
