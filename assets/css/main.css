@@ -24,7 +24,6 @@ html {
 /* Hides Scrollbar on firefox */
 @-moz-document url-prefix() {
   html,body{
-    overflow: hidden !important;
     overflow-y: auto !important;
   }
 }
