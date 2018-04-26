@@ -19,6 +19,7 @@ html {
     overflow-x: hidden;
     overflow-y: auto; 
     -ms-overflow-style: none;
+    /* Hides Scroll-bar */
     padding-right: -40px;
 }
 
