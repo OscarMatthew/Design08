@@ -2285,6 +2285,7 @@ HOMEPAGE
     letter-spacing: 2px;
     /* width: 400px; */
     margin: 0 auto;
+    -moz-column-count: 1; /* Firefox */
     -webkit-column-count: 1;
    -ms-column-count: 1;
    -o-column-count: 1;
@@ -2295,6 +2296,7 @@ HOMEPAGE
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         height: 109px;
