@@ -21,8 +21,12 @@ html {
     -ms-overflow-style: none;
 }
 
+/* Hides Scrollbar on firefox */
 @-moz-document url-prefix() {
-  html,body{overflow: hidden !important;}
+  html,body{
+    overflow: hidden !important;
+    overflow-y: auto;
+  }
 }
 
 html::-webkit-scrollbar {
