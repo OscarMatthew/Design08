@@ -6063,12 +6063,21 @@ Series
 
 }
 
+/* ======= Series large Mobile+ ======= */
+@media(min-width: 480px) {
+  .series-container {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
 
 /* ======= Series - tabletp+ ======= */
 @media(min-width: 768px) {
 
   .series-container {
     padding-top: 90px;
+    padding-left: 0;
+    padding-right: 0;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-gap: 50px;
