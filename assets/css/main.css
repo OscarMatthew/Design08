@@ -18,12 +18,9 @@
 html {
     overflow-x: hidden;
     overflow-y: auto; 
-    -ms-overflow-style: none;
+    /* -ms-overflow-style: none; */
 }
 
-body, html { 
-  -ms-overflow-style: none !important; 
-}
 
 /* Hides Scrollbar on chrome */
 html::-webkit-scrollbar {
