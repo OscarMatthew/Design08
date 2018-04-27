@@ -21,6 +21,10 @@ html {
     -ms-overflow-style: none;
 }
 
+body, html { 
+  -ms-overflow-style: none !important; 
+}
+
 /* Hides Scrollbar on chrome */
 html::-webkit-scrollbar {
   display: none;
@@ -2389,7 +2393,6 @@ HOMEPAGE
     letter-spacing: 2px;
     /* width: 488px; */
     font-size: 15px;
-    /* height: 120px; Due to android Firefox. column-count was not working */
   }
 
   .footer-nav a {
