@@ -2981,6 +2981,7 @@ Browse By - Mobile
 
 .browse-wrapper {
   padding-top: 20px;
+  background: green;
 }
 
 /* Browse Button */
@@ -2991,15 +2992,7 @@ Browse By - Mobile
 	background: #fff;
   color: rgba(59, 59, 59, 0.9);
 	border-radius: 2px;
-	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ /* OLD - Firefox 19- (buggy but mostly works) */
-	display: -ms-flexbox; /* TWEENER - IE 10 */
-	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+  display: block;
   position: relative;
 	cursor: pointer;
 	-webkit-user-select: none; /* Chrome/Safari */   
