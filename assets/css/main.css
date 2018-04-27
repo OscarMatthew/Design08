@@ -2981,7 +2981,6 @@ Browse By - Mobile
 
 .browse-wrapper {
   padding-top: 20px;
-  background: green;
 }
 
 /* Browse Button */
@@ -3022,6 +3021,8 @@ Browse By - Mobile
   font-size: 6px;
   width: 10px;
   position: absolute;
+  bottom: 17px;
+  right: 17px;
 }
  
 .flip .icon-angle-down {
@@ -3393,16 +3394,19 @@ Pagination - Mobile
     background: #fff;
     position: absolute;
     bottom: -10px;
+    left: 0;
   }
   
   .browse span {
     font-size: 16px;
     letter-spacing: 2px;
     padding-top: 0px;
+    margin-right: 28px;
   }
   
-  .browse .icon-angle-down {
+  .browse i.icon-angle-down {
     font-size: 7px;
+    right: 30px;
   }
   
   /* Browse Content */
