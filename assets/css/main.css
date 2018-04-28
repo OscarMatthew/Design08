@@ -2987,7 +2987,7 @@ Browse By - Mobile
 .browse {
 	width: 115px;
 	margin: 0 auto;
-	padding: 12px;
+	padding: 15px 15px 11px 15px;
 	background: #fff;
   color: rgba(59, 59, 59, 0.9);
 	border-radius: 2px;
@@ -3002,16 +3002,15 @@ Browse By - Mobile
   user-select: none;
   -webkit-box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
           box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
-}
-
-.browse span {
   font-family: 'Teko', Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.8px;
-  margin-right: 20px;
+  text-align: left;
+  line-height: 1;
 }
+
 
 .browse i.icon-angle-down {
   -webkit-transition: -webkit-transform .5s;
@@ -3022,7 +3021,7 @@ Browse By - Mobile
   width: 10px;
   position: absolute;
   bottom: 17px;
-  right: 17px;
+  right: 15px;
 }
  
 .flip .icon-angle-down {
@@ -3375,12 +3374,14 @@ Pagination - Mobile
   .browse {
     width: 161px;
     height: 42px;
-    padding: 14px 12px 12px;
+    padding: 15px 15px 11px 15px;
     border-radius: 3px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-around;
     bottom: -2px;
+    font-size: 16px;
+    letter-spacing: 2px;
   }
 
   .active .browse {
@@ -3397,16 +3398,10 @@ Pagination - Mobile
     left: 0;
   }
   
-  .browse span {
-    font-size: 16px;
-    letter-spacing: 2px;
-    padding-top: 0px;
-    margin-right: 28px;
-  }
   
   .browse i.icon-angle-down {
     font-size: 7px;
-    right: 30px;
+    right: 17px;
   }
   
   /* Browse Content */
@@ -3598,6 +3593,13 @@ Pagination - Mobile
     padding-top: 26px;
   }
 
+  .browse {
+    padding: 15px 18px 11px 18px;
+  }
+
+  .browse i.icon-angle-down {
+    right: 19px;
+  }
   /* Browse Content */		
   .browse-content {
     padding: 41px 43px 34px;
