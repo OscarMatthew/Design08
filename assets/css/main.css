@@ -4640,8 +4640,8 @@ BLOGPOST
   font-weight: 400;
   text-transform: uppercase;
 	color: #C5C5C5;
-	padding-top: 35px;
-	padding-bottom: 52px;
+	margin-top: 42px;
+	margin-bottom: 52px;
 	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ /* OLD - Firefox 19- (buggy but mostly works) */
 	display: -ms-flexbox; /* TWEENER - IE 10 */
   display: flex;
@@ -4686,7 +4686,7 @@ BLOGPOST
       -ms-flex-align: center;
           align-items: center;
   color: rgba(34, 34, 34, 0.3);
-  padding-top: 4px;
+  margin-top: 42px;
 }
 
 .single-social-share h1 {
@@ -4805,8 +4805,8 @@ BLOGPOST
   /* Tags */
   .tag-container {
 		font-size: 16px;
-		padding-top: 40px;
-		padding-bottom: 52px;
+		margin-top: 48px;
+		margin-bottom: 51px;
 	}
 
 	.tag-container a {
@@ -4826,7 +4826,7 @@ BLOGPOST
   
   /* Social Share */
   .single-social-share {
-    padding-top: 14px;
+    margin-top: 48px;
   }
   
   .single-social-share h1 {
@@ -4906,6 +4906,10 @@ BLOGPOST
     padding-right: 60px;
     padding-left: 0px;
   }
+
+  .single-sidebar > *:first-child  {
+    margin-top: 0px;
+  }
   
   /* Article Author */
   .article-author {
@@ -4920,8 +4924,8 @@ BLOGPOST
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-		padding-top: 60px;
-		padding-bottom: 52px;
+		margin-top: 54px;
+		margin-bottom: 60px;
   }
   
   .tag-container a {
@@ -4944,7 +4948,7 @@ BLOGPOST
 
   /* Social Share */
   .single-social-share {
-    padding-top: 44px;
+    margin-top: 60px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -4985,7 +4989,7 @@ BLOGPOST
 
   .single-sidebar {
     width: 33%;
-    padding-top: 70px;
+    padding-top: 83px;
     padding-right: 80px;
   }
 }
@@ -6515,6 +6519,7 @@ TAXONOMY PAGES
 
 .series-preview .preview-wrapper  {
   border-radius: 0%;
+  height: 100%;
 }
 
 
@@ -6565,7 +6570,7 @@ TAXONOMY PAGES
   }
 
 
-  /* ======= Series Preview - Tablet+======= */
+  /* ======= Author/Speaker and Series Preview - Tablet+======= */
 
   .author-speaker-preview {
     padding: 25px;
@@ -6592,6 +6597,12 @@ TAXONOMY PAGES
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     padding-top: 18px;
+  }
+
+  /* ======= Series Preview - Tablet+======= */
+  .series-preview .preview-wrapper  {
+    width: 160px;
+    height: 100%;
   }
  
 }
@@ -6636,7 +6647,6 @@ TAXONOMY PAGES
   
   .search-card .label {
     font-size: 12px;
-    /* padding: 5px 10px; */
     letter-spacing: 1px;
   }
   
@@ -6644,7 +6654,17 @@ TAXONOMY PAGES
     width: 36px;
     height: 36px;
   }
-  
+
+
+  /* ======= Author/Series Preview - Desktop+======= */
+
+  .author-speaker-preview h1,
+  .series-preview h1  {
+    font-size: 34px;
+    line-height: 40px;
+    margin-left: 22px;
+  }
+
 }
 
 
