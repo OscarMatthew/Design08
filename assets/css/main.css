@@ -2718,7 +2718,7 @@ ENTRY CONTENT - MOBILE
 
 
 .page-header {
-  height: 320px;
+  min-height: 320px;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2773,7 +2773,7 @@ ENTRY CONTENT - MOBILE
 /* =======  Page - Tablet+ ======= */
 @media (min-width: 768px) { 
   .page-header {
-    height: 300px;
+    min-height: 300px;
     padding: 60px;
   }
   
@@ -2813,7 +2813,7 @@ ENTRY CONTENT - MOBILE
   .page-header {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    height: 420px;
+    min-height: 420px;
     padding: 80px;
   }
   
@@ -4428,6 +4428,10 @@ body > header > span {
         flex-basis: 100%;
   }
 
+  .audioplayer {
+    margin-top: 41px;
+  }
+
   /* flex */
   .sermon-player {
     -ms-flex-preferred-size: 100%;
@@ -4455,8 +4459,14 @@ body > header > span {
         -ms-flex-order: 2; 
             order: 2;
     padding-top: 0px;
-    padding-left: 63px;
+    padding-left: 50px;
     grid-column-start: 2;
+  }
+
+  .tabs > ul {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
   }
 
   .sermon-single-header {
@@ -4507,7 +4517,7 @@ BLOGPOST
 }
 
 .single-page-header {
-  height: 400px;
+  min-height: 400px;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -4741,7 +4751,7 @@ BLOGPOST
   }
 
   .single-page-header {
-    height: 472px;
+    min-height: 472px;
     padding: 57px;
   }
   
@@ -4851,7 +4861,7 @@ BLOGPOST
   }
 
   .single-page-header {
-    height: 560px;
+    min-height: 560px;
     padding: 80px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -5485,6 +5495,13 @@ SINGLE EVENT
   padding-bottom: 52px;
 }
 
+.event-info-container a {
+  text-decoration: underline;
+}
+
+.event-info-container a:hover {
+  text-decoration: none;
+}
 
 /* ======= Single Event - Tablet+ ======= */
 
@@ -5749,6 +5766,10 @@ BROWSE PAGES
   width: 170px;
 }
 
+.browse-navigation .browse.active {
+  border-radius: 2px 2px 0 0;
+}
+
 /* Index Browse Navigation */
 .index-navigation {
   margin-top: 30px;
@@ -5827,7 +5848,7 @@ BROWSE PAGES
 }
 .browse-dropdown-area .dropdown-container {
   background: #F6F6F4;
-  width: 165px;
+  width: 170px;
   margin: 0 auto;
   position: absolute;
   right: 0;
@@ -5836,7 +5857,7 @@ BROWSE PAGES
   padding: 20px;
   -webkit-box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
     box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 2px 2px;
 }
 
 .browse-dropdown-area a {
@@ -5876,10 +5897,6 @@ Topics
 
 .topics-content li:active a {
   color: var(--primary-dark);
-}
-
-.topics-content .current {
-  color: var(--primary-regular);
 }
 
 
@@ -6070,6 +6087,7 @@ Series
 
 .series-container {
   padding-top: 64px;
+  margin: 0 auto;
 }
 
 .series-post {
@@ -6077,16 +6095,11 @@ Series
   position: relative;
 }
 
-.series-image-wrapper {
-  height: 200px;
-  position: relative;
-}
-
-.series-image-wrapper img {
-  width: 100%;
-  height: 100%;
+.series-post img {
   -o-object-fit: cover;
      object-fit: cover; 
+     height: 200px;
+     margin: 0 auto;
 }
 
 .series-post h2 {
@@ -6111,13 +6124,6 @@ Series
 
 }
 
-/* ======= Series large Mobile+ ======= */
-@media(min-width: 480px) {
-  .series-container {
-    padding-left: 25%;
-    padding-right: 25%;
-  }
-}
 
 /* ======= Series - tabletp+ ======= */
 @media(min-width: 768px) {
@@ -6132,11 +6138,15 @@ Series
   }
   
   .series-post {
-    margin-bottom: 54px;
+    margin-bottom: 30px;
+  }
+
+  .series-post img {
+    height: 240px;
   }
   
   .series-post h2 {
-    font-size: 20px;
+    /* font-size: 20px; */
     padding-top: 20px;
   }
   
@@ -6152,12 +6162,6 @@ Series
 
   .series-post {
     margin-bottom: 54px;
-  }
-  
-  .series-image-wrapper {
-    height: 280px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
   
   .series-post h2 {
@@ -6178,10 +6182,8 @@ Series
     margin-bottom: 14px;
   }
   
-  .series-image-wrapper {
+  .series-post img {
     height: 160px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
   
   .series-post h2 {
@@ -6286,27 +6288,19 @@ Authors/Speakers
 
 /*===============================
 ===============================
-SEARCH RESULT PAGES
+TAXONOMY PAGES
 ===============================
 ===============================*/
+.taxonomy > h1 {
+  line-height: 1.3;
+}
+
+.taxonomy > h1 span {
+  color: var(--primary-regular);
+}
+
 .search-card-container {
   padding-top: 63px;
-}
-
-.search-card-container > h1 {
-  margin: 0;
-  font-family: "Teko", Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  margin-bottom: 40px;
-  text-align: center;
-  padding: 0 10%;
-  line-height: 28px;
-}
-
-.search-card-container > h1 span {
-  color: var(--primary-regular);
 }
 
 .search-card {
@@ -6526,6 +6520,11 @@ SEARCH RESULT PAGES
 
 /* ======= Search Result Page - tablet+ ======= */
 @media(min-width: 768px) {
+
+  .taxonomy > h1 {
+    line-height: 1.5;
+  }
+
   .search-card-container {
     padding-top: 90px;
   }
