@@ -11,6 +11,12 @@ $(".menu-icon").click(function(){
 	$("html").toggleClass( "overflow-hidden" );
 });
 
+
+//Get height of resource type nav
+var navHeight = $( ".primary-header" ).outerHeight();
+//Apply measurement to dropdown
+$(".primary-header .nav-area-mobile .navigation").css("top", navHeight);
+
 ///////////////////
 //Search
 ///////////////////
