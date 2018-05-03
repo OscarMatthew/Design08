@@ -9,11 +9,6 @@
             box-sizing: border-box;
 }
 
-:root {
-  --primary-regular: #CF4A46;
-  --primary-light: #CE625F;
-  --primary-dark: #DB2722;
-} 
 
 html {
     overflow-x: hidden;
