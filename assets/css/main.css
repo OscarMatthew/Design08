@@ -358,6 +358,7 @@ HOMEPAGE
 
 .navigation a:hover,
 .navigation a:active {
+  color: #CE625F;
   color: var(--primary-light);
 }
 
@@ -522,6 +523,7 @@ HOMEPAGE
   }
 
   .navigation-desktop li:hover {
+    color: #CE625F;
     color: var(--primary-light);
   }
 
@@ -551,6 +553,7 @@ HOMEPAGE
 
   .search-btn:before {
     content: '|';
+    color: #CF4A46;
     color: var(--primary-regular);
     font-size: 29px;
     position: absolute;
@@ -825,6 +828,7 @@ HOMEPAGE
 }
 
 .service-times span {
+  color: #CF4A46;
   color: var(--primary-regular);
 }
 
@@ -1095,6 +1099,7 @@ HOMEPAGE
 
 .map a:hover,
 .map a:active {
+  color: #CE625F;
   color: var(--primary-light);
 }
 
@@ -1171,6 +1176,7 @@ HOMEPAGE
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; 
+  color: #CE625F;
   color: var(--primary-light);
 }
 
@@ -1181,6 +1187,7 @@ HOMEPAGE
   right: 0px;
   width: 36px;
   height: 1px;
+  background: #CE625F;
   background: var(--primary-light);
 }
 
@@ -1308,6 +1315,7 @@ HOMEPAGE
 .recent-sermon .icon-play-icon {
   font-family: 'design-08-icons', sans-serif;
   font-size: 16px;
+  color: #CF4A46;
   color: var(--primary-regular);
   margin-left: 3px;
 }
@@ -1411,6 +1419,7 @@ HOMEPAGE
           -webkit-box-pack: start; 
           -ms-flex-pack: start; 
               justify-content: flex-start;
+  color: #CE625F;
   color: var(--primary-light);
   width: 150px;
 }
@@ -1419,6 +1428,7 @@ HOMEPAGE
   content: "|";
   width: 36px;
   height: 1px;
+  background: #CE625F;
   background: var(--primary-light);
   margin-left: 8px;
   margin-bottom: 2px;
@@ -1426,6 +1436,7 @@ HOMEPAGE
 
 /* ======= Last Child Color ======= */
 .red {
+  color: #CF4A46;
   color: var(--primary-regular);
 }
 
@@ -1969,6 +1980,7 @@ HOMEPAGE
 /* ======= Footer - Mobile+ ======= */
 
 .primary-footer {
+  background: #CF4A46;
   background: var(--primary-regular);
   position: relative;
   padding-top: 178px;
@@ -2115,6 +2127,7 @@ HOMEPAGE
 
 .footer-map a:hover,
 .footer-map a:active {
+  color: #CE625F;
   color: var(--primary-light);
  
 }
@@ -2489,15 +2502,18 @@ ENTRY CONTENT - MOBILE
 
 .entry-content a {
   text-decoration: underline;
+  color: #CF4A46;
   color: var(--primary-regular);
 }
 
 .entry-content a:hover {
   text-decoration: none;
+  color: #CE625F;
   color: var(--primary-light);
 }
 
 .entry-content a:active {
+  color: #DB2722;
   color: var(--primary-dark);
 }
 
@@ -2537,6 +2553,7 @@ ENTRY CONTENT - MOBILE
   font-size: 18px;
   line-height: 30px;
   color: rgba(40, 40, 40, 0.5);
+  border-left: 3px solid #CF4A46;
   border-left: 3px solid var(--primary-regular);
   padding-left: 20px;
   margin: 33px 0;
@@ -2704,6 +2721,7 @@ ENTRY CONTENT - MOBILE
   position: relative;
   overflow: hidden;
   padding: 36px;
+  background: #CF4A46;
   background: var(--primary-regular);
   z-index: -2;
 }
@@ -2827,6 +2845,7 @@ ENTRY CONTENT - MOBILE
 
   .sidebar .sidebar-heading {
     font-size: 20px;
+    background: #CF4A46;
     background: var(--primary-regular);
     text-align: center;
     line-height: 1;
@@ -2857,14 +2876,17 @@ ENTRY CONTENT - MOBILE
   }
 
   .sidebar .sidebar-navigation a:hover {
+    color: #CE625F;
     color: var(--primary-light);
   }
 
   .sidebar .sidebar-navigation a:active {
+    color: #DB2722;
     color: var(--primary-dark);
   }
 
   .sidebar .sidebar-navigation .sidebar-current {
+    color: #CE625F;
     color: var(--primary-light);
   }
 
@@ -3068,10 +3090,12 @@ Browse By - Mobile
 }
 
 .browse-wrapper a:hover {
+  color: #CE625F;
   color: var(--primary-light);
 }
 
 .browse-wrapper a:active {
+  color: #DB2722;
   color: var(--primary-dark);
 }
 
@@ -3089,6 +3113,7 @@ Browse By - Mobile
   margin-left: -15px;
   margin-right: 15px;
   position: relative;
+  background: #CF4A46;
   background: var(--primary-regular);
 }
 
@@ -3144,6 +3169,7 @@ Browse By - Mobile
 .card .icon-play-icon {
   font-family: 'design-08-icons', sans-serif;
   font-size: 16px;
+  color: #CF4A46;
   color: var(--primary-regular);
   margin-left: 4px;
 }
@@ -3231,6 +3257,7 @@ Browse By - Mobile
   -webkit-box-pack: start; 
       -ms-flex-pack: start; 
           justify-content: flex-start;
+  color: #CE625F;
   color: var(--primary-light);
   width: 150px;
 }
@@ -3239,6 +3266,7 @@ Browse By - Mobile
   content: "|";
   width: 36px;
   height: 1px;
+  background: #CE625F;
   background: var(--primary-light);
   margin-left: 8px;
   margin-bottom: 2px;
@@ -3303,6 +3331,7 @@ Pagination - Mobile
 }
 
 .pagination .current {
+  color: #CF4A46;
   color: var(--primary-regular);
   position: relative;
 }
@@ -3311,6 +3340,7 @@ Pagination - Mobile
   content: '';
   width: 100%;
   height: 2px;
+  background: #CF4A46;
   background: var(--primary-regular);
   position: absolute;
   left: 0;
@@ -3318,10 +3348,12 @@ Pagination - Mobile
 }
 
 .pagination a:hover {
+  color: #CE625F;
   color: var(--primary-light);
 }
 
 .pagination a:active {
+  color: #DB2722;
   color: var(--primary-dark);
 }
 
@@ -3897,6 +3929,7 @@ body > header > span {
 .watch-tab.active i,
 .listen-tab.active i,
 .download-tab.active i {
+  background: #CF4A46;
 	background: var(--primary-regular);
   color: #fff;
 }
@@ -3904,15 +3937,18 @@ body > header > span {
 .watch-tab.active,
 .listen-tab.active,
 .download-tab.active {
+  color: #CF4A46;
 	color: var(--primary-regular);
 }
 
 .sermon-tab-content > li:hover i {
+  background: #CE625F;
   background: var(--primary-light);
   color: #fff;
 }
 
 .sermon-tab-content > li:hover {
+  color: #CE625F;
   color: var(--primary-light);
 }
 
@@ -4218,6 +4254,7 @@ body > header > span {
 }
 
 .tabs > ul > li > ul li a:hover {
+  color: #CE625F;
   color: var(--primary-light);
 }
 
@@ -4511,6 +4548,7 @@ BLOGPOST
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  background: #CF4A46;
   background: var(--primary-regular);
   z-index: -1;
 }
@@ -4519,6 +4557,7 @@ BLOGPOST
 .single-page-header p {
   margin: 0;
   font-style: none;
+  border-left: 2px solid #CF4A46;
   border-left: 2px solid var(--primary-regular);
   padding-left: 25px;
 }
@@ -4601,6 +4640,7 @@ BLOGPOST
 }
 
 .single-sidebar .article-author a:hover {
+  color: #CE625F;
   color: var(--primary-light);
 }
 
@@ -4641,12 +4681,14 @@ BLOGPOST
 
 .tag-container a:hover {
   border: none;
+  background: #CE625F;
   background: var(--primary-light);
   color: rgba(255,255,255,1);
   padding: 20px 18px;
 }
 
 .tag-container a:active {
+  color: #DB2722;
   color: var(--primary-dark);
 }
 
@@ -4718,6 +4760,7 @@ BLOGPOST
 
 .single-social-share .comment .icon-comment2 {
   font-size: 16px;
+  color: #CF4A46;
   color: var(--primary-regular);
 }
 
@@ -5081,6 +5124,7 @@ EVENTS
 
 .event-card .event-content {
   width: 50%;
+  border-left: 2px solid #CE625F;
   border-left: 2px solid var(--primary-light);
   padding-left: 13px;
 }
@@ -5221,6 +5265,7 @@ EVENTS
   }
 
   .event-tab .tab-links .current {
+    color: #CF4A46;
     color: var(--primary-regular);
     position: relative;
   }
@@ -5229,6 +5274,7 @@ EVENTS
     content: "";
     width: 100%;
     height: 3px;
+    background: #CF4A46;
     background: var(--primary-regular);;
     position: absolute;
     bottom: 0;
@@ -5454,6 +5500,7 @@ SINGLE EVENT
   font-size: 21px;
   font-weight: 500;
   text-transform: uppercase;
+  color: #CF4A46;
   color: var(--primary-regular);
   letter-spacing: 1.2px;
 }
@@ -5662,7 +5709,8 @@ SINGLE EVENT
 
 .error-page .go-back-home-btn {
 	font-size: 14px;
-	color: #fff;
+  color: #fff;
+  background-color: #CF4A46;
 	background-color: var(--primary-regular);
 	padding: 15px 20px 17px;
 	-ms-flex-item-align: center;
@@ -5676,11 +5724,13 @@ SINGLE EVENT
 }
 
 .error-page .go-back-home-btn:hover { /* Btn Hover */
+  background-color: #CE625F;
 	background-color: var(--primary-light);
 	color: #fff; 
 }
 
 .error-page .go-back-home-btn:active {
+  background-color: #DB2722;
   background-color: var(--primary-dark);
 	color: #fff; 
 }
@@ -5872,6 +5922,7 @@ BROWSE PAGES
 }
 
 .browse-dropdown-area a:hover {
+  color: #CE625F;
   color: var(--primary-light);
 }
 
@@ -5897,10 +5948,12 @@ Topics
 }
 
 .topics-content li:hover a {
+  color: #CE625F;
   color: var(--primary-light);
 }
 
 .topics-content li:active a {
+  color: #DB2722;
   color: var(--primary-dark);
 }
 
@@ -5990,6 +6043,7 @@ Scripture
   letter-spacing: 2px;
   text-transform: uppercase;
   color: rgba(59, 59, 59, 0.8);
+  border-bottom: 3px solid #CF4A46;
   border-bottom: 3px solid var(--primary-regular);
   padding-bottom: 5px;
 }
@@ -6006,6 +6060,7 @@ Scripture
 }
 
 .testament ul li:hover a {
+  color: #CE625F;
   color: var(--primary-light);
 }
 
@@ -6119,6 +6174,7 @@ Series
 }
 
 .series-post:hover h2 {
+  color: #CF4A46;
   color: var(--primary-regular);
 }
 
@@ -6250,6 +6306,7 @@ Authors/Speakers
 }
 
 .contributor:hover h2 {
+  color: #CE625F;
   color: var(--primary-light);
 }
 
@@ -6301,6 +6358,7 @@ TAXONOMY PAGES
 }
 
 .taxonomy > h1 span {
+  color: #CF4A46;
   color: var(--primary-regular);
 }
 
@@ -6350,6 +6408,7 @@ TAXONOMY PAGES
 }
 
 .search-card .meta {
+  border-left: 2px solid #CF4A46;
   border-left: 2px solid var(--primary-regular);
   padding-left: 11px;
 }
