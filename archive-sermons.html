@@ -162,65 +162,69 @@
 								<h1>Index</h1>
 								<ul class="flex-container-secondary">		
 									<li class="all"><a href="#">All</a></li>
-									<li><a href="#">Scripture</a><!-- DEVNOTE: link -->
+									<li><a href="#">Scripture</a><!-- DEVNOTE: <a> link to Scripture page (the one like this: https://soladevinc.github.io/Design08/scripture) -->
 										<ul>
 											<li><a href="#">John</a></li>
 											<li><a href="#">James</a></li>
 											<li><a href="#">Ruth</a></li>
 											<li><a href="#">Revelation</a></li>
-										</ul>
+										</ul><!-- DEVNOTE: The 4 most popular books, with the most views. Limit to 4 books. -->
 									</li>
-									<li><a href="#">Authors / Preacher</a>
+									<li><a href="#">Authors / Preacher</a><!-- DEVNOTE: <a> link to Author / Speaker page (the one like this: https://soladevinc.github.io/Design08/authors-speakers) -->
 										<ul>
 											<li><a href="#">Brian Barnett</a></li>
 											<li><a href="#">Bill Gamble</a></li>
 											<li><a href="#">David Stine</a></li>
 											<li><a href="#">Jeff Hendry</a></li>
-										</ul>
+										</ul><!-- DEVNOTE: The 4 most popular author/speakers, with the most views. Limit to 4 author/speakers. -->
 									</li>
-									<li><a href="#">Topics</a>
+									<li><a href="#">Topics</a><!-- DEVNOTE: <a> link to Author / Speaker page (the one like this: https://soladevinc.github.io/Design08/topics) -->
 										<ul>
 											<li><a href="#">Fellowship</a></li>
 											<li><a href="#">Hermeneutics</a></li>
 											<li><a href="#">Faith in Life</a></li>
 											<li><a href="#">Sin</a></li>
-										</ul>
+										</ul><!-- DEVNOTE: The 4 most popular topics, with the most views. Limit to 4 topics. -->
 									</li>
-									<li><a href="#">Series</a>
+									<li><a href="#">Series</a><!-- DEVNOTE: <a> link to Series page (the one like this: https://soladevinc.github.io/Design08/series) -->
 										<ul>
 											<li><a href="#">1 Samuel: God is King</a></li>
 											<li><a href="#">Membership Matters</a></li>
 											<li><a href="#">Outreach</a></li>
 											<li><a href="#">Who is this Christ?</a></li>
-										</ul>
+										</ul><!-- DEVNOTE: The 4 most popular series, with the most views. Limit to 4 series. -->
 									</li>
-									<li><a href="#">Date</a>
+									<li><a href="#">Date</a><!-- DEVNOTE: <a> link to Series page (the one like this: https://soladevinc.github.io/Design08/date) -->
 										<ul>
 											<li><a href="#">2017</a></li>
 											<li><a href="#">2016</a></li>
 											<li><a href="#">2015</a></li>
 											<li><a href="#">2014</a></li>
-										</ul>
+										</ul><!-- DEVNOTE: The 4 most RECENT years, with the most views. Limit to 4 years. -->
 									</li>	
 								</ul>
 							</section>
 						</div>
-
 					</div>
 				
 				</div><!-- End Browse Wrapper -->
 
-                <!-- Sermon Feed 1 -->
-                <article class="card">
+				<!-- Sermon Feed 1 -->
+				<article class="card">
 					<div class="img-container">
 						<img alt="Image Alt Text Here" class="feed-image" src="images/the-race.jpg"
-												sizes="	(min-width: 1200px) 500px,
-														(min-width: 768px) 45vw,
-														(min-width: 480px) 693px,
-														90vw "
-											   srcset="	images/the-race-1440.jpg 1440w,
-														images/the-race-900.jpg 900w,
-														images/the-race-450.jpg 450w ">
+							sizes="(min-width: 1200px) 500px,
+								(min-width: 768px) 45vw,
+								(min-width: 480px) 693px,
+								90vw"
+							srcset="images/the-race-1440.jpg 1440w,
+								images/the-race-900.jpg 900w,
+								images/the-race-450.jpg 450w"><!-- DEVNOTE: Featured image sermon. For SRCSET, SRC, & ALT instructions and logic visit this doc: http://soladevinc.wpengine.com/docs/attributes-in-the-img-element/. 
+								Conditions: 
+									- If user chose [Uplaod image], use the proper versions of that image in SRC and SRCSET
+									- If user chose [Video thumbnail], remove the SRCSET attribute and simply use the Video Thumbnail url in the SRC attribute 
+									- If user chose [Series image], use the proper versions of that image in SRC and SRCSET
+									- If user chose [No image], remove the <img> element completely -->
 						<div class="play-icon">
 							<div class="outer-circle">
 								<div class="inner-dark-circle">
@@ -231,23 +235,24 @@
 					</div>
 					<div class="card-content">
 						<div class="flex-content">
-							<p class="meta"><time datetime="2018-04-10">April 10 2018</time></p>
-							<h1 class="lastWord">Reedeming Sport</h1>
+							<p class="meta"><time datetime="2018-04-10">April 10 2018</time></p><!-- DEVNOTE: Sermon publish date. Keep this format. -->
+							<h1 class="lastWord">Reedeming Sport</h1><!-- DEVNOTE: Title of most recently published sermon. No drafts. Character limit: 35 | Ellipses after limit. -->
 						</div>
 						<div class="avatar">
 							<div class="avatar-container">
-								<img alt="Image Alt Text Here" src="images/avatar-jeff-hendry-225.jpg">
+								<img alt="Image Alt Text Here" src="images/avatar-jeff-hendry-225.jpg"><!-- DEVNOTE: Speaker's image, 225 pixel version -->
 							</div>
-							<p class="speaker">By: Jeff Hendry</p>
+							<p class="speaker">By: Jeff Hendry</p><!-- DEVNOTE: Speaker. -->
 						</div>
-						<p class="label-counter">Watch<span></span></p>
+						<p class="label-counter">Watch<span></span></p><!-- DEVNOTE: Condition: If [WP-Admin > Sermons > (Sermon Title) > Sermon Details > Sermon Media Files (Tab) > Media Type] is [Video Only], or [Video and MP3], print "Watch". If has [MP3 Only], write "Listen" instead of "Watch". If [No Media] print "Read". -->
 					</div>
 					<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-                </article>
+				</article>
 				<!-- End Sermon Feed 1 -->
+				<!-- DEVNOTE: Repeat loop 10 times per page. The below <article> html can be removed whne loop is made. -->
 				
 				<!-- Sermon Feed 2 -->
-                <article class="card">
+				<article class="card">
 					<div class="img-container">
 						<img alt="Image Alt Text Here" class="feed-image" src="images/praying-over-bible.jpg"
 												sizes="	(min-width: 1200px) 500px,
@@ -279,11 +284,11 @@
 						<p class="label-counter">Watch<span></span></p>
 					</div>
 					<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-                </article>
+				</article>
 				<!-- End Sermon Feed 2 -->
 				
 				<!-- Sermon Feed 3 -->
-                <article class="card">
+				<article class="card">
 					<div class="img-container">
 						<img alt="Image Alt Text Here" class="feed-image" src="images/city-scape-fellowship.jpg"
 												sizes="	(min-width: 1200px) 500px,
@@ -315,11 +320,11 @@
 						<p class="label-counter">Watch<span></span></p>
 					</div>
 					<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-                </article>
+				</article>
 				<!-- End Sermon Feed 3 -->
 				
 				<!-- Sermon Feed 4 -->
-                <article class="card">
+				<article class="card">
 					<div class="img-container">
 						<img alt="Image Alt Text Here" class="feed-image" src="images/mother-daughter.jpg"
 												sizes="	(min-width: 1200px) 500px,
@@ -351,7 +356,7 @@
 						<p class="label-counter">Watch<span></span></p>
 					</div>
 					<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-                </article>
+				</article>
 				<!-- End Sermon Feed 4 -->
 				
 				<!-- Pagination -->
@@ -367,7 +372,7 @@
 						<a href="#">120</a>
 						<a class="icon-events-single-arrow-right2" href="#"></a>
 					</nav>
-				</div>
+				</div><!-- DEVNOTE: If 10 or less sermons published, remove .pagination-wrapper <div> completely. Only show if more than 1 page should this show. -->
 				<!-- End Pagination -->
                 
 			</section><!-- End Blogposts-->
