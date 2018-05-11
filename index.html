@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang=""><!-- Devnote: Site language here -->
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=0">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<!-- Devnote: Title, Description & Favicon details outlined in this document: https://solasit.es/head-social-details. Please be sure there are not duplicate elements in the final theme. -->
 		<title>Home</title>
 		<meta name="description" content="">
 		<link rel="icon" href="assets/png/default-favicon.png">
 		<!-- Stylesheets -->
-		<link rel=stylesheet href="assets/css/normalize.css" TYPE="text/css" media=screen>
+		<link rel=stylesheet href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css" TYPE="text/css" media=screen>
 		<link rel=stylesheet href="assets/css/main.css" TYPE="text/css" media=screen>
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i" rel="stylesheet">
 		<style>
 			:root {
-				--primary-regular: #CF4A46;
-				--primary-light: #CE625F;
-				--primary-dark: #DB2722;
-			} 
+				--primary-regular: #CF4A46; /* Devnote: Remove color and replace with [Customizer > Colors > Primary Color > Color Picker Choice] */
+				--primary-light: #CE625F; /* Devnote: Remove color and replace with [Customizer > Colors > Primary Color (Light) > Color Picker Choice] */
+				--primary-dark: #DB2722; /* Devnote: Remove color and replace with [Customizer > Colors > Primary Color (Dark) > Color Picker Choice] */
+			}
 		</style>
 	</head>
 	<body>
@@ -26,12 +27,13 @@
 		<header class="primary-header super-big-container">
 			<!--Logo-->
 			<div class="logo">
-				<a href="#"><span class="logo-placeholder">Westridge Church</span>
-					<img alt="Image Alt Text Here" src="assets/png/logo@2x.png">
+				<a href="#"><!-- Devnote: href link to homepage -->
+					<img alt="Image Alt Text Here" src="assets/png/logo.png"><!-- Devnote: SRC from [Customizer > Site Identity > Logo], ALT from image alternative text set by user. CONDITION: If no image chosen, remove <img> tag and put in the below <span> (currently commented out) and insert text from [Customizer > Site Identity > Site Title] inside of the <span>. If image is chosen, remove the below <span>. -->
+					<!-- <span class="logo-placeholder">Site Title</span>  -->
 				</a>
 			</div>
 
-      		<!--Mobile/Tablet Nav Markup-->
+			<!--Mobile/Tablet Nav Markup-->
 			<nav class="nav-area-mobile">
 				<!--Mobile Nav Icon(Hamburger Icon)-->
 				<button class="menu-icon">
@@ -40,18 +42,18 @@
 					<span class="icon-bar-2"></span>
 				</button>
 
-				<ul class="navigation">
-					<li><a href="#" class="active">Home</a></li>
+				<ul class="navigation"><!-- Devnote: Menu is populated from [Primary Menu (Mobile)]. Only allow three levels (Parent, children and grandchildren) -->
+					<li><a href="#">Home</a></li>
 					<li>
 						<a href="#">About</a>
 						<ul>
 							<li><a href="#">The Gospel </a></li>
-							<li><a href="#" class="active">Statement of faith</a></li>
+							<li><a href="#">Statement of faith</a></li>
 							<li>
 								<a href="#">Leadership</a>
 								<ul>
 									<li><a href="#">Elders</a></li>
-									<li><a href="">Deacons </a></li>
+									<li><a href="#">Deacons </a></li>
 								</ul>
 							</li>
 							<li><a href="#">Our Ministries</a></li>
@@ -70,27 +72,27 @@
 									<li><a href="#">South Campus</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Service Times &amp;Directions</a></li>
+							<li><a href="#">Service Times &amp; Directions</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
 					</li>
 				</ul>
-      		</nav>
+			</nav>
       
 			<!-- Desktop Nav Markup-->
 			<nav class="nav-area-desktop">
-				<ul class="navigation-desktop">
-					<li><a href="#" class="active">Home</a></li>
+				<ul class="navigation-desktop"><!-- Devnote: Menu is populated from [Primary Menu (Desktop)]. Only allow three levels (Parent, children and grandchildren) -->
+					<li><a href="#">Home</a></li>
 					<li>
 						<a href="#">About</a>
 						<ul>
 							<li><a href="#">The Gospel </a></li>
-							<li><a href="#" class="active">Statement of faith</a></li>
+							<li><a href="#">Statement of faith</a></li>
 							<li>
 								<a href="#">Leadership</a>
 								<ul>
 									<li><a href="#">Elders</a></li>
-									<li><a href="">Deacons </a></li>
+									<li><a href="#">Deacons </a></li>
 								</ul>
 							</li>
 							<li><a href="#">Our Ministries</a></li>
@@ -109,7 +111,7 @@
 									<li><a href="#">South Campus</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Service Times &amp;Directions</a></li>
+							<li><a href="#">Service Times &amp; Directions</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
 					</li>
@@ -124,7 +126,7 @@
 				<div class="search-area">
 					<div class="search-container">
 						
-						<form role="search" method="get" class="search-form" action="website url>">
+						<form role="search" method="get" class="search-form" action="website url"><!-- Devnote: In action="" insert link to homepage -->
 							<i class="icon-search-icon"></i>
 							<label for="page-heading">Search</label>
 							<input id="fullBar" type="search" name="s" placeholder="Start Typing..." autocomplete="off" autofocus />
@@ -138,15 +140,32 @@
 		<main class="main-relative super-big-container">
 			<!--Banner-->
 			<section class="banner">
-				<h1>Created For Him</h1>
-				<p>"For by Him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or rulers or authorities"</p>
+				<h1>Created For Him</h1><!-- Devnote: Text from [Customizer > Homepage > Banner > Banner Heading. Character limit 40 | Ellipses after limit ] -->
+				<p>"For by Him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or rulers or authorities"</p><!-- Devnote: Text from [Customizer > Homepage > Banner > Banner Subheading. Character limit 185 | Ellipses after limit ] -->
 				<section class="service-times">
-					<h2>We Gather on <span>Every Sunday at 9:00 am</span> and on <span>Every Wednesday at 6:00 pm</span></h2>
+					<h2>We Gather on <span>Every Sunday at 9:00 am</span> and on <span>Every Wednesday at 6:00 pm</span></h2><!-- Devnote: Text from [Customizer > Homepage > Banner > Banner Bottom Text. Character limit 140 | Ellipses after limit ] -->
 				</section>
-				<img class="background-img" alt="Image Alt Text Here" sizes="100vw" srcset="images/banner-hand-2000.jpg 2000w, images/banner-hand-1440.jpg 1440w, images/banner-hand-850.jpg 850w" src="images/banner-hand-2000.jpg">
+				<img class="background-img" alt="Image Alt Text Here" srcset="images/banner-hand-2000.jpg 2000w, images/banner-hand-1440.jpg 1440w, images/banner-hand-850.jpg 850w" src="images/banner-hand-2000.jpg"><!-- Devnote: See instructions and logic here: http://soladevinc.wpengine.com/docs/attributes-in-the-img-element/. 
+					Conditions:
+					- If in [Customizer > Homepage > Banner > Banner Type] user chooses [Custom] then use [Customizer > Homepage > Banner > Custom Image]
+					- If in [Customizer > Homepage > Banner > Banner Type] user chooses [Page] then use the featured image of the page chosen in [Customizer > Homepage > Banner > Page] 
+					- If in [Customizer > Homepage > Banner > Banner Type] user chooses [Blogpost] then use the featured image of the blogpost chosen in [Customizer > Homepage > Banner > Blogpost]
+					- If in [Customizer > Homepage > Banner > Banner Type] user chooses [Sermon] then use the featured image of the page chosen in [Customizer > Homepage > Banner > Sermon]. Be sure to get the correct featured image for the sermon that is set in [wp-admin > Sermon Details > General (Tab) > Sermon's Featured Image]. 
+						• If user chose [Uplaod image], use the proper versions of that image in SRC and SRCSET
+						• If user chose [Video thumbnail], remove the SRCSET attribute and simply use the Video Thumbnail url in the SRC attribute 
+						• If user chose [Series image], use the proper versions of that image in SRC and SRCSET
+						• If user chose [No image], remove the <img> element completely 
+					- If in [Customizer > Homepage > Banner > Banner Type] user chooses [Event] then use the featured image of the event chosen in [Customizer > Homepage > Banner > Event] -->
 				<div class="dark-overlay"></div>
 				<div class="square-bg"></div>
-				<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
+				<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a><!-- Devnote: Put the link both in the href="" attribute, and as the text in the .sr-only <span> in place of "Insert Link Here.
+					Conditions:
+					- If in [Customizer > Homepage > Banner > Banner Type] user chooses [Custom] then use [Customizer > Homepage > Banner > Custom Link]
+					- If in [Customizer > Homepage > Banner > Banner Type] user chooses [Page] then use the link of the page chosen in [Customizer > Homepage > Banner > Page]
+					- If in [Customizer > Homepage > Banner > Banner Type] user chooses [Blogpost] then use the link of the blogpost chosen in [Customizer > Homepage > Banner > Blogpost]
+					- If in [Customizer > Homepage > Banner > Banner Type] user chooses [Sermon] then use the featured image of the page chosen in [Customizer > Homepage > Banner > Sermon].
+					- If in [Customizer > Homepage > Banner > Banner Type] user chooses [Event] then use the featured image of the event chosen in [Customizer > Homepage > Banner > Event]
+				-->
 			</section><!--End Banner-->
 
 			<!-- Main Content -->
@@ -155,25 +174,25 @@
 				<article class="invite"><!-- Invite Section -->
 					<div class="img-wrapper">
 						<div class="image-container">
-							<img class="" alt="Image Alt Text Here" sizes=" 	(min-width: 1200px) 414px,
+							<img alt="Image Alt Text Here" sizes="(min-width: 1200px) 414px,
 																	(min-width: 992px) 374px,
 																	(min-width: 768px) 310px,
 																	(min-width: 480px) 60vw,
 																	90vw"
-														srcset	="	images/door-900.jpg 900w,
+														srcset="images/door-900.jpg 900w,
 																	images/door-450.jpg 450w"
-																	src	="images/door.jpg">
+																	src	="images/door.jpg"><!-- Devnote: Image chosen in [Customizer > Homepage > Welcome Section > Image]. For SRCSET, SRC, & ALT instructions and logic visit this doc: http://soladevinc.wpengine.com/docs/attributes-in-the-img-element/. -->
 						</div>
 					</div>
 					
 					<div class="where">
 						<div class="address">
-							<h1>Where</h1>
-							<p>Westridge Church 7892 Marnul Avenue, La Jolla CA 92037</p>
+							<h1>Where</h1><!-- Devnote: [Customizer > Homepage > Welcome Section > Welcome Heading]. Character Limit: 50 | Ellipses after limit -->
+							<p>Westridge Church 7892 Marnul Avenue, La Jolla CA 92037</p><!-- Devnote: [Customizer > Homepage > Welcome Section > Welcome Sub Heading]. Character Limit: 110 | Ellipses after limit -->
 						</div>
 						<div class="map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107233.87514984208!2d-117.31973474427495!3d32.870168973783265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc014ed14c07bd%3A0x836697d9c9696a46!2sLa+Jolla%2C+CA+92037%2C+USA!5e0!3m2!1sen!2sin!4v1494478550874" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-							<a href="#">Full Map</a>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107233.87514984208!2d-117.31973474427495!3d32.870168973783265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc014ed14c07bd%3A0x836697d9c9696a46!2sLa+Jolla%2C+CA+92037%2C+USA!5e0!3m2!1sen!2sin!4v1494478550874" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe><!-- Devnote: iframe pasted by user in [Customizer >  Homepage > Welcome Section > Map]. Condition: If field is empty, remove entire .map <div>. --> 
+							<a href="#">Full Map</a><!-- Devnote: href comes from [Customizer > Homepage > Welcome Section > Map Button Link]. <a> text comes from [Customizer > Homepage > Welcome Section > Map Button Text] -->
 						</div>
 					</div>
 				</article><!-- End Invite Section -->
@@ -183,37 +202,35 @@
 					<article class="feed-1">
 						<div class="image-container">
 							<img class="feed-image" alt="Image Alt Text Here" 
-							sizes="	(min-width: 1200px) 500px,
+							sizes="(min-width: 1200px) 500px,
 							(min-width: 768px) 420px,
-							90vw "
-							srcset="	images/praying-over-bible-900.jpg 900w,
-							images/praying-over-bible-450.jpg 450w "
-
-							src="images/praying-over-bible.jpg">
+							90vw"
+							srcset="images/praying-over-bible-900.jpg 900w,
+							images/praying-over-bible-450.jpg 450w"
+							src="images/praying-over-bible.jpg"><!-- Devnote: Featured image of the page, sermon, blogpost or event chosen in [Customizer > Homepage > Featured Content > Item 1: Type of Featured Content/Item 1: Choose a Page/Item 1: Choose a Blogpost/Item 1: Choose a Sermon/Item 1: Choose a Event]. For SRCSET, SRC, & ALT instructions and logic visit this doc: http://soladevinc.wpengine.com/docs/attributes-in-the-img-element/. -->
 						</div>
 						<div class="feed-content content-1">
-							<h1>The Gospel</h1>
+							<h1>The Gospel</h1><!-- Devnote: Page title, Blogpost title, Sermon title or Event title chosen in [Customizer > Homepage > Item 1: Featured Content > Item 1: Type of Featured Content/Item 1: Choose a Page/Item 1: Choose a Blogpost/Item 1: Choose a Sermon/Item 1: Choose a Event]. Character limit: 65 | Ellipses after limit. -->
 							<p>View More <span></span></p>
 						</div>
-						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
+						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a><!-- Devnote: Page link, Blogpost link, Sermon link or Event link chosen in [Customizer > Homepage > Featured Content > Item 1: Type of Featured Content/Item 1: Choose a Page/Item 1: Choose a Blogpost/Item 1: Choose a Sermon/Item 1: Choose a Event]. Put the link both in the href="" attribute, and as the text in the .sr-only <span> in place of "Insert Link Here". -->
 					</article>
 
 					<article class="feed-2">
 						<div class="image-container">
 							<img class="feed-image" alt="Image Alt Text Here" 
-													sizes="	(min-width: 1200px) 500px,
-															(min-width: 768px) 420px,
-															90vw "
-												   srcset="	images/deep-secrets-ocean-900.jpg 900w,
-															images/deep-secrets-ocean-450.jpg 450w "
-
-													src="images/deep-secrets-ocean.jpg">
+							sizes="(min-width: 1200px) 500px,
+							(min-width: 768px) 420px,
+							90vw"
+							srcset="images/deep-secrets-ocean-900.jpg 900w,
+							images/deep-secrets-ocean-450.jpg 450w "
+							src="images/deep-secrets-ocean.jpg"><!-- Devnote: Featured image of the page, sermon, blogpost or event chosen in [Customizer > Homepage > Featured Content > Item 2: Type of Featured Content/Item 2: Choose a Page/Item 2: Choose a Blogpost/Item 2: Choose a Sermon/Item 2: Choose a Event]. For SRCSET, SRC, & ALT instructions and logic visit this doc: http://soladevinc.wpengine.com/docs/attributes-in-the-img-element/. -->
 						</div>
 						<div class="feed-content content-2">
-							<h1>Statement of Faith</h1>
+							<h1>Statement of Faith</h1><!-- Devnote: Page title, Blogpost title, Sermon title or Event title chosen in [Customizer > Homepage > Item 2: Featured Content > Item 2: Type of Featured Content/Item 2: Choose a Page/Item 2: Choose a Blogpost/Item 2: Choose a Sermon/Item 2: Choose a Event]. Character limit: 65 | Ellipses after limit. -->
 							<p>View More <span></span></p>
 						</div>
-						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
+						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a><!-- Devnote: Page link, Blogpost link, Sermon link or Event link chosen in [Customizer > Homepage > Featured Content > Item 2: Type of Featured Content/Item 2: Choose a Page/Item 2: Choose a Blogpost/Item 2: Choose a Sermon/Item 2: Choose a Event]. Put the link both in the href="" attribute, and as the text in the .sr-only <span> in place of "Insert Link Here". -->
 					</article>
 				</article><!-- End Page Feeds -->
 
@@ -221,13 +238,13 @@
 				<article class="recent-sermon">
 					<div class="img-container">
 						<img alt="Image Alt Text Here" class="feed-image" src="images/lion.jpg"
-												sizes="	(min-width: 1200px) 500px,
-														(min-width: 768px) 45vw,
-														(min-width: 480px) 693px,
-														90vw "
-											   srcset="	images/lion-1440.jpg 1440w,
-											   			images/lion-900.jpg 900w,
-														images/lion-450.jpg 450w ">
+							sizes="(min-width: 1200px) 500px,
+							(min-width: 768px) 45vw,
+							(min-width: 480px) 693px,
+							90vw "
+							srcset="images/lion-1440.jpg 1440w,
+							images/lion-900.jpg 900w,
+							images/lion-450.jpg 450w "><!-- Devnote: Featured image of most recently published sermon. No drafts. For SRCSET, SRC, & ALT instructions and logic visit this doc: http://soladevinc.wpengine.com/docs/attributes-in-the-img-element/. -->
 						<div class="play-icon">
 							<div class="outer-circle">
 								<div class="inner-dark-circle">
@@ -238,20 +255,57 @@
 					</div>
 					<div class="recent-sermon-content">
 						<div class="flex-content">
-							<p class="meta"><time datetime="2018-04-10">April 10 2018</time> Recent Sermon</p>
+							<p class="meta"><time datetime="2018-04-10">April 10 2018</time></p><!-- Devnote: Date of most recently published sermon. No drafts. Keep same format. -->
+							<h1 class="lastWord">What we have become in Christ</h1><!-- Devnote: Title of most recently published sermon. No drafts. Character limit: 35 | Ellipses after limit. -->
+						</div>
+						<div class="avatar">
+							<div class="avatar-container">
+								<img alt="Image Alt Text Here" src="images/avatar-brian-barnett-225.jpg">
+							</div>
+							<p class="speaker">By: Brain Barnett</p><!-- Devnote: Author of most recently published sermon. No drafts. -->
+						</div>
+						<p class="label-counter">Recent Sermon <span></span></p>
+					</div>
+					<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a><!-- Devnote: Put the link of most recently published sermon (no drafts) both in the href="" attribute, and as the text in the .sr-only <span> in place of "Insert Link Here". -->
+				</article><!-- Devnote: If in [Customizer > Homepage > Featured Content > Item 3: Type of Featured Content] user chooses [Most Recent Sermon], use this .recent-sermon <article>, and remove .card <article> (immediately below). If user choses [Most Recent Blogpost], remove this .recent-sermon <article> and use .card <article> (immediately below) -->
+				<!-- End Recent Sermon Feed -->
+
+				<!-- Recent Blogpost Feed -->
+				<!-- <article class="card">
+					<div class="img-container">
+						<img alt="Image Alt Text Here" class="feed-image" src="images/deep-secrets-ocean.jpg"
+						sizes="(min-width: 1200px) 500px,
+						(min-width: 768px) 45vw,
+						(min-width: 480px) 693px,
+						90vw"
+						srcset="images/deep-secrets-ocean-1440.jpg 1440w,
+						images/deep-secrets-ocean-900.jpg 900w,
+						images/deep-secrets-ocean-450.jpg 450w">
+					</div>
+					<div class="card-content">
+						<div class="flex-content">
+							<p class="meta"><time datetime="2018-04-10">April 10 2018</time></p>
 							<h1 class="lastWord">What we have become in Christ</h1>
 						</div>
+						<p class="snippet">Curabitur arcu erat, accumsan id et, porttitor at sem. Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. </p>
 						<div class="avatar">
 							<div class="avatar-container">
 								<img alt="Image Alt Text Here" src="images/avatar-brian-barnett-225.jpg">
 							</div>
 							<p class="speaker">By: Brain Barnett</p>
 						</div>
-						<p class="label-counter">Recent Sermon <span></span></p>
+						<p class="label-counter">Blogpost<span></span></p>
 					</div>
 					<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-				</article>
-				<!-- End Recent Sermon Feed -->
+				</article> -->
+				<!-- Devnote: 
+					- Featured image of most recently published blogpost. No drafts. For SRCSET, SRC, & ALT instructions and logic visit this doc: http://soladevinc.wpengine.com/docs/attributes-in-the-img-element/.
+					- Date of most recently published blogpost. No drafts.
+					- Title of most recently published blogpost. No drafts. Character limit: 35 | Ellipses after limit.
+					- First 165 characters of entry-content of most recently published blogpost. No drafts. Sanitize all html.
+					- "Blogpost" label can remain static 
+					- For <a> put the link of most recently published blogpost (no drafts) both in the href="" attribute, and as the text in the .sr-only <span> in place of "Insert Link Here". -->
+				<!-- End Recent Blogpost Feed -->
 
 			</section>
 
@@ -267,11 +321,11 @@
 			<div class="footer-content main-container">
 				<p class="inviting">visit us
 					<span>Come!</span>
-				</p>
-				<p class="inviting-content">We would love to see you there this Sunday. Join us at 9:00 Am and Invite God in your Life.</p>
+				</p><!-- Devnote: [Customizer > Footer > Large Background Heading (Faded in Background)] in <p> (Character Limit: 10 | No Ellipses), and [Customizer > Footer > Medium Foreground Heading (Clear in Foreground)] in <span> (Character Limit: 10 | No Ellipses). -->
+				<p class="inviting-content">We would love to see you there this Sunday. Join us at 9:00 Am and Invite God in your Life.</p><!-- Devnote: [Customizer > Footer > Sub-Heading]. Character Limit: 250 | No Ellipses. Condition: If field in Customizer left empty, remove <p>. -->
 				<div class="footer-map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107233.87514984208!2d-117.31973474427495!3d32.870168973783265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc014ed14c07bd%3A0x836697d9c9696a46!2sLa+Jolla%2C+CA+92037%2C+USA!5e0!3m2!1sen!2sin!4v1494478550874" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-					<a href="#"><i class="icon-map2"></i>Get Directions</a>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107233.87514984208!2d-117.31973474427495!3d32.870168973783265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc014ed14c07bd%3A0x836697d9c9696a46!2sLa+Jolla%2C+CA+92037%2C+USA!5e0!3m2!1sen!2sin!4v1494478550874" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe><!-- Devnote: iframe pasted by user in [Customizer >  Footer > Map] Condition: If field is empty, remove entire .footer-map <div>. --> 
+					<a href="#"><i class="icon-map2"></i>Get Directions</a><!-- Devnote: href comes from [Customizer > Footer > Map Button Link]. <a> text comes from [Customizer > Footer > Map Button Text]. Character Limit: 30 | No Ellipses -->
 				</div>
 				<nav class="footer-nav">
 					<a href="#">Home</a>
@@ -280,13 +334,12 @@
 					<a href="#">Blog</a>
 					<a href="#">Sermons</a>
 					<a href="#">visit</a>
-				</nav>
+				</nav><!-- Devnote: Menu is populated from [Footer Menu]. Only allow one levels (no children or grandchildren) -->
 				<div class="footer-divider"></div>
 				<p class="copy-credit">
-					&copy; 2018 - 2019 Westridge Church All Rights Reserved 
-					<span class="credit">Powered by 
-					<a href="#">Soladev</a></span>
-				</p>
+					&copy; 2018 Westridge Church. All Rights Reserved.  
+					<span class="credit">| Powered by <a href="#">Soladev</a></span>
+				</p><!-- DEVNOTE: [Customizer > Footer > Copyright Details] - Date should be forced by Wordpress (current year XXXX). Get current year for XXXX. And then a " " space. And the rest, "Westridge Church. All Rights Reserved." Should be entered by user in [Copyright Details], and " | Powered by SolaDev" should not be editable by user. -->
 			</div>
 			<div class="square-bg-top"></div>
 			<div class="square-bg-bottom"></div>
@@ -295,6 +348,5 @@
 		<!-- Scripts -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="assets/js/main.js"></script>
-		<script src="assets/js/css-var-polyfill.js"></script>
     </body>
 </html>
