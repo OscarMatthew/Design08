@@ -4,7 +4,7 @@
   ===============================
   ===============================*/
 
-* {
+  * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
@@ -189,13 +189,9 @@ button:focus {
 }
 
 body {
-    background: #FFFFFF;
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    /* IE Compatiblity */
-    --primary-regular: #F91C4C;
-    --primary-light: #ff3b66;
-    --primary-dark: #d61f46;
-  }
+  background: #FFFFFF;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
 
 /*===============================
 ===============================
@@ -2864,7 +2860,6 @@ ENTRY CONTENT - MOBILE
 
   .sidebar nav {
     background: #F6F6F4;
-    padding: 45px;
   }
 
   .sidebar .sidebar-navigation {
@@ -2873,6 +2868,7 @@ ENTRY CONTENT - MOBILE
     line-height: 30px;
     letter-spacing: 2px;
     color: rgba(59, 59, 59, 0.9);
+    padding: 45px;
   }
 
   .sidebar .sidebar-navigation a {
@@ -6732,5 +6728,3 @@ TAXONOMY PAGES
   }
 
 }
-
-

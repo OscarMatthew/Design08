@@ -12,14 +12,13 @@
 		<link rel=stylesheet href="assets/css/main.css" TYPE="text/css" media=screen>
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,700i" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i" rel="stylesheet">
 		<style>
 			:root {
-				--primary-regular: #CF4A46;
-				--primary-light: #CE625F;
-				--primary-dark: #DB2722;
-			} 
+				--primary-regular: #f91c4c;
+				--primary-light: #ff3b66;
+				--primary-dark: #d61f46;
+			}
 		</style>
 	</head>
 	<body>
@@ -27,12 +26,13 @@
 		<header class="primary-header super-big-container">
 			<!--Logo-->
 			<div class="logo">
-				<a href="#"><span class="logo-placeholder">Westridge Church</span>
-					<img alt="Image Alt Text Here" src="assets/png/logo.png">
+				<a href="#">
+					<img alt="Image Alt Text Here" src="images/logo.png">
+					<!-- <span class="logo-placeholder">Site Title</span>  -->
 				</a>
 			</div>
 
-      		<!--Mobile/Tablet Nav Markup-->
+			<!--Mobile/Tablet Nav Markup-->
 			<nav class="nav-area-mobile">
 				<!--Mobile Nav Icon(Hamburger Icon)-->
 				<button class="menu-icon">
@@ -42,17 +42,17 @@
 				</button>
 
 				<ul class="navigation">
-					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">Home</a></li>
 					<li>
 						<a href="#">About</a>
 						<ul>
 							<li><a href="#">The Gospel </a></li>
-							<li><a href="#" class="active">Statement of faith</a></li>
+							<li><a href="#">Statement of faith</a></li>
 							<li>
 								<a href="#">Leadership</a>
 								<ul>
 									<li><a href="#">Elders</a></li>
-									<li><a href="">Deacons </a></li>
+									<li><a href="#">Deacons </a></li>
 								</ul>
 							</li>
 							<li><a href="#">Our Ministries</a></li>
@@ -71,27 +71,27 @@
 									<li><a href="#">South Campus</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Service Times &amp;Directions</a></li>
+							<li><a href="#">Service Times &amp; Directions</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
 					</li>
 				</ul>
-      		</nav>
+			</nav>
       
 			<!-- Desktop Nav Markup-->
 			<nav class="nav-area-desktop">
 				<ul class="navigation-desktop">
-					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">Home</a></li>
 					<li>
 						<a href="#">About</a>
 						<ul>
 							<li><a href="#">The Gospel </a></li>
-							<li><a href="#" class="active">Statement of faith</a></li>
+							<li><a href="#">Statement of faith</a></li>
 							<li>
 								<a href="#">Leadership</a>
 								<ul>
 									<li><a href="#">Elders</a></li>
-									<li><a href="">Deacons </a></li>
+									<li><a href="#">Deacons </a></li>
 								</ul>
 							</li>
 							<li><a href="#">Our Ministries</a></li>
@@ -110,7 +110,7 @@
 									<li><a href="#">South Campus</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Service Times &amp;Directions</a></li>
+							<li><a href="#">Service Times &amp; Directions</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
 					</li>
@@ -125,7 +125,7 @@
 				<div class="search-area">
 					<div class="search-container">
 						
-						<form role="search" method="get" class="search-form" action="website url>">
+						<form role="search" method="get" class="search-form" action="website url">
 							<i class="icon-search-icon"></i>
 							<label for="page-heading">Search</label>
 							<input id="fullBar" type="search" name="s" placeholder="Start Typing..." autocomplete="off" autofocus />
@@ -135,18 +135,19 @@
 
 			</nav>	
 		</header><!--End Header-->
+		<!-- Devnote: See index.html file for devnotes on <head> and <header> -->
     
 		<main class="main-relative super-big-container">
-            <!-- Main Content -->
-            <article class="page-flex">
-                <header class="page-header">
-                    <h1>Statement of Faith</h1>
+			<!-- Main Content -->
+			<article class="page-flex">
+				<header class="page-header">
+					<h1>Statement of Faith</h1><!-- Devnote: Page Title -->
 					<img alt="Image Alt Text Here" class="background-img" sizes="100vw" src="images/green-plants.jpg"
-					srcset="images/green-plants-2000.jpg 2000w, images/green-plants-1440.jpg 1440w, images/green-plants-900.jpg 900w, images/green-plants-450.jpg 450w">
-                    <div class="dark-overlay"></div>
-                    <div class="page-image-svg"></div>
-                </header>
-                <section class="page-entry entry-content">
+					srcset="images/green-plants-2000.jpg 2000w, images/green-plants-1440.jpg 1440w, images/green-plants-900.jpg 900w, images/green-plants-450.jpg 450w"><!-- Devnote: Featured image. If no featured image chosen, remove <img> element entirely. For SRCSET, SRC, & ALT instructions and logic visit this doc: http://soladevinc.wpengine.com/docs/attributes-in-the-img-element/. -->
+					<div class="dark-overlay"></div>
+					<div class="page-image-svg"></div>
+				</header>
+				<section class="page-entry entry-content">
 
 					<h2>Heading Level 2</h2>
 					<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
@@ -297,13 +298,14 @@
 					</p><!-- End Iframes -->
 
 				</section><!-- End Entry Content -->
+				<!-- Devnote: All content inside of the .entry-content <section> Can be removed and added to a Wordpress page for testing. -->
 				
 				<aside class="sidebar">
-					<h1 class="sidebar-heading">About</h1>
 					<nav>
+						<h1 class="sidebar-heading">About</h1><!-- Devnote: Menu Title -->
 						<ul class="sidebar-navigation">
 							<li><a href="#">The Gospel</a></li>
-							<li class="sidebar-current"><a href="#">Statement of Faith</a></li>
+							<li class="sidebar-current"><a href="#">Statement of Faith</a></li><!-- Devnote: Add .sidebar-current to the <li> that is the current page user is on. -->
 							<li><a href="#">Leadership</a>
 								<ul>
 									<li><a href="#">Elders</a></li>
@@ -312,10 +314,13 @@
 							</li>
 							<li><a href="#">Our Ministries</a></li>
 						</ul>
-					</nav>
+					</nav><!-- Devnote: Conditions:
+						- If current page is a menu item in a menu that is selected in [Customizer > Menus > Sidebar Menu Settings] then display that menu here in the <nav>, along with the title. 
+						- If current page is in multiple menus that are selected in [Customizer > Menus > Sidebar Menu Settings] then display a new <nav> for each of the menus. 
+						- If current page is NOT a menu item in a menu that is selected in [Customizer > Menus > Sidebar Menu Settings] then completely remove the <aside> element. -->
 				</aside>
                 
-            </article>
+			</article>
 			
     
 			<div class="lines">
@@ -326,7 +331,7 @@
 			</div>
 		</main><!-- End Main -->
 
-		<footer class="primary-footer super-big-container">
+		<footer class="primary-footer super-big-container"><!-- Devnote: See index.html for footer notes. -->
 			<div class="footer-content main-container">
 				<h1 class="inviting">Please
 					<span>Come!</span>
