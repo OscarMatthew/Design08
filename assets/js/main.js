@@ -29,18 +29,6 @@ $(".search-btn").click(function(){
 	$("html").toggleClass( "overflow-hidden" );		
 });
 
-
-///////////////////
-//Sub-Menu Items
-///////////////////
-
-//Target all .nav-area li items that have UL as children add class
-//Mobile & Tablet
-var subMenuItems = $( ".nav-area-mobile > ul > li:has(ul)" );
-
-$(subMenuItems).addClass("child-menu");
-
-
 ///////////////////
 //Last Word
 ///////////////////
