@@ -68,7 +68,7 @@ Here's our logo (hover to see the title text):
 Inline-style: 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
-!(https://www.evernote.com/l/APTS4irMxpFB07cLwj5pAstoarMr-np-iKgB/image.png)
+![alt text](https://www.evernote.com/l/APTS4irMxpFB07cLwj5pAstoarMr-np-iKgB/image.png)
 
 Reference-style: 
 ![alt text][logo]
