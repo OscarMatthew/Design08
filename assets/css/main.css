@@ -1383,6 +1383,7 @@ nav.nav-area-mobile > ul.navigation > li ul ul {
 .avatar-container {
   width: 27px;
   height: 27px;
+  margin-right: 11px;
 }
 
 .avatar-container img {
@@ -1398,7 +1399,6 @@ nav.nav-area-mobile > ul.navigation > li ul ul {
   font-size: 13px;
   font-weight: 400;
   text-transform: capitalize;
-  padding-left: 11px;
 }
 
 /* Side Labels */
@@ -1716,10 +1716,10 @@ nav.nav-area-mobile > ul.navigation > li ul ul {
   .avatar-container {
     width: 32px;
     height: 32px;
+    margin-right: 16px;
   }
 
   .avatar .speaker {
-    padding-left: 16px;
     font-size: 12px;
   }
 
@@ -3230,12 +3230,15 @@ Browse By - Mobile
           align-items: center;
 }
 
+.avatar-container {
+  margin-right: 11px;
+}
+
 .avatar .speaker {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 400;
   text-transform: capitalize;
-  padding-left: 11px;
 }
 
 /* Side Labels */
@@ -3518,10 +3521,10 @@ Pagination - Mobile
   .avatar-container {
     width: 32px;
     height: 32px;
+    margin-right: 16px;
   }
 
   .avatar .speaker {
-    padding-left: 16px;
     font-size: 12px;
   }
 
