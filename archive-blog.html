@@ -210,34 +210,38 @@
 				</div><!-- End Browse Wrapper -->
 				<!-- DEVNOTE: Same concept as .browse-wrapper in archive-sermons.html - Use same code. -->
 
-                <!-- Blogpost 1 -->
-                <article class="card">
+				<!-- Blogpost 1 -->
+				<article class="card">
 					<div class="img-container">
 						<img alt="Image Alt Text Here" class="feed-image" src="images/deep-secrets-ocean.jpg"
-											sizes="	(min-width: 1200px) 500px,
-													(min-width: 768px) 45vw,
-													(min-width: 480px) 693px,
-													90vw "
-										   srcset="	images/deep-secrets-ocean-1440.jpg 1440w,
-													images/deep-secrets-ocean-900.jpg 900w,
-													images/deep-secrets-ocean-450.jpg 450w ">
+						sizes="(min-width: 1200px) 500px,
+							(min-width: 768px) 45vw,
+							(min-width: 480px) 693px,
+							90vw"
+						srcset="images/deep-secrets-ocean-1440.jpg 1440w,
+							images/deep-secrets-ocean-900.jpg 900w,
+							images/deep-secrets-ocean-450.jpg 450w"><!-- DEVNOTE: Featured image of blogpost. No drafts. For SRCSET, SRC, & ALT instructions and logic visit this doc: http://soladevinc.wpengine.com/docs/attributes-in-the-img-element/. 
+							Conditions: 
+								- If no featured image chosen, remove the <img> element completely -->
 					</div>
 					<div class="card-content">
 						<div class="flex-content">
-							<p class="meta"><time datetime="2018-04-10">April 10 2018</time></p>
+							<p class="meta"><time datetime="2018-04-10">April 10 2018</time></p><!-- DEVNOTE: Date. Same format. -->
 							<h1 class="lastWord">What we have become in Christ</h1>
-						</div>
-						<p class="snippet">Curabitur arcu erat, accumsan id et, porttitor at sem. Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. </p>
+						</div><!-- Blogpost title. Character limit: 35 | Ellipses after limit. -->
+						<p class="snippet">Curabitur arcu erat, accumsan id et, porttitor at sem. Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p><!-- DEVNOTE: First 165 characters of entry-content of blogpost. Sanitize (remove) all html. -->
 						<div class="avatar">
 							<div class="avatar-container">
-								<img alt="Image Alt Text Here" src="images/avatar-brian-barnett-225.jpg">
+								<img alt="Image Alt Text Here" src="images/avatar-brian-barnett-225.jpg"><!-- DEVNOTE: Avatar image of author, 225 pixel version. If speaker has no image, remove .avatar-container <div> entirely -->
 							</div>
-							<p class="speaker">By: Brain Barnett</p>
+							<p class="speaker">By: Brain Barnett</p><!-- DEVNOTE: Author name after "By: " -->
 						</div>
-						<p class="label-counter">Read More<span></span></p>
+						<p class="label-counter">Read More<span></span></p><!-- "Read More" label can remain static -->
 					</div>
-					<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-				</article><!-- End Blogpost 1 -->
+					<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a><!-- DEVNOTE: Put link of blogpost both as value of href="" attribute, and as the text in the .sr-only <span> in place of "Insert Link Here". -->
+				</article>
+				<!-- End Blogpost 1 -->
+				<!-- DEVNOTE: Repeat loop 10 times per page.  No drafts, only published. The below <article> html can be removed when loop is made. -->
 				
 				<!-- Blogpost 2 -->
                 <article class="card">
@@ -339,7 +343,8 @@
 						<a href="#">120</a>
 						<a class="icon-events-single-arrow-right2" href="#"></a>
 					</nav>
-				</div><!-- End Pagination -->
+				</div><!-- DEVNOTE: If 10 or less sermons published, remove .pagination-wrapper <div> completely. Only show if there is more than 1 page. -->
+				<!-- End Pagination -->
 
                 
 			</section><!-- End Sermons-->

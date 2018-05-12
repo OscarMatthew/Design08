@@ -197,12 +197,14 @@
 
         <p>Curabitur arcu erat, accumsan id et, porttitor at sem. Sed porttitor lectus nibh. Proin eget tortor risus. Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla quis lorem ut libero malesuada feugiat. Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
         Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
-      </section><!-- DEVNOTE: Sermon notes. -->
+			</section><!-- DEVNOTE: Sermon notes. 
+				Condition: 
+					- If no sermon notes content, remove .entry-content <section> and add .no-entry-content class to <article class="sermon-single-flex"> (above). This enables us to style the sidebard differently if no body content. -->
 
 				<!--Sidebar-->
 				<aside class="single-sidebar"> 
 
-					<p class="article-author"><span><a href="#">Brian Barnett</a></span> <a href="#">(@brianbarnett)</a> Proin eget tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.</p><!-- DEVNOTE: If no author chosen, remove .article-author <p>. If is author, insert name in <span><a>, and link to the author's taxonomy filter result page. After that simply include the description entered for the author in WordPress. -->
+					<p class="article-author"><span><a href="#">Brian Barnett</a></span> <a href="#">(@brianbarnett)</a> Proin eget tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.</p><!-- DEVNOTE: If no author chosen, remove .article-author <p>. If is author, insert name in <span><a></a></span>, and link to the author's taxonomy filter result page. After that simply include the description entered for the author in WordPress. -->
 
 					<div class="tag-container">
 						<a href="">Fear &amp; Anxiety</a>
@@ -233,10 +235,8 @@
 							</a> --><!-- Devnote: Will use in future, for now, leave commented out. -->
 						</div>
 					</article><!--End Social Share-->
-				</aside><!--End Sidebar-->
-                     
+				</aside><!--End Sidebar-->     
       </article>
-			
     
 			<div class="lines">
 				<div class="line"></div>

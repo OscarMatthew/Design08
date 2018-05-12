@@ -260,7 +260,7 @@
 						</div>
 						<div class="avatar">
 							<div class="avatar-container">
-								<img alt="Image Alt Text Here" src="images/avatar-brian-barnett-225.jpg"><!-- DEVNOTE: Speaker's image, 225 pixel version -->
+								<img alt="Image Alt Text Here" src="images/avatar-brian-barnett-225.jpg"><!-- DEVNOTE: Speaker's image, 225 pixel version. If speaker has no image, remove .avatar-container <div> entirely -->
 							</div>
 							<p class="speaker">By: Brain Barnett</p><!-- DEVNOTE: Speaker of most recently published sermon. No drafts. -->
 						</div>
@@ -303,8 +303,8 @@
 					- Featured image of most recently published blogpost. For SRCSET, SRC, & ALT instructions and logic visit this doc: http://soladevinc.wpengine.com/docs/attributes-in-the-img-element/.
 					- Date of most recently published blogpost.
 					- Title of most recently published blogpost. Character limit: 35 | Ellipses after limit.
-					- First 165 characters of entry-content of most recently published blogpost. Sanitize all html.
-					- Avatar image of author, 225 pixel version.
+					- First 165 characters of entry-content of most recently published blogpost. Sanitize (remove) all html.
+					- Avatar image of author, 225 pixel version. If speaker has no image, remove .avatar-container <div> entirely.
 					- Author of most recently published sermon.
 					- "Blogpost" label can remain static 
 					- For <a> put the link of most recently published blogpost both in the href="" attribute, and as the text in the .sr-only <span> in place of "Insert Link Here". -->
