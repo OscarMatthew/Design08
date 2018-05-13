@@ -6571,6 +6571,7 @@ TAXONOMY PAGES
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
+  margin-right: 14px;
 }
 
 .preview-wrapper img {
@@ -6590,7 +6591,6 @@ TAXONOMY PAGES
   line-height: 28px;
   letter-spacing: 2px;
   color: rgba(40, 40, 40, 0.9);
-  margin-left: 14px;
   margin-top: 2px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -6682,6 +6682,7 @@ TAXONOMY PAGES
   .preview-wrapper {
     width: 90px;
     height: 90px;
+    margin-right: 18px;
   }
 
   .author-speaker-preview h1,
@@ -6689,7 +6690,6 @@ TAXONOMY PAGES
     font-size: 30px;
     line-height: 34px;
     letter-spacing: 3px;
-    margin-left: 18px;
     margin-top: 4px;
   }
 
@@ -6761,11 +6761,14 @@ TAXONOMY PAGES
 
   /* ======= Author/Series Preview - Desktop+======= */
 
+  .preview-wrapper {
+    margin-right: 22px;
+  }
+
   .author-speaker-preview h1,
   .series-preview h1  {
     font-size: 34px;
     line-height: 40px;
-    margin-left: 22px;
   }
 
 }
