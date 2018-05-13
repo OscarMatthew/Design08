@@ -171,12 +171,12 @@
 				<div class="contributors-container">
 
 					<div class="contributor">
-						<h2>Brian Barnet</h2>
+						<h2>Brian Barnet</h2><!-- DEVNOTE: Author name. -->
 						<div class="contributor-image-wrapper">
-							<img alt="Image Alt Text Here" src="images/avatar-brian-barnett-225.jpg">
+							<img alt="Image Alt Text Here" src="images/avatar-brian-barnett-225.jpg"><!-- DEVNOTE: Avatar image of author, 225 pixel version. If speaker has no image, remove .contributor-image-wrapper <div> entirely -->
 						</div>
-						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-					</div>
+						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a><!-- DEVNOTE: Put link of author's taxonomy result page (taxonomy-author-speaker.html) both as value of href="" attribute, and as the text in the .sr-only <span> in place of "Insert Link Here". -->
+					</div><!-- DEVNOTE: Only display author/speaker if they have a published blogpost or sermon associated with their name. Repeat loop until reach end of author/speakers. Remove below static HTML when loop is made. -->
 
 					<div class="contributor">
 						<h2>Jeff Hendry</h2>
