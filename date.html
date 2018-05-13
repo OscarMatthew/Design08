@@ -15,9 +15,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i" rel="stylesheet">
 		<style>
 			:root {
-				--primary-regular: #f91c4c;
-				--primary-light: #ff3b66;
-				--primary-dark: #d61f46;
+				--primary-regular: #cf4a46;
+				--primary-light: #ce625f;
+				--primary-dark: #db2722;
 			}
 		</style>
 	</head>
@@ -163,7 +163,7 @@
 							<li><a href="#">Authors/Speakers</a></li>
 							<li><a href="#">Topics</a></li>
 							<li><a href="#">Series</a></li>
-							<li><a class="current" href="#">Date</a></li>
+							<li class="current"><a href="#">Date</a></li>
 						</ul>
 					</div>
 				</div><!-- DEVNOTE: See .index-navigation of topics.html. Same exact as there, only thing is .current changes to current page. -->
@@ -184,9 +184,9 @@
 						<li><a href="#">November</a></li>
 						<li><a href="#">December</a></li>
 					</ul>
-			</section>
+			</section><!-- DEVNOTE: The <h1> needs to contain the year (if there are published blogposts or sermons in that year), and then the 12 months must be listed in the <li>. If there is a month that had 1 or more published posts, then include the <a> around the month, with the href linking to that months taxonomy result page (taxonomy-date.html). This should repeat in a loop for every year that there are published blogposts or sermons in. Remove static HTML below. -->
 
-			<section class="testament new">
+			<section class="testament old">
 					<h1>2017</h1>
 					<ul>
 						<li><a href="#">January</a></li>
@@ -204,7 +204,7 @@
 					</ul>
 				</section>
 
-				<section class="testament new">
+				<section class="testament old">
 						<h1>2016</h1>
 						<ul>
 							<li><a href="#">January</a></li>
