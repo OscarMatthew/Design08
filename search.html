@@ -142,7 +142,33 @@
 			<section class="blog main-container taxonomy">
 				<h1 class="page-heading">Search Result For: <span>Preserve in Faith</span></h1><!-- DEVNOTE: Inside <span> put the thing being searched for. The rest is static. -->
 
-				<div class="search-card-container">
+				<div class="browse-navigation">
+						<!-- <div class="browse-dropdown">
+							<button class="browse">
+								<span>All Resources</span><i class="icon-angle-down"></i>
+							</button>
+						</div>
+						<div class="browse-dropdown-area">
+							<div class="dropdown-container">
+								<a href="#">Sermons</a>
+								<a href="#">Blogposts</a>	
+								<a href="#">All Resources</a>
+							</div>	
+						</div> -->
+							
+						<div class="index-navigation">
+							<ul>
+								<li class="current"><a href="#">All</a></li>
+								<li><a href="#">Scripture</a></li>
+								<li><a href="#">Authors/Speakers</a></li>
+								<li><a href="#">Topics</a></li>
+								<li><a href="#">Series</a></li>
+								<li><a href="#">Date</a></li>
+							</ul>
+						</div>
+					</div><!-- DEVNOTE: See .index-navigation of topics.html. Same exact as there, only thing is .current changes to current page. -->
+
+				<div class="search-card-container"><!-- DEVNOTE: The HTML loop in this .search-card-container is the same as browse.html page, so use the same code if possible (Don't repeat yourself) -->
 
 					<article class="search-card">
 						<div class="meta">
@@ -154,7 +180,7 @@
 								<img alt="Image Alt Text Here" class="avatar" src="images/avatar-david-stine-225.jpg">
 								<p>By: David Stine</p>
 							</div>
-							<div class="label">Audio/Video</div>
+							<div class="label">Sermon</div>
 						</div>
 						<img alt="Image Alt Text Here" class="background-img" src="images/mens-small-group-mens-ministry.jpg"
 												sizes="	(min-width: 1200px) 800px,
@@ -202,6 +228,7 @@
 							<a class="icon-events-single-arrow-right2" href="#"></a>
 						</nav>
 					</div><!-- End Pagination -->
+					<!-- DEVNOTE: Same logic for pagination as browse.html -->
 
 				</div>
 			</section>
