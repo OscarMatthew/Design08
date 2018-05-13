@@ -140,34 +140,32 @@
 		<main class="main-relative super-big-container">
 			<!-- Main Content -->
 			<section class="blog main-container">
-                <h1 class="page-heading">Browse By Topics</h1>
+				<h1 class="page-heading">Browse By Topics</h1>
 
-                <div class="browse-navigation">
-                    <div class="browse-dropdown">
-                        <button class="browse">
-							<span>All Resources</span>
-							<i class="icon-angle-down"></i>
+				<div class="browse-navigation">
+					<!-- <div class="browse-dropdown">
+						<button class="browse">
+							<span>All Resources</span><i class="icon-angle-down"></i>
 						</button>
 					</div>
-
 					<div class="browse-dropdown-area">
 						<div class="dropdown-container">
 							<a href="#">Sermons</a>
 							<a href="#">Blogposts</a>	
 							<a href="#">All Resources</a>
 						</div>	
+					</div> --><!-- DEVNOTE: Leave this commented out. We may incorporate in the future. -->
+				
+					<div class="index-navigation">
+						<ul>
+							<li><a href="#">All</a></li><!-- DEVNOTE: Link to Browse page (browse.html) -->
+							<li><a href="#">Scripture</a></li><!-- DEVNOTE: Link to Scripture page (scripture.html) -->
+							<li><a href="#">Authors/Speakers</a></li><!-- DEVNOTE: Link to Author/Speaker page (author-speaker.html) -->
+							<li class="current"><a href="#">Topics</a></li><!-- DEVNOTE: Link to Topics page (topics.html) -->
+							<li><a href="#">Series</a></li><!-- DEVNOTE: Link to Series page (series.html) -->
+							<li><a href="#">Date</a></li><!-- DEVNOTE: Link to Date page (date.html) -->
+						</ul><!-- DEVNOTE: .current class should change to appropriate <li>. If on "Scripture" .current goes to that <li>, if "Series", then .current goes to that <li> -->
 					</div>
-					
-                    <div class="index-navigation">
-                        <ul>
-                            <li><a href="#">All</a></li>
-                            <li><a href="#">Scripture</a></li>
-                            <li><a href="#">Authors/Speakers</a></li>
-                            <li class="current"><a href="#">Topics</a></li>
-                            <li><a href="#">Series</a></li>
-                            <li><a href="#">Date</a></li>
-                        </ul>
-                    </div>
 				</div>
 				
 				<ul class="topics-content">
@@ -183,7 +181,7 @@
 					<li><a href="#">Christian Life</a></li>
 					<li><a href="#">Assurance</a></li>
 					<li><a href="#">God as King</a></li>
-				</ul>
+				</ul><!-- DEVNOTE: List each topic that has a blogpost or sermon associated with it. If a topic is created, but no blogpost or sermon is associated, do not list the topic here. -->
 
 			</section><!-- End Sermons-->
 
