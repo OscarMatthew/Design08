@@ -140,111 +140,110 @@
 		<main class="main-relative super-big-container">
 			<!-- Main Content -->
 			<section class="blog main-container browse-page">
-                <h1 class="page-heading">Browse By Series</h1>
+				<h1 class="page-heading">Browse By Series</h1>
 
-                <div class="browse-navigation">
-                    <div class="browse-dropdown">
-                        <button class="browse">
-							<span>All Resources</span>
-							<i class="icon-angle-down"></i>
+        <div class="browse-navigation">
+					<!-- <div class="browse-dropdown">
+						<button class="browse">
+							<span>All Resources</span><i class="icon-angle-down"></i>
 						</button>
 					</div>
-
 					<div class="browse-dropdown-area">
 						<div class="dropdown-container">
 							<a href="#">Sermons</a>
 							<a href="#">Blogposts</a>	
 							<a href="#">All Resources</a>
 						</div>	
+					</div> -->
+						
+					<div class="index-navigation">
+						<ul>
+							<li><a href="#">All</a></li>
+							<li class="current"><a href="#">Scripture</a></li>
+							<li><a href="#">Authors/Speakers</a></li>
+							<li><a href="#">Topics</a></li>
+							<li><a class="current" href="#">Series</a></li>
+							<li><a href="#">Date</a></li>
+						</ul>
 					</div>
-					
-                    <div class="index-navigation">
-                        <ul>
-                            <li><a href="#">All</a></li>
-                            <li><a href="#">Scripture</a></li>
-                            <li><a href="#">Authors/Speakers</a></li>
-                            <li><a href="#">Topics</a></li>
-                            <li class="current"><a href="#">Series</a></li>
-                            <li><a href="#">Date</a></li>
-                        </ul>
-                    </div>
-				</div>
+				</div><!-- DEVNOTE: See .index-navigation of topics.html. Same exact as there, only thing is .current changes to current page. -->
                 
-                <div class="series-container">
+				<div class="series-container">
 
-                    <div class="series-post">
+					<article class="series-post">
 						<img alt="Image Alt Text Here" src="images/01-God-is-King.jpg"
-							sizes="	(min-width: 1200px) 240px,
-									(min-width: 992px) 390px,
-									(min-width: 768px) 45vw,
-									90vw "
-							srcset="images/01-God-is-King-900.jpg 900w,
-									images/01-God-is-King-450.jpg 450w ">
-                        <h2>1 Samuel: God is King</h2>
-                        <a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-                    </div>
+						sizes="(min-width: 1200px) 240px,
+								(min-width: 992px) 390px,
+								(min-width: 768px) 45vw,
+								90vw"
+						srcset="images/01-God-is-King-900.jpg 900w,
+								images/01-God-is-King-450.jpg 450w"><!-- DEVNOTE: Image associated with Series. For SRCSET, SRC, & ALT instructions and logic visit this doc: http://soladevinc.wpengine.com/docs/attributes-in-the-img-element/. 
+									Conditions: 
+										- If no featured image chosen, remove the <img> element completely -->
+						<h2>1 Samuel: God is King</h2><!-- DEVNOTE: Title of Series (Custom Taxonomy) -->
+						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a><!-- DEVNOTE: Put link of blogpost both as value of href="" attribute, and as the text in the .sr-only <span> in place of "Insert Link Here". -->
+					</article><!-- DEVNOTE: Repeat loop as many times as there are series. If there are no sermons or blogposts using the series, do not display the series in the loop. The below static html <article>s can be removed when loop is made. -->
 
-                    <div class="series-post">
+					<article class="series-post">
 						<img alt="Image Alt Text Here" src="images/02-mm.jpg"
-							sizes="	(min-width: 1200px) 240px,
-									(min-width: 992px) 390px,
-									(min-width: 768px) 45vw,
-									90vw "
-							srcset="images/02-mm-900.jpg 900w,
-									images/02-mm-450.jpg 450w ">
+						sizes="(min-width: 1200px) 240px,
+								(min-width: 992px) 390px,
+								(min-width: 768px) 45vw,
+								90vw"
+						srcset="images/02-mm-900.jpg 900w,
+								images/02-mm-450.jpg 450w">
 						<h2>Membership Matters</h2>
 						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-                    </div>
+					</article>
 
-                    <div class="series-post">
+					<article class="series-post">
 						<img alt="Image Alt Text Here" src="images/03-Outreach.jpg"
-							sizes="	(min-width: 1200px) 240px,
-									(min-width: 992px) 390px,
-									(min-width: 768px) 45vw,
-									90vw "
-							srcset="images/03-Outreach-900.jpg 900w,
-									images/03-Outreach-450.jpg 450w ">
+						sizes="(min-width: 1200px) 240px,
+							(min-width: 992px) 390px,
+							(min-width: 768px) 45vw,
+							90vw"
+						srcset="images/03-Outreach-900.jpg 900w,
+							images/03-Outreach-450.jpg 450w">
 						<h2>Outreach</h2>
 						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-                    </div>
+					</article>
 
-                    <div class="series-post">
-						<img alt="Image Alt Text Here" 					src="images/05-who-is-this-christ.jpg"
-								sizes="	(min-width: 1200px) 240px,
-										(min-width: 992px) 390px,
-										(min-width: 768px) 45vw,
-										90vw "
-								srcset="images/05-who-is-this-christ-900.jpg 900w,
-										images/05-who-is-this-christ-450.jpg 450w ">
+					<article class="series-post">
+						<img alt="Image Alt Text Here" src="images/05-who-is-this-christ.jpg"
+						sizes="(min-width: 1200px) 240px,
+							(min-width: 992px) 390px,
+							(min-width: 768px) 45vw,
+							90vw"
+						srcset="images/05-who-is-this-christ-900.jpg 900w,
+							images/05-who-is-this-christ-450.jpg 450w">
 						<h2>Who is this Christ?</h2>
 						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-                    </div>
+					</article>
 
-                    <div class="series-post">
-						<img alt="Image Alt Text Here" 			src="images/06-Colossians.jpg"
-						sizes="	(min-width: 1200px) 240px,
-										(min-width: 992px) 390px,
-										(min-width: 768px) 45vw,
-										90vw "
-								srcset="images/06-Colossians-900.jpg 900w,
-										images/06-Colossians-450.jpg 450w ">
+					<article class="series-post">
+						<img alt="Image Alt Text Here" src="images/06-Colossians.jpg"
+						sizes="(min-width: 1200px) 240px,
+							(min-width: 992px) 390px,
+							(min-width: 768px) 45vw,
+							90vw"
+						srcset="images/06-Colossians-900.jpg 900w,
+							images/06-Colossians-450.jpg 450w">
 						<h2>Colossians: Christ is Supreme Over All </h2>
 						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-                    </div>
+					</article>
 
-                    <div class="series-post">
+					<article class="series-post">
 						<img alt="Image Alt Text Here" src="images/04-E-and-A.jpg"
-							sizes="	(min-width: 1200px) 240px,
-									(min-width: 992px) 390px,
-									(min-width: 768px) 45vw,
-									90vw "
-							srcset="images/04-E-and-A-900.jpg 900w,
-									images/04-E-and-A-450.jpg 450w ">
-                        <h2>Evidence &amp; Assurance of Salvation</h2>
+						sizes="(min-width: 1200px) 240px,
+							(min-width: 992px) 390px,
+							(min-width: 768px) 45vw,
+							90vw"
+						srcset="images/04-E-and-A-900.jpg 900w,
+							images/04-E-and-A-450.jpg 450w">
+						<h2>Evidence &amp; Assurance of Salvation</h2>
 						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-                    </div>
-                </div> 
-				
+					</article>
+				</div> 
 
 			</section><!-- End Sermons-->
 
