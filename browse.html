@@ -140,7 +140,7 @@
 		<main class="main-relative super-big-container">
 			<!-- Main Content -->
 			<section class="blog main-container">
-				<h1 class="page-heading">Browse</h1>
+				<h1 class="page-heading">Browse</h1><!-- DEVNOTE: Title static. -->
 
 				<div class="browse-navigation">
 					<!-- <div class="browse-dropdown">
@@ -180,7 +180,7 @@
 								<img alt="Image Alt Text Here" class="avatar" src="images/avatar-david-stine-225.jpg"><!-- DEVNOTE: Avatar image of author/speaker, 225 pixel version. If speaker has no image, remove <img> entirely -->
 								<p>By: David Stine</p><!-- DEVNOTE: Author/Speaker name after "By: ". If no author, remove <p> (not .author <div>) -->
 							</div>
-							<div class="label">Sermon</div><!-- If custom post type is Sermon, write sermon, if Blogpost, write blogpost. -->
+							<div class="label">Sermon</div><!-- If custom post type is Sermon, write "Sermon", if Blogpost, write "Blogpost". -->
 						</div>
 						<img alt="Image Alt Text Here" class="background-img" src="images/mens-small-group-mens-ministry.jpg"
 							sizes="	(min-width: 1200px) 800px,
@@ -195,8 +195,8 @@
 											- User chose [Series image], use the proper versions of that image in SRC and SRCSET, or
 											- User chose [No image], remove the <img> element completely -->
 						<div class="dark-overlay"></div>
-						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a>
-					</article>
+						<a class="cover-link" href="#"><span class="sr-only">Insert Link Here</span></a><!-- DEVNOTE: Put link of blogpost or sermon both as value of href="" attribute, and as the text in the .sr-only <span> in place of "Insert Link Here". -->
+					</article><!-- DEVNOTE: Repeat loop 10 times per page, wether sermon or blogpost.  No drafts, only published. The below <article> can be removed when loop is made. -->
 
 					<article class="search-card">
 						<div class="meta">

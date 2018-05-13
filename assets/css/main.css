@@ -6417,6 +6417,18 @@ TAXONOMY PAGES
   overflow: hidden;
 }
 
+.search-card::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #cf4a46;
+  background-color: var(--primary-regular);
+  z-index: -2;
+}
+
 .search-card h1 {
   margin: 0;
   font-family: "Teko", Arial, Helvetica, sans-serif;
@@ -6634,8 +6646,6 @@ TAXONOMY PAGES
     height: 180px;
     padding: 20px;
     margin-bottom: 30px;
-    background-color: #cf4a46;
-  	background-color: var(--primary-regular);
   }
   
   .search-card h1 {
